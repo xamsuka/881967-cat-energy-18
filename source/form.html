@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cat Energy подбор программы</title>
+</head>
+
+<body>
+  <header class="page-header">
+    <div class="container">
+      <a href="#" class="page-header__logo">
+        <img class="page-header__logo-image" src="#" width="33px" height="38px" alt="Магазин Cat Energy">
+        <img class="page-header__logo-text logo-text" src="#" alt="Cat Energy">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <ul class="main-nav__list site-navigation">
+          <li class="site-navigation__item">
+            <a href="#" class="site-navigation__link">Главная</a>
+          </li>
+          <li class="site-navigation__item">
+            <a href="#" class="site-navigation__link">Каталог продукции</a>
+          </li>
+          <li class="site-navigation__item">
+            <a href="#" class="site-navigation__link">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="page-main">
+    <div class="container">
+      <section class="nutrition-programm">
+        <h2 class="nutrition-programm__title">Программы питания для котов</h2>
+        <p class="nutrition-programm__text-description">
+          Заполните анкету и мы подберем
+          программу питания для вашего кота
+        </p>
+        <form action="https://echo.htmlacademy.ru" class="programm-form" method="POST">
+          <div class="programm-form__content">
+            <div class="programm-form__content-info">
+              <p class="programm-form__group">
+                <label class="programm-form__label input-label" for="program-user-name">
+                  Имя:*
+                </label>
+                <input type="text" name="program-user-name" id="program-user-name">
+              </p>
+              <p class="programm-form__group">
+                <label class="programm-form__label input-label" for="program-user-weight">
+                  Вес (кг):*
+                </label>
+                <input type="text" name="program-user-weight" id="program-user-weight">
+              </p>
+              <p class="programm-form__group">
+                <label class="programm-form__label input-label" for="program-user-age">
+                  Возраст (лет):
+                </label>
+                <input type="text" name="program-user-age" id="program-user-age">
+              </p>
+            </div>
+            <div class="programm-form__content-programm">
+              <p class="programm-form__group">
+                <input type="radio" name="program-value" id="program-value-losing" value="losing-weight">
+                <label class="programm-form__label input-label" for="program-value-losing">
+                  Похудение
+                </label>
+              </p>
+              <p class="programm-form__group">
+                <input type="radio" name="program-value" id="program-value-mass" value="mass-gain">
+                <label class="programm-form__label input-label" for="program-value-mass">
+                  Набор массы
+                </label>
+              </p>
+              <p class="programm-form__group">
+                <input type="radio" name="program-value" id="program-value-advice" value="need-advice">
+                <label class="programm-form__label input-label" for="program-value-advice">
+                  Не знаю (нужен ваш совет)
+                </label>
+              </p>
+            </div>
+            <div class="programm-form__content-contact form-contact">
+              <h2 class="program-form__title">
+                Контактные данные
+                (владельца кота)
+              </h2>
+              <p class="programm-form__group">
+                <label class="programm-form__label input-label" for="user-email">
+                  E-mail:*
+                </label>
+                <input class="form-contact__input input" type="email" name="user-email" id="user-email">
+              </p>
+              <p class="programm-form__group">
+                <label class="programm-form__label input-label" for="user-tel">
+                  Телефон:*
+                </label>
+                <input class="form-contact__input input" type="tel" name="user-tel" id="user-tel">
+              </p>
+              <p class="programm-form__group">
+                <label class="programm-form__label input-label" for="user-comment">
+                  Комментарий
+                </label>
+                <textarea name="user-comment" id="user-comment" cols="30" rows="10"></textarea>
+              </p>
+            </div>
+            <div class="programm-form__content-optionally">
+              <h2 class="program-form__title">
+                Дополнительно
+              </h2>
+              <p class="programm-form__group">
+                <input class="form-contact__input input" type="checkbox" name="sweetener" id="optionally-sweetener">
+                <label class="programm-form__label input-label" for="optionally-sweetener">
+                  Сахарозаменитель
+                </label>
+              </p>
+              <p class="programm-form__group">
+                <input class="form-contact__input input" type="checkbox" name="water" id="optionally-water">
+                <label class="programm-form__label input-label" for="optionally-water">
+                  Питьевая вода
+                </label>
+              </p>
+              <p class="programm-form__group">
+                <input class="form-contact__input input" type="checkbox" name="milk" id="optionally-milk">
+                <label class="programm-form__label input-label" for="optionally-milk">
+                  Молоко
+                </label>
+              </p>
+              <p class="programm-form__group">
+                <input class="form-contact__input input" type="checkbox" name="vitamins" id="optionally-vitamins">
+                <label class="programm-form__label input-label" for="optionally-vitamins">
+                  Витамины
+                </label>
+              </p>
+            </div>
+            <button class="programm-form__button button">Отправить заявку</button>
+            <p class="programm-form__note">
+              * — Обязательные поля
+            </p>
+          </div>
+        </form>
+      </section>
+
+      <section class="cooperation">
+        <h2 class="cooperation__title">
+          приглашаем
+          к сотрудничеству
+          дилеров!
+        </h2>
+        <p class="cooperation__address company-address">
+          ул. Большая Конюшенная, д. 19/8
+          Санкт-Петербург
+        </p>
+        <div class="map-block">
+          <img src="#" width="" height="" alt="Адрес местонахождения компании">
+        </div>
+      </section>
+      <footer class="page-footer">
+        <div class="container">
+          <div class="page-footer__logo">
+            <img class="logo-text" src="#" alt="Cat Energy">
+          </div>
+          <div class="page-footer__social social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a href="#" class="social__link social-item__link--vk" aria-label="Магазин Глейси в Вконтакте">
+
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link social-item__link--inst" aria-label="Магазин Глейси в инстаграмме">
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link social-item__link--fb" aria-label="Магазин Глейси в фейсбуке">
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="page-footer__copyright copyright">
+            <a href="htmlacademy.ru" class="copyright__link">HTML Academy</a>
+            <a href="htmlacademy.ru" class="copyright__link-img">
+              <img src="#" width="27px" height="34px" alt="HTML Academy">
+            </a>
+          </div>
+      </footer>
+    </div>
+  </main>
+</body>
+
+</html>
