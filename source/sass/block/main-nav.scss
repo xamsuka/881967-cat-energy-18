@@ -5,6 +5,7 @@
 .site-navigation {
   display: none;
   font-size: 18px;
+
   @include site-nav;
 
   .site-navigation__item {
@@ -14,7 +15,6 @@
   .site-navigation__link {
     @include link-site;
     padding-bottom: 9px;
-
   }
 
   .site-navigation__link-current {
@@ -44,21 +44,23 @@
   height: 2px;
   background-color: #222222;
 }
+
 .main-nav__btn > span::before {
-  content: '';
+  content: "";
   top: -8px;
 }
+
 .main-nav__btn > span::after {
-  content: '';
+  content: "";
   top: 8px;
 }
 
-@media  (min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .main-nav__btn {
     display: none;
   }
+
   .site-navigation {
     display: flex;
   }
 }
-
