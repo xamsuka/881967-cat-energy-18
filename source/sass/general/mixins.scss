@@ -1,0 +1,17 @@
+@mixin site-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin link-site {
+  color: #222222;
+  text-transform: uppercase;
+}
+
+@mixin wrapper($property) {
+  width: $property;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
