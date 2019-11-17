@@ -49,3 +49,17 @@ input[type="radio"].visually-hidden {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.button {
+  display: inline-block;
+  vertical-align: middle;
+  padding-top: 14px;
+  padding-right: 74px;
+  padding-bottom: 11px;
+  padding-left: 74px;
+
+  font-size: 14px;
+  line-height: 14px;
+  background-color: $text-green;
+  color: #ffffff;
+}
