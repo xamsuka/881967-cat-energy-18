@@ -1,0 +1,25 @@
+.site-navigation {
+  display: none;
+  font-size: 18px;
+
+  @include site-nav;
+
+  .site-navigation__item {
+    margin-right: 2em;
+  }
+
+  .site-navigation__link {
+    @include link-site;
+    padding-bottom: 9px;
+  }
+
+  .site-navigation__link-current {
+    border-bottom: 2px solid $color-green;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .site-navigation {
+    display: flex;
+  }
+}
