@@ -1,0 +1,57 @@
+.programm-list {
+  @include clear-list;
+
+  .programm-list__item {
+    margin-bottom: 20px;
+    padding-top: 24px;
+    padding-right: 20px;
+    padding-bottom: 22px;
+    padding-left: 20px;
+
+    background-color: $bg-silver;
+  }
+
+  .programm-list__item-cat-slim .programm-list__title::after {
+    background: url("../../img/icon-cat-slim.svg") no-repeat;
+  }
+
+  .programm-list__item-cat-pro .programm-list__title::after {
+    background: url("../../img/icon-cat-pro.svg") no-repeat;
+    width: 67px;
+    height: 28px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -10px;
+  }
+
+  .programm-list__title {
+    @include text-black;
+    padding-left: 70px;
+    position: relative;
+
+    &::before {
+      @include pos-absolute(-5px);
+      width: 50px;
+      height: 50px;
+      background-color: $color-green;
+      border-radius: 50%;
+    }
+
+    &::after {
+      @include pos-absolute();
+      top: -5px;
+      left: 10px;
+      width: 35px;
+      height: 49px;
+    }
+  }
+
+  .programm-list__description {
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+    font-size: 14px;
+    line-height: 18px;
+    color: $text-silver;
+  }
+}

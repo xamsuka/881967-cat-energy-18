@@ -1,5 +1,7 @@
 .promo {
   display: flex;
+  padding-bottom: 167px;
+  max-height: 305px;
   flex-direction: column;
   text-align: center;
   background-color: $color-green;
@@ -20,14 +22,12 @@
 
   .promo__subtitle {
     margin: 0;
+    margin-top: 20px;
+    margin-bottom: 29px;
 
     font-size: 14px;
     line-height: 14px;
     text-transform: uppercase;
     color: #ffffff;
-  }
-
-  .promo__content {
-    background-color: transparent;
   }
 }
