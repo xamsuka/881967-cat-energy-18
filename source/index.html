@@ -38,14 +38,22 @@
     </div>
   </header>
   <main class="page-main">
-    <div class="page-main__container">
-      <section class="promo">
+    <section class="promo">
+      <div class="promo__container">
         <h1 class="promo__title">Функциональное питание для котов</h1>
         <p class="promo__subtitle">Занялся собой? Займись котом!</p>
-        <img class="promo__image" src="#" width="280" height="270" alt="Cat Energy продукт">
-        <a href="#" class="promo__link button">Подобрать программу</a>
-      </section>
 
+        <div class="promo__content">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg">
+            <source media="(min-width: 1440px)" srcset="img">
+            <img class="logo__image" src="img/index-can-mobile@1x.png" width="280" height="270" alt="Магазин Cat Energy">
+          </picture>
+          <a href="#" class="promo__link button">Подобрать программу</a>
+        </div>
+      </div>
+    </section>
+    <div class="page-main__container">
       <section class="nutrition-programm">
         <h2 class="visually-hidden">Программы питания для котов</h2>
         <ul class="nutrition-programm__list programm-list">

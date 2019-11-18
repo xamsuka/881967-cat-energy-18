@@ -4,9 +4,9 @@ body {
   padding: 0;
 
   font-size: 16px;
+  font-weight: 400;
   line-height: 24px;
   font-family: $font-family;
-  font-weight: 400;
   color: $text-silver;
   font-style: normal;
 
@@ -54,12 +54,13 @@ input[type="radio"].visually-hidden {
   display: inline-block;
   vertical-align: middle;
   padding-top: 14px;
-  padding-right: 74px;
+  padding-right: 73px;
   padding-bottom: 11px;
-  padding-left: 74px;
+  padding-left: 73px;
 
   font-size: 14px;
   line-height: 14px;
+  text-transform: uppercase;
   background-color: $text-green;
   color: #ffffff;
 }

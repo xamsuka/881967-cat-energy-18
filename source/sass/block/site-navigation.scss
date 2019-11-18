@@ -2,7 +2,7 @@
   display: none;
   font-size: 18px;
 
-  @include site-nav;
+  @include clear-list;
 
   .site-navigation__item {
     margin-right: 2em;
