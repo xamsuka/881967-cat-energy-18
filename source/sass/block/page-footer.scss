@@ -1,0 +1,12 @@
+.page-footer {
+  background-color: $bg-silver;
+  text-align: center;
+
+  .page-footer__container {
+    @include wrapper($mobile-width);
+  }
+
+  .page-footer__logo {
+    padding-top: 40px;
+  }
+}

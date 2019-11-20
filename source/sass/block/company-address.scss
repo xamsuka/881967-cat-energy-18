@@ -1,0 +1,8 @@
+.company-address {
+  @include text-mobile;
+  display: inline-block;
+  margin: 0;
+  width: 134px;
+
+  text-align: right;
+}

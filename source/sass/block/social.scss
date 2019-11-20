@@ -1,0 +1,28 @@
+.social {
+  padding-top: 31px;
+
+  .social__list {
+    @include clear-list;
+    display: flex;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgba($color: #000000, $alpha: 0.1);
+    border-top: 1px solid rgba($color: #000000, $alpha: 0.1);
+  }
+
+  .social__item {
+    margin-right: 37px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    circle,
+    path {
+      fill: #666666;
+    }
+  }
+}
