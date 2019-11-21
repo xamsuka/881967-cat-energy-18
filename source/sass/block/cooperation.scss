@@ -1,0 +1,20 @@
+.cooperation {
+  padding-top: 30px;
+
+  .cooperation__container {
+    @include wrapper($mobile-width);
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cooperation__title {
+    @include text-black;
+    display: inline-block;
+    margin-right: auto;
+    max-width: 123px;
+
+    font-size: 16px;
+    line-height: 20px;
+    text-align: left;
+  }
+}

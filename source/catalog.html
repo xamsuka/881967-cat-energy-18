@@ -6,17 +6,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="page-header">
     <div class="page-header__container">
-      <a href="#" class="page-header__logo">
-        <img class="page-header__logo-image" src="#" width="33px" height="38px" alt="Магазин Cat Energy">
-        <img class="page-header__logo-text" src="#" alt="Cat Energy">
+      <a class="page-header__logo logo">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img class="logo__image" src="img/logo-mobile.svg" width="191" height="38" alt="Магазин Cat Energy">
+        </picture>
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <input class="visually-hidden" id="main-nav__toggle" type="checkbox">
+        <label class="main-nav__btn" for="main-nav__toggle">
+          <span></span>
+        </label>
         <ul class="main-nav__list site-navigation">
           <li class="site-navigation__item">
             <a href="#" class="site-navigation__link">Главная</a>
@@ -45,59 +51,23 @@
                     PRO 500 г
                   </h3>
                 </td>
-              </tr>
-              <tr class="catalog-item__row">
                 <td class="catalog-item__column">
-                  <p class="catalog-item__weight">
-                    <span>Объем</span>
-                    <span>500 г</span>
-                  </p>
+                  Объем
                 </td>
-              </tr>
-              <tr class="catalog-item__row">
                 <td class="catalog-item__column">
-                  <p class="catalog-item__taste">
-                    <span>Вкус</span>
-                    <span>Курица</span>
-                  </p>
-                  <p class="catalog-item__price">
-                    <span>Цена</span>
-                    <span>700 Р.</span>
-                  </p>
+                  500 г
                 </td>
-              </tr>
-            </table>
-            <a href="#" class="catalog-list__link button">Заказать</a>
-          </li>
-          <li class="catalog-list__item catalog-item">
-            <img src="#" alt="Продукт со вкусом курица" class="catalog-item__image">
-            <table class="catalog-item__description">
-              <tr class="catalog-item__row">
                 <td class="catalog-item__column">
-                  <h3 class="catalog-item__title">
-                    Cat Energy
-                    PRO 500 г
-                  </h3>
+                  Вкус
                 </td>
-              </tr>
-              <tr class="catalog-item__row">
                 <td class="catalog-item__column">
-                  <p class="catalog-item__weight">
-                    <span>Объем</span>
-                    <span>500 г</span>
-                  </p>
+                  Курица
                 </td>
-              </tr>
-              <tr class="catalog-item__row">
                 <td class="catalog-item__column">
-                  <p class="catalog-item__taste">
-                    <span>Вкус</span>
-                    <span>Курица</span>
-                  </p>
-                  <p class="catalog-item__price">
-                    <span>Цена</span>
-                    <span>700 Р.</span>
-                  </p>
+                  Цена
+                </td>
+                <td class="catalog-item__column">
+                  700 Р.
                 </td>
               </tr>
             </table>
@@ -113,59 +83,23 @@
                     PRO 500 г
                   </h3>
                 </td>
-              </tr>
-              <tr class="catalog-item__row">
                 <td class="catalog-item__column">
-                  <p class="catalog-item__weight">
-                    <span>Объем</span>
-                    <span>500 г</span>
-                  </p>
+                  Объем
                 </td>
-              </tr>
-              <tr class="catalog-item__row">
                 <td class="catalog-item__column">
-                  <p class="catalog-item__taste">
-                    <span>Вкус</span>
-                    <span>Курица</span>
-                  </p>
-                  <p class="catalog-item__price">
-                    <span>Цена</span>
-                    <span>700 Р.</span>
-                  </p>
+                  500 г
                 </td>
-              </tr>
-            </table>
-            <a href="#" class="catalog-list__link button">Заказать</a>
-          </li>
-          <li class="catalog-list__item catalog-item">
-            <img src="#" alt="Продукт со вкусом курица" class="catalog-item__image">
-            <table class="catalog-item__description">
-              <tr class="catalog-item__row">
                 <td class="catalog-item__column">
-                  <h3 class="catalog-item__title">
-                    Cat Energy
-                    PRO 500 г
-                  </h3>
+                  Вкус
                 </td>
-              </tr>
-              <tr class="catalog-item__row">
                 <td class="catalog-item__column">
-                  <p class="catalog-item__weight">
-                    <span>Объем</span>
-                    <span>500 г</span>
-                  </p>
+                  Курица
                 </td>
-              </tr>
-              <tr class="catalog-item__row">
                 <td class="catalog-item__column">
-                  <p class="catalog-item__taste">
-                    <span>Вкус</span>
-                    <span>Курица</span>
-                  </p>
-                  <p class="catalog-item__price">
-                    <span>Цена</span>
-                    <span>700 Р.</span>
-                  </p>
+                  Цена
+                </td>
+                <td class="catalog-item__column">
+                  700 Р.
                 </td>
               </tr>
             </table>
@@ -181,59 +115,23 @@
                     PRO 500 г
                   </h3>
                 </td>
-              </tr>
-              <tr class="catalog-item__row">
                 <td class="catalog-item__column">
-                  <p class="catalog-item__weight">
-                    <span>Объем</span>
-                    <span>500 г</span>
-                  </p>
+                  Объем
                 </td>
-              </tr>
-              <tr class="catalog-item__row">
                 <td class="catalog-item__column">
-                  <p class="catalog-item__taste">
-                    <span>Вкус</span>
-                    <span>Курица</span>
-                  </p>
-                  <p class="catalog-item__price">
-                    <span>Цена</span>
-                    <span>700 Р.</span>
-                  </p>
+                  500 г
                 </td>
-              </tr>
-            </table>
-            <a href="#" class="catalog-list__link button">Заказать</a>
-          </li>
-          <li class="catalog-list__item catalog-item">
-            <img src="#" alt="Продукт со вкусом курица" class="catalog-item__image">
-            <table class="catalog-item__description">
-              <tr class="catalog-item__row">
                 <td class="catalog-item__column">
-                  <h3 class="catalog-item__title">
-                    Cat Energy
-                    PRO 500 г
-                  </h3>
+                  Вкус
                 </td>
-              </tr>
-              <tr class="catalog-item__row">
                 <td class="catalog-item__column">
-                  <p class="catalog-item__weight">
-                    <span>Объем</span>
-                    <span>500 г</span>
-                  </p>
+                  Курица
                 </td>
-              </tr>
-              <tr class="catalog-item__row">
                 <td class="catalog-item__column">
-                  <p class="catalog-item__taste">
-                    <span>Вкус</span>
-                    <span>Курица</span>
-                  </p>
-                  <p class="catalog-item__price">
-                    <span>Цена</span>
-                    <span>700 Р.</span>
-                  </p>
+                  Цена
+                </td>
+                <td class="catalog-item__column">
+                  700 Р.
                 </td>
               </tr>
             </table>
@@ -249,40 +147,134 @@
                     PRO 500 г
                   </h3>
                 </td>
-              </tr>
-              <tr class="catalog-item__row">
                 <td class="catalog-item__column">
-                  <p class="catalog-item__weight">
-                    <span>Объем</span>
-                    <span>500 г</span>
-                  </p>
+                  Объем
                 </td>
-              </tr>
-              <tr class="catalog-item__row">
                 <td class="catalog-item__column">
-                  <p class="catalog-item__taste">
-                    <span>Вкус</span>
-                    <span>Курица</span>
-                  </p>
-                  <p class="catalog-item__price">
-                    <span>Цена</span>
-                    <span>700 Р.</span>
-                  </p>
+                  500 г
+                </td>
+                <td class="catalog-item__column">
+                  Вкус
+                </td>
+                <td class="catalog-item__column">
+                  Курица
+                </td>
+                <td class="catalog-item__column">
+                  Цена
+                </td>
+                <td class="catalog-item__column">
+                  700 Р.
                 </td>
               </tr>
             </table>
             <a href="#" class="catalog-list__link button">Заказать</a>
+          </li>
+          <li class="catalog-list__item catalog-item">
+            <img src="#" alt="Продукт со вкусом курица" class="catalog-item__image">
+            <table class="catalog-item__description">
+              <tr class="catalog-item__row">
+                <td class="catalog-item__column">
+                  <h3 class="catalog-item__title">
+                    Cat Energy
+                    PRO 500 г
+                  </h3>
+                </td>
+                <td class="catalog-item__column">
+                  Объем
+                </td>
+                <td class="catalog-item__column">
+                  500 г
+                </td>
+                <td class="catalog-item__column">
+                  Вкус
+                </td>
+                <td class="catalog-item__column">
+                  Курица
+                </td>
+                <td class="catalog-item__column">
+                  Цена
+                </td>
+                <td class="catalog-item__column">
+                  700 Р.
+                </td>
+              </tr>
+            </table>
+            <a href="#" class="catalog-list__link button">Заказать</a>
+          </li>
+          <li class="catalog-list__item catalog-item">
+            <img src="#" alt="Продукт со вкусом курица" class="catalog-item__image">
+            <table class="catalog-item__description">
+              <tr class="catalog-item__row">
+                <td class="catalog-item__column">
+                  <h3 class="catalog-item__title">
+                    Cat Energy
+                    PRO 500 г
+                  </h3>
+                </td>
+                <td class="catalog-item__column">
+                  Объем
+                </td>
+                <td class="catalog-item__column">
+                  500 г
+                </td>
+                <td class="catalog-item__column">
+                  Вкус
+                </td>
+                <td class="catalog-item__column">
+                  Курица
+                </td>
+                <td class="catalog-item__column">
+                  Цена
+                </td>
+                <td class="catalog-item__column">
+                  700 Р.
+                </td>
+              </tr>
+            </table>
+            <a href="#" class="catalog-list__link button">Заказать</a>
+          </li>
+          <li class="catalog-list__item catalog-item">
+            <img src="#" alt="Продукт со вкусом курица" class="catalog-item__image">
+            <table class="catalog-item__description">
+              <tr class="catalog-item__row">
+                <td class="catalog-item__column">
+                  <h3 class="catalog-item__title">
+                    Cat Energy
+                    PRO 500 г
+                  </h3>
+                </td>
+                <td class="catalog-item__column">
+                  Объем
+                </td>
+                <td class="catalog-item__column">
+                  500 г
+                </td>
+                <td class="catalog-item__column">
+                  Вкус
+                </td>
+                <td class="catalog-item__column">
+                  Курица
+                </td>
+                <td class="catalog-item__column">
+                  Цена
+                </td>
+                <td class="catalog-item__column">
+                  700 Р.
+                </td>
+              </tr>
+            </table>
+            <a href="#" class="catalog-list__link button">Заказать</a>
+          </li>
+          <li class="catalog__all-product all-product">
+            <p class="all-product__title">
+              Показать еще 100500 товаров
+            </p>
+            <p class="all-product__subtitle">
+              На самом деле вкусов гораздно больше!
+            </p>
+            <a href="" class="button all-product__button all-product__button_silver">Показать все</a>
           </li>
         </ul>
-        <li class="catalog__all-product all-product">
-          <p class="all-product__title">
-            Показать еще 100500 товаров
-          </p>
-          <p class="all-product__subtitle">
-            На самом деле вкусов гораздно больше!
-          </p>
-          <a href="" class="button all-product__button all-product__button_silver">Показать все</a>
-        </li>
       </section>
       <section class="additional-product">
         <ul class="additional-list">
@@ -329,6 +321,7 @@
         </ul>
       </section>
       <section class="promo-banners">
+        <h2 class="visually-hidden">Акция</h2>
         <div class="promo-banners__text">
           Закажите все
           и получите чехол для кота в подарок!
@@ -361,7 +354,7 @@
       <div class="page-footer__copyright copyright">
         <a href="htmlacademy.ru" class="copyright__link">HTML Academy</a>
         <a href="htmlacademy.ru" class="copyright__link-img">
-          <img src="#" width="27px" height="34px" alt="HTML Academy">
+          <img src="#" width="27" height="34" alt="HTML Academy">
         </a>
       </div>
     </div>

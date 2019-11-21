@@ -1,0 +1,21 @@
+.example {
+  padding-bottom: 38px;
+
+  background-color: $bg-silver;
+
+  .example__container {
+    @include wrapper($mobile-width);
+  }
+
+  .example__title {
+    @include block-title;
+  }
+
+  .example__text {
+    @include text-mobile;
+  }
+
+  .example__preview {
+    margin-top: 40px;
+  }
+}
