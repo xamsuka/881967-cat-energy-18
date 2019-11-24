@@ -14,9 +14,9 @@
   z-index: 1;
 }
 
-.main-nav__btn > span,
-.main-nav__btn > span::before,
-.main-nav__btn > span::after {
+.main-nav__line,
+.main-nav__line::before,
+.main-nav__line::after {
   display: block;
   position: absolute;
   width: 100%;
@@ -24,12 +24,12 @@
   background-color: #222222;
 }
 
-.main-nav__btn > span::before {
+.main-nav__line::before {
   content: "";
   top: -8px;
 }
 
-.main-nav__btn > span::after {
+.main-nav__line::after {
   content: "";
   top: 8px;
 }

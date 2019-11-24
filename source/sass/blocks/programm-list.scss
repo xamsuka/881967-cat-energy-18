@@ -15,12 +15,12 @@
     }
   }
 
-  .programm-list__item-cat-slim .programm-list__title::after {
+  .programm-list__item--cat-slim .programm-list__title::after {
     background: url("../../img/icon-cat-slim.svg") no-repeat;
     top: 0;
   }
 
-  .programm-list__item-cat-pro .programm-list__title::after {
+  .programm-list__item--cat-pro .programm-list__title::after {
     background: url("../../img/icon-cat-pro.svg") no-repeat;
     width: 67px;
     height: 28px;
