@@ -3,6 +3,9 @@
 }
 
 .programm-list__item {
+  display: flex;
+  flex-direction: column;
+
   margin-bottom: 20px;
   padding-top: 24px;
   padding-right: 20px;
@@ -16,19 +19,10 @@
   }
 }
 
-// .programm-list__item--cat-slim .programm-list__title::after {
-//   background: url("../../img/icon-cat-slim.svg") no-repeat;
-//   top: 0;
-// }
-
-// .programm-list__item--cat-pro .programm-list__title::after {
-//   background: url("../../img/icon-cat-pro.svg") no-repeat;
-//   width: 67px;
-//   height: 28px;
-//   top: 25px;
-//   transform: translateY(-50%);
-//   left: -10px;
-// }
+.programm-list__item--cat-pro .programm-list__title::after {
+  background: url("../../img/icon-cat-pro.svg") no-repeat center center;
+  max-width: 268px;
+}
 
 .programm-list__title {
   @include text-black;
@@ -37,7 +31,7 @@
   font-weight: 400;
 
   &::before {
-    @include pos-absolute(0, auto, auto, 0);
+    @include pos-absolute(-5px, auto, auto, 0);
     width: 50px;
     height: 50px;
     background-color: $color-green;
@@ -45,10 +39,10 @@
   }
 
   &::after {
-    @include pos-absolute(5px, auto, auto, 0);
-    width: 35px;
+    @include pos-absolute(-5px, auto, auto, -7px);
+    width: 67px;
     height: 49px;
-    background-color: tomato;
+    background: url("../../img/icon-cat-slim.svg") no-repeat center center;
   }
 }
 
@@ -62,15 +56,13 @@
 
 .programm-list__link {
   position: relative;
-  width: 24px;
-  height: 11px;
 
   line-height: 16px;
   color: $text-title;
   text-transform: uppercase;
 
   &::after {
-    @include pos-absolute(6px,-38px,auto,auto);
+    @include pos-absolute(3px, auto, auto,100px);
     width: 24px;
     height: 11px;
     content: "";
@@ -83,14 +75,15 @@
     min-height: 372px;
     position: relative;
     padding-top: 81px;
-    padding-right: 285px;
     padding-bottom: 62px;
     padding-left: 52px;
   }
 
   .programm-list__title {
-    padding-left: 0;
     position: unset;
+    padding-left: 0;
+    font-size: 60px;
+    line-height: 60px;
 
     &::before {
       @include pos-absolute(92px, 62px, auto, auto);
@@ -99,9 +92,25 @@
     }
 
     &::after {
-      width: 140px;
+      @include pos-absolute(90px, 30px, auto, auto);
+      width: 268px;
       height: 194px;
-      top: 50px;
     }
+  }
+
+  .programm-list__description {
+    max-width: 371px;
+    padding-bottom: 0;
+
+    @include text-tablet;
+    border-bottom: none;
+  }
+
+  .programm-list__item:nth-child(2) .programm-list__description {
+    max-width: 340px;
+  }
+
+  .programm-list__link {
+    margin-top: auto;
   }
 }
