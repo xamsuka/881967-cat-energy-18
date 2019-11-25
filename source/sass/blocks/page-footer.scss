@@ -6,9 +6,20 @@
     @include wrapper($mobile-width);
   }
 
+  .page-footer__logo {
+    padding-top: 40px;
+  }
+
   @media (min-width: $tablet-width) {
     .page-footer__container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
       width: $tablet-width;
+    }
+
+    .page-footer__logo {
+      padding: 0;
     }
   }
 
@@ -16,9 +27,5 @@
     .page-footer__container {
       width: $desktop-width;
     }
-  }
-
-  .page-footer__logo {
-    padding-top: 40px;
   }
 }

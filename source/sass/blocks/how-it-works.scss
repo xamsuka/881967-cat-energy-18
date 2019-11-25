@@ -44,15 +44,15 @@
     }
   }
 
-  .how-it-works__step-powder::after {
+  .how-it-works__step--powder::after {
     background: url("../../img/advantage-powder@1x.png") no-repeat center center;
   }
 
-  .how-it-works__step-dining::after {
+  .how-it-works__step--dining::after {
     background: url("../../img/advantage-dining@1x.png") no-repeat center center;
   }
 
-  .how-it-works__step-clock::after {
+  .how-it-works__step--clock::after {
     background: url("../../img/advantage-clock@1x.png") no-repeat center center;
   }
 
@@ -62,4 +62,25 @@
 
     @include text-mobile;
   }
+
+  @media (min-width: $tablet-width) {
+    .how-it-works__title {
+      @include title-block-tablet;
+    }
+
+    .how-it-works__steps {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .how-it-works__step {
+      width: 27%;
+      margin-right: 26%;
+    }
+
+    .how-it-works__step:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
 }
+
