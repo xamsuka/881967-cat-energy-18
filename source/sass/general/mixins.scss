@@ -55,3 +55,15 @@
   line-height: 18px;
   color: $text-silver;
 }
+
+@mixin text-tablet {
+  @include text-mobile;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+@mixin text-desktop {
+  @include text-mobile;
+  font-size: 16px;
+  line-height: 24px;
+}
