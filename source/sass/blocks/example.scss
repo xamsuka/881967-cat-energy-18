@@ -44,6 +44,22 @@
       text-align: center;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    .example__container {
+      display: flex;
+      flex-wrap: wrap;
+      width: 1440px;
+    }
+
+    .example__title {
+      width: 100%;
+    }
+
+    .example__content {
+      width: 430px;
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {

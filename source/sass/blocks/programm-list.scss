@@ -82,8 +82,8 @@
   .programm-list__title {
     position: unset;
     padding-left: 0;
-    font-size: 60px;
-    line-height: 60px;
+
+    @include title-block-tablet;
 
     &::before {
       @include pos-absolute(92px, 62px, auto, auto);
@@ -112,5 +112,46 @@
 
   .programm-list__link {
     margin-top: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programm-list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .programm-list__description {
+    margin-top: 75px;
+  }
+
+  .programm-list__item {
+    display: flex;
+    width: 39%;
+    margin: 0;
+    margin-right: 80px;
+  }
+
+  .programm-list__title {
+    padding-left: 164px;
+    position: relative;
+
+    font-size: 36px;
+    line-height: 37.02px;
+
+    &::before {
+      @include pos-absolute(-25px, auto, auto, 0);
+      width: 100px;
+      height: 100px;
+      background-color: $color-green;
+      border-radius: 50%;
+    }
+
+    &::after {
+      @include pos-absolute(-25px, auto, auto, -18px);
+      width: 134px;
+      height: 97px;
+      background: url("../../img/icon-cat-slim.svg") no-repeat center center;
+    }
   }
 }

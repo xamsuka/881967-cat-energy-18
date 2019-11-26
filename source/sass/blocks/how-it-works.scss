@@ -70,6 +70,7 @@
 
     .how-it-works__steps {
       display: flex;
+      align-items: flex-start;
       flex-wrap: wrap;
     }
 
@@ -80,6 +81,17 @@
 
     .how-it-works__step:nth-child(2n) {
       margin-right: 0;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    .how-it-works__step {
+      width: 197px;
+      margin-right: 128px;
+    }
+
+    .how-it-works__step:nth-child(2n) {
+      margin-right: 128px;
     }
   }
 }

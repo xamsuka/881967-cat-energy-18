@@ -25,4 +25,10 @@
       padding-right: 30px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    .cooperation__container {
+      width: 1440px;
+    }
+  }
 }
