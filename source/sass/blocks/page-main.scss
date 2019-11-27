@@ -2,12 +2,12 @@
   @include wrapper($mobile-width);
 
   @media (min-width: $tablet-width) {
-    width: $tablet-width;
+    max-width: $tablet-width;
     padding-left: 30px;
     padding-right: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    width: $desktop-width;
+    max-width: $desktop-width;
   }
 }

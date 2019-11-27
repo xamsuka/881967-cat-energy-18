@@ -47,7 +47,7 @@
     width: 174px;
     text-align: right;
 
-    @include sub-title;
+    // @include sub-title;
   }
 
   @media (min-width: $desktop-width) {

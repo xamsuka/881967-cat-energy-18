@@ -69,7 +69,7 @@
     position: unset;
     padding-left: 0;
 
-    @include title-block-tablet;
+    // @include title-block-tablet;
 
     &::before {
       @include pos-absolute(92px, 62px, auto, auto);
@@ -119,7 +119,7 @@
     max-width: 371px;
     padding-bottom: 0;
 
-    @include text-tablet;
+    // @include text-tablet;
     border-bottom: none;
   }
 

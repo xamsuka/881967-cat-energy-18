@@ -8,13 +8,13 @@
   flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
-    width: 768px;
+    max-width: $tablet-width;
     padding-left: 30px;
     padding-right: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1440px;
+    max-width: $desktop-width;
   }
 }
 
