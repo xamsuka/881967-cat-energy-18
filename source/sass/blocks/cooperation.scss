@@ -1,34 +1,30 @@
 .cooperation {
   padding-top: 30px;
+}
 
-  .cooperation__container {
-    @include wrapper($mobile-width);
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .cooperation__title {
-    @include text-black;
-    display: inline-block;
-    margin-right: auto;
-    max-width: 123px;
-
-    font-size: 16px;
-    line-height: 20px;
-    text-align: left;
-  }
+.cooperation__container {
+  @include wrapper($mobile-width);
+  display: flex;
+  flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
-    .cooperation__container {
-      width: 768px;
-      padding-left: 30px;
-      padding-right: 30px;
-    }
+    width: 768px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    .cooperation__container {
-      width: 1440px;
-    }
+    width: 1440px;
   }
+}
+
+.cooperation__title {
+  @include text-black;
+  display: inline-block;
+  margin-right: auto;
+  max-width: 123px;
+
+  font-size: 16px;
+  line-height: 20px;
+  text-align: left;
 }

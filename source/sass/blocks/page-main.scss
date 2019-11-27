@@ -1,17 +1,13 @@
 .page-main__container {
   @include wrapper($mobile-width);
-}
 
-@media (min-width: $tablet-width) {
-  .page-main__container {
+  @media (min-width: $tablet-width) {
     width: $tablet-width;
     padding-left: 30px;
     padding-right: 30px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .page-main__container {
+  @media (min-width: $desktop-width) {
     width: $desktop-width;
   }
 }

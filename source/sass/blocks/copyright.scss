@@ -4,16 +4,14 @@
   padding-bottom: 22px;
   justify-content: space-between;
   align-items: center;
+}
 
-  .copyright__link {
-    @include text-mobile;
-    font-size: 16px;
-    line-height: 16px;
-  }
+.copyright__link {
+  @include text-mobile;
+  font-size: 16px;
+  line-height: 16px;
 
   @media (min-width: $tablet-width) {
-    .copyright__link {
-      margin-right: 20px;
-    }
+    margin-right: 20px;
   }
 }

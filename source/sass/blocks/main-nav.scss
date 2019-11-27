@@ -12,6 +12,10 @@
   height: 28px;
   cursor: pointer;
   z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .main-nav__line,
@@ -32,10 +36,4 @@
 .main-nav__line::after {
   content: "";
   top: 8px;
-}
-
-@media (min-width: $tablet-width) {
-  .main-nav__btn {
-    display: none;
-  }
 }

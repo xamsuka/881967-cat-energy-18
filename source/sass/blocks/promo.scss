@@ -5,6 +5,24 @@
   background-color: $color-green;
   background-image: url("../../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    height: 806px;
+    max-height: 806px;
+    background-image: none;
+    background-color: #ffffff;
+    background-size: contain;
+    text-align: left;
+  }
+}
+
+.promo__content {
+  @media (min-width: $tablet-width) {
+    max-width: 415px;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+  }
 }
 
 .promo__title {
@@ -14,6 +32,12 @@
   font-weight: 400;
   line-height: 36px;
   color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    color: #111111;
+
+    @include title-block-tablet;
+  }
 }
 
 .promo__subtitle {
@@ -24,66 +48,42 @@
   line-height: 14px;
   text-transform: uppercase;
   color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 33px;
+    margin-bottom: 48px;
+
+    @include sub-title;
+    color: #111111;
+  }
 }
 
 .promo__container {
   @include wrapper($mobile-width);
   position: relative;
   z-index: 0;
-}
 
-@media (min-width: $tablet-width) {
-  .promo {
-    height: 806px;
-    max-height: 806px;
-    background-image: none;
-    background-color: #ffffff;
-    background-size: contain;
-    text-align: left;
-  }
-
-  .promo__title,
-  .promo__subtitle {
-    color: #111111;
-  }
-
-  .promo__title {
-    @include title-block-tablet;
-  }
-
-  .promo__subtitle {
-    margin-top: 33px;
-    margin-bottom: 48px;
-
-    @include sub-title;
-  }
-
-  .promo__container {
+  @media (min-width: $tablet-width) {
     width: $tablet-width;
     padding-left: 120px;
   }
 
-  .promo__content {
-    max-width: 415px;
-    display: flex;
-    flex-direction: column;
-    z-index: 1;
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
   }
+}
 
-  .promo__picture {
+.promo__picture {
+  @media (min-width: $tablet-width) {
     order: 4;
 
     @include pos-absolute(0, auto, auto, 0);
     z-index: -1;
   }
-
-  .promo__link {
-    align-self: flex-start;
-  }
 }
 
-@media (min-width: $desktop-width) {
-  .promo__container {
-    width: $desktop-width;
+.promo__link {
+  @media (min-width: $tablet-width) {
+    align-self: flex-start;
   }
 }
