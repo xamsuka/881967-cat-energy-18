@@ -1,7 +1,7 @@
 .nutrition-programm {
   padding-top: 197px;
 
-  @media (min-width: $tablet-width) {
+  @include tablet-width {
     padding-top: 0;
   }
 }

@@ -11,14 +11,14 @@
   position: relative;
   align-items: center;
 
-  @media (min-width: $tablet-width) {
+  @include tablet-width {
     max-width: $tablet-width;
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 24px;
   }
 
-  @media (min-width: $desktop-width) {
+  @include desktop-width {
     max-width: $desktop-width;
   }
 }

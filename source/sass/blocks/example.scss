@@ -14,14 +14,14 @@
 
   @include wrapper($mobile-width);
 
-  @media (min-width: $tablet-width) {
+  @include tablet-width {
     max-width: $tablet-width;
     padding-top: 51px;
     padding-left: 30px;
     padding-right: 30px;
   }
 
-  @media (min-width: $desktop-width) {
+  @include desktop-width {
     max-width: $desktop-width;
     display: flex;
     flex-wrap: wrap;
@@ -36,11 +36,11 @@
 .example__title {
   @include block-title;
 
-  @media (min-width: $tablet-width) {
+  @include tablet-width {
     // @include title-block-tablet;
   }
 
-  @media (min-width: $tablet-width) {
+  @include desktop-width {
     // @include title-block-tablet;
   }
 }
@@ -48,7 +48,7 @@
 .example__text {
   @include text-mobile;
 
-  @media (min-width: $tablet-width) {
+  @include tablet-width {
     margin-top: 60px;
     margin-bottom: 52px;
 
@@ -59,7 +59,7 @@
 .example__preview {
   margin-top: 40px;
 
-  @media (min-width: $tablet-width) {
+  @include tablet-width {
     .example__image-before {
       text-align: center;
     }

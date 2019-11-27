@@ -17,7 +17,7 @@
 }
 
 .promo__content {
-  @media (min-width: $tablet-width) {
+  @include tablet-width {
     max-width: 415px;
     display: flex;
     flex-direction: column;
@@ -33,7 +33,7 @@
   line-height: 36px;
   color: #ffffff;
 
-  @media (min-width: $tablet-width) {
+  @include tablet-width {
     color: #111111;
 
     // @include title-block-tablet;
@@ -49,7 +49,7 @@
   text-transform: uppercase;
   color: #ffffff;
 
-  @media (min-width: $tablet-width) {
+  @include tablet-width {
     margin-top: 33px;
     margin-bottom: 48px;
 
@@ -63,25 +63,25 @@
   position: relative;
   z-index: 0;
 
-  @media (min-width: $tablet-width) {
+  @include tablet-width {
     max-width: $tablet-width;
     padding-left: 120px;
   }
 
-  @media (min-width: $desktop-width) {
+  @include desktop-width {
     max-width: $desktop-width;
   }
 }
 
 .promo__picture {
-  @media (min-width: $tablet-width) {
+  @include tablet-width {
     order: 4;
 
     @include pos-absolute(220px, auto, auto, 0);
     z-index: -1;
   }
 
-  @media (min-width: $desktop-width) {
+  @include desktop-width {
     @include pos-absolute(0, 200px, auto, auto);
   }
 }
@@ -91,7 +91,7 @@
 }
 
 .promo__link {
-  @media (min-width: $tablet-width) {
+  @include tablet-width {
     align-self: flex-start;
   }
 }

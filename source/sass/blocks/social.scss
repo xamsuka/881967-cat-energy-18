@@ -1,7 +1,7 @@
 .social {
   padding-top: 31px;
 
-  @media (min-width: $tablet-width) {
+  @include tablet-width {
     padding: 0;
   }
 }
@@ -17,7 +17,7 @@
   border-bottom: 1px solid rgba($color: #000000, $alpha: 0.1);
   border-top: 1px solid rgba($color: #000000, $alpha: 0.1);
 
-  @media (min-width: $tablet-width) {
+  @include tablet-width {
     padding: 0;
     border: none;
   }
