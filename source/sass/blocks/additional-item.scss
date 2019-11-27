@@ -1,0 +1,15 @@
+.additional-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.additional-item__info {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 17px;
+  justify-content: space-between;
+
+  @include text-mobile;
+  font-size: 14px;
+  line-height: 14px;
+}
