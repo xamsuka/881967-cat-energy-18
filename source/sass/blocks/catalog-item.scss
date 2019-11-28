@@ -15,6 +15,10 @@
 
     background-color: $bg-silver;
   }
+
+  @include desktop-width {
+    width: 245px;
+  }
 }
 
 .catalog-item__image {
@@ -73,6 +77,11 @@
     padding-left: 65px;
     padding-right: 65px;
     text-align: center;
+  }
+
+  @include desktop-width {
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 

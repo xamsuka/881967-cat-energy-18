@@ -8,12 +8,22 @@
     flex-direction: row;
     border: 1px solid #cdcdcd;
   }
+
+  @include desktop-width {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .additional-item__title {
   @include tablet-width {
     width: 50%;
     margin: 0;
+  }
+
+  @include desktop-width {
+    width: 18%;
   }
 }
 
@@ -31,9 +41,17 @@
     width: 50%;
     margin: 0;
   }
+
+  @include desktop-width {
+    width: 31%;
+  }
 }
 
 .additional-item__button {
   margin-top: 20px;
   width: 100%;
+
+  @include desktop-width {
+    width: 27%;
+  }
 }

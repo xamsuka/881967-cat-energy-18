@@ -34,6 +34,21 @@
       transform: translateY(-50%);
     }
   }
+
+  @include desktop-width {
+    background-image: url("../../img/gift-photo-desktop@1x.jpg");
+
+    &::before {
+      @include pos-absolute(0, auto, auto, 0);
+      left: 50%;
+      top: 65px;
+
+      width: 55px;
+      height: 60px;
+      content: url("../../img/icon-gift.svg");
+      transform: translateX(-50%);
+    }
+  }
 }
 
 .promo-banners__text {
