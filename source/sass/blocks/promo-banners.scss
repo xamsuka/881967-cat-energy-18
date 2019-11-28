@@ -18,6 +18,22 @@
     content: url("../../img/icon-gift.svg");
     transform: translateX(-50%);
   }
+
+  @include tablet-width {
+    background-image: url("../../img/gift-photo-tablet@1x.jpg");
+    max-height: 200px;
+
+    &::before {
+      @include pos-absolute(0, auto, auto, 0);
+      top: 50%;
+      left: 90px;
+
+      width: 55px;
+      height: 60px;
+      content: url("../../img/icon-gift.svg");
+      transform: translateY(-50%);
+    }
+  }
 }
 
 .promo-banners__text {
@@ -31,4 +47,14 @@
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
+
+  @include tablet-width {
+    padding: 0;
+    padding-top: 75px;
+    padding-bottom: 70px;
+    padding-left: 424px;
+    padding-right: 125px;
+
+    text-align: left;
+  }
 }

@@ -15,6 +15,20 @@
     opacity: 0.2;
     transform: translateX(-50%);
   }
+
+  @include tablet-width {
+    width: 324px;
+    max-height: 430px;
+    padding-left: 37px;
+    padding-right: 37px;
+    padding-bottom: 40px;
+
+    border: 1px solid #cdcdcd;
+  }
+}
+
+.all-product__button {
+  margin-top: auto;
 }
 
 .all-product__title {

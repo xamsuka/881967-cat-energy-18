@@ -9,6 +9,8 @@
     padding-left: 35px;
     padding-right: 35px;
     padding-top: 165px;
+    padding-bottom: 52px;
+    margin-bottom: 90px;
     width: 324px;
 
     background-color: $bg-silver;
@@ -35,7 +37,7 @@
 
   @include tablet-width {
     margin: 0;
-    width: 100%;
+    min-width: 100%;
   }
 }
 
@@ -43,6 +45,10 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+
+  @include tablet-width {
+
+  }
 }
 
 .catalog-item__column:not(:nth-child(1)) {
@@ -50,6 +56,12 @@
 
   @include text-mobile;
   line-height: 16px;
+
+  @include tablet-width {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid silver;
+  }
 }
 
 .catalog-item__column:nth-child(1) {
@@ -58,14 +70,18 @@
 
   @include tablet-width {
     width: 100%;
-    padding-left: 28px;
-    padding-right: 28px;
+    padding-left: 65px;
+    padding-right: 65px;
     text-align: center;
   }
 }
 
+.catalog-item__column:nth-child(odd):not(:nth-child(1)) {
+  text-align: right;
+}
+
 .catalog-list__link {
   width: 100%;
-  margin-top: 15px;
+  margin-top: 30px;
   text-align: center;
 }
