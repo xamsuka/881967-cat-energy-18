@@ -4,17 +4,12 @@
 }
 
 .page-footer__container {
-  @include wrapper($mobile-width);
+  @include wrapper;
 
   @include tablet-width {
-    max-width: $tablet-width;
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
-
-  @include desktop-width {
-    max-width: $desktop-width;
   }
 }
 

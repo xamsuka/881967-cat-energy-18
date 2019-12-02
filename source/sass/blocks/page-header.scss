@@ -5,20 +5,15 @@
 }
 
 .page-header__container {
-  @include wrapper($mobile-width);
+  @include wrapper;
   display: flex;
   justify-content: space-between;
   position: relative;
   align-items: center;
 
   @include tablet-width {
-    max-width: $tablet-width;
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 24px;
-  }
-
-  @include desktop-width {
-    max-width: $desktop-width;
   }
 }

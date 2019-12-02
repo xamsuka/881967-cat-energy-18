@@ -1,3 +1,8 @@
 .additional-list {
   @include clear-list;
+
+  @include desktop-width {
+    flex-grow: 1;
+    margin-right: 50px;
+  }
 }

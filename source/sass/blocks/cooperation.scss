@@ -3,18 +3,13 @@
 }
 
 .cooperation__container {
-  @include wrapper($mobile-width);
+  @include wrapper;
   display: flex;
   flex-wrap: wrap;
 
   @include tablet-width {
-    max-width: $tablet-width;
     padding-left: 30px;
     padding-right: 30px;
-  }
-
-  @include desktop-width {
-    max-width: $desktop-width;
   }
 }
 

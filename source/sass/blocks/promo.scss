@@ -6,7 +6,7 @@
   background-image: url("../../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
 
-  @media (min-width: $tablet-width) {
+  @include tablet-width {
     height: 806px;
     max-height: 806px;
     background-image: none;
@@ -59,17 +59,12 @@
 }
 
 .promo__container {
-  @include wrapper($mobile-width);
+  @include wrapper;
   position: relative;
   z-index: 0;
 
   @include tablet-width {
-    max-width: $tablet-width;
     padding-left: 120px;
-  }
-
-  @include desktop-width {
-    max-width: $desktop-width;
   }
 }
 
