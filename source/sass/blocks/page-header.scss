@@ -2,24 +2,18 @@
   display: flex;
   align-items: center;
   min-height: 65px;
+}
 
-  .page-header__container {
-    @include wrapper($mobile-width);
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    align-items: center;
-  }
+.page-header__container {
+  @include wrapper;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
 
-  @media (min-width: $tablet-width) {
-    .page-header__container {
-      width: $tablet-width;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    .page-header__container {
-      width: $desktop-width;
-    }
+  @include tablet-width {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 24px;
   }
 }

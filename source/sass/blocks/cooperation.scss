@@ -1,20 +1,25 @@
 .cooperation {
   padding-top: 30px;
+}
 
-  .cooperation__container {
-    @include wrapper($mobile-width);
-    display: flex;
-    flex-wrap: wrap;
+.cooperation__container {
+  @include wrapper;
+  display: flex;
+  flex-wrap: wrap;
+
+  @include tablet-width {
+    padding-left: 30px;
+    padding-right: 30px;
   }
+}
 
-  .cooperation__title {
-    @include text-black;
-    display: inline-block;
-    margin-right: auto;
-    max-width: 123px;
+.cooperation__title {
+  @include text-black;
+  display: inline-block;
+  margin-right: auto;
+  max-width: 123px;
 
-    font-size: 16px;
-    line-height: 20px;
-    text-align: left;
-  }
+  font-size: 16px;
+  line-height: 20px;
+  text-align: left;
 }

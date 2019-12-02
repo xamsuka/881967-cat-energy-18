@@ -1,80 +1,155 @@
 .programm-list {
   @include clear-list;
 
-  .programm-list__item {
-    margin-bottom: 20px;
-    padding-top: 24px;
-    padding-right: 20px;
-    padding-bottom: 22px;
-    padding-left: 20px;
+  @include desktop-width {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 
-    background-color: $bg-silver;
+.programm-list__item {
+  display: flex;
+  flex-direction: column;
 
-    &:last-child {
-      margin-bottom: 0;
+  margin-bottom: 20px;
+  padding-top: 24px;
+  padding-right: 20px;
+  padding-bottom: 22px;
+  padding-left: 20px;
+
+  background-color: $bg-silver;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @include tablet-width {
+    min-height: 372px;
+    position: relative;
+    padding-top: 81px;
+    padding-bottom: 62px;
+    padding-left: 52px;
+  }
+
+  @include desktop-width {
+    display: flex;
+    width: 39%;
+    margin: 0;
+    margin-right: 80px;
+  }
+}
+
+.programm-list__item--cat-pro .programm-list__title::after {
+  background: url("../../img/icon-cat-pro.svg") no-repeat center center;
+  max-width: 268px;
+}
+
+.programm-list__title {
+  @include text-black;
+  padding-left: 70px;
+  position: relative;
+  font-weight: 400;
+
+  &::before {
+    @include pos-absolute(-5px, auto, auto, 0);
+    width: 50px;
+    height: 50px;
+    background-color: $color-green;
+    border-radius: 50%;
+  }
+
+  &::after {
+    @include pos-absolute(-5px, auto, auto, -7px);
+    width: 67px;
+    height: 49px;
+    background: url("../../img/icon-cat-slim.svg") no-repeat center center;
+  }
+
+  @include tablet-width {
+    position: unset;
+    padding-left: 0;
+
+    // @include title-block-tablet;
+
+    &::before {
+      @include pos-absolute(92px, 62px, auto, auto);
+      width: 200px;
+      height: 200px;
+    }
+
+    &::after {
+      @include pos-absolute(90px, 30px, auto, auto);
+      width: 268px;
+      height: 194px;
     }
   }
 
-  .programm-list__item--cat-slim .programm-list__title::after {
-    background: url("../../img/icon-cat-slim.svg") no-repeat;
-    top: 0;
-  }
-
-  .programm-list__item--cat-pro .programm-list__title::after {
-    background: url("../../img/icon-cat-pro.svg") no-repeat;
-    width: 67px;
-    height: 28px;
-    top: 25px;
-    transform: translateY(-50%);
-    left: -10px;
-  }
-
-  .programm-list__title {
-    @include text-black;
-    padding-left: 70px;
+  @include desktop-width {
+    padding-left: 164px;
     position: relative;
-    font-weight: 400;
+
+    font-size: 36px;
+    line-height: 37.02px;
 
     &::before {
-      @include pos-absolute(0,auto,auto,0);
-      width: 50px;
-      height: 50px;
+      @include pos-absolute(-25px, auto, auto, 0);
+      width: 100px;
+      height: 100px;
       background-color: $color-green;
       border-radius: 50%;
     }
 
     &::after {
-      @include pos-absolute();
-      top: -5px;
-      left: 10px;
-      width: 35px;
-      height: 49px;
+      @include pos-absolute(-25px, auto, auto, -18px);
+      width: 134px;
+      height: 97px;
+      background: url("../../img/icon-cat-slim.svg") no-repeat center center;
     }
   }
+}
 
-  .programm-list__description {
-    margin-top: 25px;
-    padding-bottom: 25px;
-    border-bottom: 1px solid rgba($color: #000000, $alpha: 0.1);
+.programm-list__description {
+  margin-top: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid rgba($color: #000000, $alpha: 0.1);
 
-    @include text-mobile;
+  @include text-mobile;
+
+  @include tablet-width {
+    max-width: 371px;
+    padding-bottom: 0;
+
+    // @include text-tablet;
+    border-bottom: none;
   }
 
-  .programm-list__link {
-    position: relative;
+  @include desktop-width {
+    margin-top: 75px;
+  }
+}
+
+.programm-list__link {
+  position: relative;
+
+  line-height: 16px;
+  color: $text-title;
+  text-transform: uppercase;
+
+  &::after {
+    @include pos-absolute(3px, auto, auto,100px);
     width: 24px;
     height: 11px;
+    content: "";
+    background: url("../../img/icon-right-arrow-long.svg") center center;
+  }
 
-    line-height: 16px;
-    color: $text-title;
-    text-transform: uppercase;
+  @include tablet-width {
+    margin-top: auto;
+  }
+}
 
-    &::after {
-      @include pos-absolute(6px,-38px,auto,auto);
-      width: 24px;
-      height: 11px;
-      content: "";
-      background: url("../../img/icon-right-arrow-long.svg") center center;
-    }
+@include tablet-width {
+  .programm-list__item:nth-child(2) .programm-list__description {
+    max-width: 340px;
   }
 }

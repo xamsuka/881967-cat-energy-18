@@ -1,0 +1,15 @@
+.additional-product {
+  padding-bottom: 30px;
+
+  @include desktop-width {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.additional-product__title {
+  @include desktop-width {
+    width: 100%;
+  }
+}
