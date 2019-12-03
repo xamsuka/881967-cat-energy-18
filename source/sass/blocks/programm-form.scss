@@ -1,0 +1,35 @@
+.programm-form__content-info,
+.programm-form__content-programm {
+  @include desktop-width {
+    display: inline-block;
+    width: 50%;
+    margin-right: -2px;
+  }
+}
+
+.programm-form__content-optionally {
+  @include tablet-width {
+    display: flex;
+    flex-wrap: wrap;
+
+    .program-form__title {
+      width: 100%;
+    }
+
+    .programm-form__group {
+      width: 50%;
+    }
+  }
+
+  @include desktop-width {
+    .programm-form__group {
+      width: 25%;
+    }
+  }
+}
+
+.programm-form__note {
+  @include tablet-width {
+    display: inline-block;
+  }
+}
