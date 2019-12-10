@@ -1,5 +1,4 @@
 .site-navigation {
-  display: block;
   font-size: 18px;
 
   @include clear-list;
@@ -10,14 +9,28 @@
 }
 
 .site-navigation__item {
-  margin-right: 2em;
+  display: block;
+  text-align: center;
+
+  @include tablet-width {
+    margin-right: 2em;
+  }
 }
 
 .site-navigation__link {
   @include link-site;
-  padding-bottom: 9px;
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  cursor: pointer;
+
+  @include tablet-width {
+
+  }
 }
 
 .site-navigation__link-current {
-  border-bottom: 2px solid $color-green;
+  @include tablet-width {
+    border-bottom: 2px solid $color-green;
+  }
 }
