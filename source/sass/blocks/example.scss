@@ -68,3 +68,25 @@
     }
   }
 }
+
+.example__image-after {
+  display: none;
+}
+
+.example__toggle {
+  position: relative;
+  display: inline-block;
+  width: 84px;
+  height: 14px;
+  border-radius: 6px;
+  border: 1px solid #cdcdcd;
+  background-color: #ffffff;
+}
+
+.example__bar {
+  @include pos-absolute(3px, auto, auto, 4px);
+  width: 35px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: #68b738;
+}
