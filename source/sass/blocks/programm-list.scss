@@ -12,9 +12,9 @@
   flex-direction: column;
 
   margin-bottom: 20px;
-  padding-top: 24px;
+  padding-top: 30px;
   padding-right: 20px;
-  padding-bottom: 22px;
+  padding-bottom: 21px;
   padding-left: 20px;
 
   background-color: $bg-silver;
@@ -46,12 +46,12 @@
 
 .programm-list__title {
   @include text-black;
-  padding-left: 70px;
+  padding-left: 71px;
   position: relative;
   font-weight: 400;
 
   &::before {
-    @include pos-absolute(-5px, auto, auto, 0);
+    @include pos-absolute(-5px, auto, auto, 2px);
     width: 50px;
     height: 50px;
     background-color: $color-green;
@@ -109,8 +109,10 @@
 }
 
 .programm-list__description {
-  margin-top: 25px;
-  padding-bottom: 25px;
+  margin: 0;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding-bottom: 22px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 
   @include text-mobile;
@@ -136,7 +138,7 @@
   text-transform: uppercase;
 
   &::after {
-    @include pos-absolute(3px, auto, auto,100px);
+    @include pos-absolute(2px, auto, auto, 96px);
     width: 24px;
     height: 11px;
     content: "";
