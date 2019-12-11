@@ -69,10 +69,6 @@
   }
 }
 
-.example__image-after {
-  display: none;
-}
-
 .example__block-toggle {
   margin-top: 49px;
   display: flex;
@@ -107,4 +103,17 @@
   height: 6px;
   border-radius: 3px;
   background-color: #68b738;
+  transition: 0.3s;
+}
+
+.example-right {
+  transform: translateX(100%);
+}
+
+.example__image-before .example-right {
+  display: none;
+}
+
+.example__image-after .example-right {
+  display: block;
 }
