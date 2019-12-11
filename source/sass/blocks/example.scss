@@ -73,14 +73,32 @@
   display: none;
 }
 
+.example__block-toggle {
+  margin-top: 49px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .example__toggle {
   position: relative;
   display: inline-block;
+  margin-left: 19px;
+  margin-right: 17px;
   width: 84px;
   height: 14px;
+  vertical-align: middle;
   border-radius: 6px;
   border: 1px solid #cdcdcd;
   background-color: #ffffff;
+}
+
+.example__toggle-before,
+.example__toggle-after {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
 }
 
 .example__bar {

@@ -9,8 +9,8 @@
 .social__list {
   @include clear-list;
   display: flex;
-  padding-top: 18px;
-  padding-bottom: 18px;
+  padding-top: 21px;
+  padding-bottom: 24px;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -25,6 +25,8 @@
 
 .social__item {
   margin-right: 37px;
+  width: 22px;
+  height: 16px;
 
   &:last-child {
     margin-right: 0;
