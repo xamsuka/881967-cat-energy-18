@@ -10,7 +10,7 @@
   @include clear-list;
   display: flex;
   padding-top: 21px;
-  padding-bottom: 24px;
+  padding-bottom: 21px;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -24,9 +24,12 @@
 }
 
 .social__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-right: 37px;
   width: 22px;
-  height: 16px;
+  height: 19px;
 
   &:last-child {
     margin-right: 0;
@@ -36,4 +39,14 @@
   path {
     fill: #666666;
   }
+}
+
+.social__link {
+  width: 100%;
+  max-height: 19px;
+  display: block;
+}
+
+.social__link svg {
+  display: block;
 }

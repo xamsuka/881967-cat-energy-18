@@ -13,8 +13,16 @@
   align-items: center;
 
   @include tablet-width {
+    padding-top: 24px;
     padding-left: 30px;
     padding-right: 30px;
-    padding-top: 24px;
+  }
+}
+
+.page-header__picture {
+  max-width: 173px;
+
+  .logo__image {
+    display: block;
   }
 }

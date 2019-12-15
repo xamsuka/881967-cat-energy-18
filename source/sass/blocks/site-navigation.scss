@@ -9,20 +9,41 @@
 }
 
 .site-navigation__item {
+  position: relative;
   display: block;
   text-align: center;
 
   @include tablet-width {
     margin-right: 2em;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
 
 .site-navigation__link {
   @include link-site;
   display: block;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 11px;
+  padding-bottom: 9px;
   cursor: pointer;
+
+  @media (max-width: 767px) {
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+
+    &::before {
+      @include pos-absolute(0, auto, auto, -20px);
+      width: 100vw;
+      height: 0;
+      border-top: 1px dashed rgba(0, 0, 0, 0.5);
+    }
+  }
 }
 
 .site-navigation__link-current {
