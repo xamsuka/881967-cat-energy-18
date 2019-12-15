@@ -10,12 +10,12 @@
 }
 
 .example__container {
-  padding-top: 17px;
+  padding-top: 30px;
 
   @include wrapper;
 
   @include tablet-width {
-    padding-top: 51px;
+    padding-top: 60px;
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -35,7 +35,8 @@
   @include block-title;
 
   @include tablet-width {
-    // @include title-block-tablet;
+    font-size: 60px;
+    line-height: 60px;
   }
 
   @include desktop-width {
@@ -46,16 +47,17 @@
 .example__text {
   margin: 0;
   margin-top: 23px;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
   padding-left: 1px;
 
   @include text-mobile;
 
   @include tablet-width {
-    margin-top: 60px;
+    margin-top: 63px;
     margin-bottom: 52px;
-
-    // @include text-tablet;
+    padding-right: 5px;
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 
