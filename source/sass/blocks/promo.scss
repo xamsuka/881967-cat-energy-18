@@ -57,6 +57,10 @@
     line-height: 20px;
     color: #111111;
   }
+
+  @include desktop-width {
+    margin-bottom: 56px;
+  }
 }
 
 .promo__container {
@@ -66,6 +70,11 @@
 
   @include tablet-width {
     padding-left: 117px;
+  }
+
+  @include desktop-width {
+    padding-top: 50px;
+    padding-left: 190px;
   }
 }
 
@@ -78,7 +87,7 @@
   }
 
   @include desktop-width {
-    @include pos-absolute(0, 200px, auto, auto);
+    @include pos-absolute(25px, 328px, auto, auto);
   }
 }
 
@@ -91,7 +100,7 @@
 
   @include tablet-width {
     padding-top: 15px;
-    padding-right: 30px;
+    padding-right: 28px;
     padding-bottom: 17px;
     padding-left: 27px;
     align-self: flex-start;

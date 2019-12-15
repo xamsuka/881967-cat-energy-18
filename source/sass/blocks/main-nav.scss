@@ -4,6 +4,12 @@
   @include tablet-width {
     width: auto;
   }
+
+  @include desktop-width {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+  }
 }
 
 .main-nav__toggle {

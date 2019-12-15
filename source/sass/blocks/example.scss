@@ -17,14 +17,12 @@
 
   @include tablet-width {
     padding-top: 60px;
-    padding-left: 30px;
-    padding-right: 30px;
   }
 
   @include desktop-width {
     display: flex;
     flex-wrap: wrap;
-    width: 1440px;
+    width: auto;
 
     .example__content {
       width: 430px;
