@@ -130,10 +130,21 @@
         </div>
         <div class="example__preview">
           <div class="example__image-before">
-            <img src="img/before-mobile@1x.png" width="311" height="232" alt="Кот который жирный">
+            <picture class="example__picture">
+              <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png">
+              <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png">
+              <img class="example__picture-image" src="img/before-mobile@1x.png" width="311" height="232"
+                alt="Кот который жирный">
+            </picture>
           </div>
-          <img class="example__image-after display-none" src="img/after-mobile@1x.png" width="311" height="232"
-            alt="Кот который не жирный">
+          <div class="example__image-after display-none">
+            <picture class="example__picture">
+              <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png">
+              <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png">
+              <img class="example__picture-image" src="img/after-mobile@1x.png" width="311" height="232"
+                alt="Кот который не жирный">
+            </picture>
+          </div>
           <div class="example__block-toggle">
             <span class="example__toggle-before">Было</span>
             <div class="example__toggle">
@@ -153,13 +164,13 @@
         </h2>
         <address class="cooperation__address company-address">
           ул. Большая Конюшенная, д. 19/8
-          Санкт-Петербург
+         <span class="company-address__town">Санкт-Петербург</span>
         </address>
       </div>
       <div class="map-block">
         <picture class="map-block__picture">
-          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png">
           <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png">
+          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png">
           <img class="map-block__image" src="img/bg-map-mobile@1x.png" width="320" height="365"
             alt="Адрес местонахождения компании">
         </picture>
