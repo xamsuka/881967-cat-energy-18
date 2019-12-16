@@ -28,15 +28,15 @@
     min-height: 372px;
     margin-bottom: 30px;
     padding-top: 75px;
-    padding-bottom: 62px;
-    padding-left: 52px;
+    padding-left: 53px;
+    padding-bottom: 63px;
   }
 
   @include desktop-width {
     display: flex;
-    width: 39%;
+    width: 47%;
     margin: 0;
-    margin-right: 80px;
+    padding-right: 30px;
   }
 }
 
@@ -132,6 +132,7 @@
 
   @include desktop-width {
     margin-top: 75px;
+    max-width: 100%;
   }
 }
 
@@ -178,5 +179,19 @@
   .programm-list__item--cat-pro .programm-list__title::after {
     top: 95px;
     max-width: 268px;
+  }
+}
+
+@include desktop-width {
+  .programm-list__item:nth-child(2) .programm-list__description {
+    max-width: none;
+  }
+
+  .programm-list__item--cat-slim .programm-list__title::after {
+    top: -30px;
+  }
+
+  .programm-list__item--cat-pro .programm-list__title::after {
+    top: -30px;
   }
 }
