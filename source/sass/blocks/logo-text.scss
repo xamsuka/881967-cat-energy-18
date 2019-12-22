@@ -1,0 +1,7 @@
+.logo-text {
+  max-height: 24px;
+
+  @include tablet-width {
+    margin-right: 15px;
+  }
+}

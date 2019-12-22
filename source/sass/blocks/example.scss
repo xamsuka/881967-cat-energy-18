@@ -21,7 +21,7 @@
   @include wrapper;
 
   @include tablet-width {
-    padding-top: 60px;
+    padding-top: 45px;
   }
 
   @include desktop-width {
@@ -33,7 +33,7 @@
     background-color: $bg-silver;
 
     .example__content {
-      width: 430px;
+      width: 435px;
     }
   }
 }
@@ -79,7 +79,11 @@
   margin-top: 40px;
 
   @include tablet-width {
+    position: relative;
+    display: flex;
+    flex-direction: column;
     margin-top: 90px;
+    z-index: 1;
 
     .example__image-before {
       text-align: center;
@@ -88,7 +92,28 @@
 
   @include desktop-width {
     margin-top: -190px;
-    max-width: 569px;
+    max-width: 677px;
+    padding-left: 25px;
+  }
+}
+
+.example__image-before {
+  @include tablet-width {
+    width: 56%;
+    overflow: hidden;
+  }
+}
+
+.example__image-after {
+  @include tablet-width {
+    @include pos-absolute(-3px, 30px, auto, auto);
+    width: 40%;
+    z-index: -1;
+    overflow: hidden;
+
+    .example__picture-image {
+      margin-left: -350px;
+    }
   }
 }
 
@@ -96,6 +121,7 @@
   @include tablet-width {
     width: 690px;
     height: 517px;
+    max-width: none;
   }
 }
 
@@ -110,7 +136,8 @@
   }
 
   @include desktop-width {
-    margin-top: 35px;
+    margin-top: auto;
+    padding-left: 80px;
   }
 }
 
@@ -169,7 +196,7 @@
   @include tablet-width {
     position: relative;
     top: -14px;
-    left: 1%;
+    left: 47%;
     width: 34px;
     height: 34px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);

@@ -1,8 +1,13 @@
 .cooperation {
+  position: relative;
   padding-top: 27px;
 
   @include tablet-width {
     padding-top: 63px;
+  }
+
+  @include desktop-width {
+    padding-top: 0;
   }
 }
 
@@ -14,6 +19,16 @@
   @include tablet-width {
     padding-left: 70px;
     padding-right: 70px;
+  }
+
+  @include desktop-width {
+    @include pos-absolute(90px, auto, auto, 110px);
+    width: 570px;
+    padding-top: 66px;
+    padding-right: 90px;
+    padding-bottom: 60px;
+    padding-left: 76px;
+    background-color: #ffffff;
   }
 }
 

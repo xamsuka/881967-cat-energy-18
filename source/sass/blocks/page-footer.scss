@@ -10,7 +10,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 68px;
+    padding-top: 65px;
+  }
+
+  @include desktop-width {
+    padding-top: 53px;
+    padding-bottom: 56px;
   }
 }
 

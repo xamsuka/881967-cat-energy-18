@@ -4,6 +4,10 @@
   @include tablet-width {
     height: 400px;
   }
+
+  @include desktop-width {
+    margin-top: 0;
+  }
 }
 
 .map-block__image {

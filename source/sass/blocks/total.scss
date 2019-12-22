@@ -103,3 +103,9 @@
     margin-top: 55px;
   }
 }
+
+.total__cost-label {
+  @include desktop-width {
+    margin-right: 60px;
+  }
+}
