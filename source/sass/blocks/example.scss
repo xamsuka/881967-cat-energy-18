@@ -105,6 +105,8 @@
 }
 
 .example__image-after {
+  display: none;
+
   @include tablet-width {
     @include pos-absolute(-3px, 30px, auto, auto);
     width: 40%;
