@@ -1,6 +1,4 @@
 .additional-product {
-  padding-bottom: 30px;
-
   @include desktop-width {
     display: flex;
     flex-wrap: wrap;
@@ -9,6 +7,13 @@
 }
 
 .additional-product__title {
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+
   @include desktop-width {
     width: 100%;
   }

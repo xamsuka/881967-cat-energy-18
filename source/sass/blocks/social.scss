@@ -60,18 +60,24 @@
 }
 
 .social-item__link--vk svg {
-  width: 30px;
-  height: 16px;
+  @include tablet-width {
+    width: 30px;
+    height: 16px;
+  }
 }
 
 .social-item__link--inst svg {
-  width: 23px;
-  height: 23px;
+  @include tablet-width {
+    width: 23px;
+    height: 23px;
+  }
 }
 
 .social-item__link--fb svg {
-  width: 14px;
-  height: 28px;
+  @include tablet-width {
+    width: 14px;
+    height: 28px;
+  }
 }
 
 .social__link svg {
