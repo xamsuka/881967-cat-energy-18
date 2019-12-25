@@ -5,4 +5,12 @@
   font-size: 36px;
   font-weight: 400;
   line-height: 60px;
+
+  @include tablet-width {
+    padding-top: 55px;
+    padding-bottom: 165px;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 60px;
+  }
 }

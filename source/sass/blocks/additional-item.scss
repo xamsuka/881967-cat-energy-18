@@ -4,7 +4,10 @@
   flex-direction: column;
 
   @include tablet-width {
-    padding: 25px;
+    padding-top: 25px;
+    padding-right: 37px;
+    padding-bottom: 25px;
+    padding-left: 37px;
     flex-direction: row;
     border: 1px solid #cdcdcd;
   }
@@ -18,7 +21,10 @@
 
 .additional-item__title {
   position: relative;
+  width: 100%;
+  margin-top: 16px;
   margin-bottom: 15px;
+  font-family: $font-family;
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;
@@ -32,8 +38,15 @@
   }
 
   @include tablet-width {
+    flex-grow: 1;
     width: 50%;
     margin: 0;
+    font-size: 20px;
+    line-height: 20px;
+
+    &::before {
+      height: 0;
+    }
   }
 
   @include desktop-width {
@@ -52,8 +65,9 @@
   line-height: 14px;
 
   @include tablet-width {
-    width: 50%;
     margin: 0;
+    font-size: 16px;
+    line-height: 20px;
   }
 
   @include desktop-width {
@@ -61,10 +75,20 @@
   }
 }
 
+.additional-item__volume {
+  @include tablet-width {
+
+  }
+}
+
 .additional-item__button {
   margin-top: 13px;
   margin-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   width: 100%;
+  font-size: 16px;
+  line-height: 20px;
 
   @include desktop-width {
     width: 27%;
