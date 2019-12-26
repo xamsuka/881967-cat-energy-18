@@ -4,6 +4,7 @@
 
   @include tablet-width {
     padding-top: 63px;
+    background-color: $bg-silver;
   }
 
   @include desktop-width {

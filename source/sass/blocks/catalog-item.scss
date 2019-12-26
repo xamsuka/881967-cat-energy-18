@@ -122,12 +122,14 @@
 
 .catalog-item__link {
   width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 16px;
+  line-height: 20px;
 
   @include tablet-width {
     margin-top: auto;
     padding-top: 11px;
     padding-bottom: 9px;
-    font-size: 16px;
-    line-height: 20px;
   }
 }

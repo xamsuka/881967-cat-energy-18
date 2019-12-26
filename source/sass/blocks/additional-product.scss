@@ -1,4 +1,8 @@
 .additional-product {
+  @include tablet-width {
+    padding-bottom: 77px;
+  }
+
   @include desktop-width {
     display: flex;
     flex-wrap: wrap;

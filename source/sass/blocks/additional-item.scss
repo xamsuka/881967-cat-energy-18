@@ -6,7 +6,7 @@
   @include tablet-width {
     padding-top: 25px;
     padding-right: 37px;
-    padding-bottom: 25px;
+    padding-bottom: 12px;
     padding-left: 37px;
     flex-direction: row;
     border: 1px solid #cdcdcd;
@@ -65,9 +65,9 @@
   line-height: 14px;
 
   @include tablet-width {
-    margin: 0;
+    width: 100%;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 25px;
   }
 
   @include desktop-width {
@@ -77,12 +77,12 @@
 
 .additional-item__volume {
   @include tablet-width {
-
+    margin-right: 50px;
   }
 }
 
 .additional-item__button {
-  margin-top: 13px;
+  margin-top: 20px;
   margin-bottom: 15px;
   padding-top: 10px;
   padding-bottom: 10px;
