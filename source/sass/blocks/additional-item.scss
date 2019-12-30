@@ -82,13 +82,17 @@
 }
 
 .additional-item__button {
-  margin-top: 20px;
+  margin-top: 13px;
   margin-bottom: 15px;
   padding-top: 10px;
   padding-bottom: 10px;
   width: 100%;
   font-size: 16px;
   line-height: 20px;
+
+  @include tablet-width {
+    margin-top: 20px;
+  }
 
   @include desktop-width {
     width: 27%;
