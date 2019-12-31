@@ -56,12 +56,24 @@
   }
 }
 
-.site-navigation__link-current {
+.site-navigation__link--black {
+  @include desktop-width {
+    color: #111111;
+  }
+}
+
+.site-navigation__link--current {
   @include tablet-width {
     border-bottom: 2px solid $color-green;
   }
 
   @include desktop-width {
     border-bottom: 2px solid #ffffff;
+  }
+}
+
+.site-navigation__link--current-green {
+  @include desktop-width {
+    border-bottom: 2px solid $color-green;
   }
 }

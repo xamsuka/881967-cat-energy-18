@@ -14,6 +14,7 @@
     <div class="page-header__container">
       <a class="page-header__logo logo">
         <picture>
+          <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
           <img class="logo__image" src="img/logo-mobile.svg" width="191" height="38" alt="Магазин Cat Energy">
         </picture>
@@ -22,13 +23,13 @@
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list site-navigation">
           <li class="site-navigation__item">
-            <a href="index.html" class="site-navigation__link">Главная</a>
+            <a href="index.html" class="site-navigation__link site-navigation__link--black">Главная</a>
           </li>
           <li class="site-navigation__item">
-            <a href="catalog.html" class="site-navigation__link">Каталог продукции</a>
+            <a href="catalog.html" class="site-navigation__link site-navigation__link--black">Каталог продукции</a>
           </li>
           <li class="site-navigation__item">
-            <a href="form.html" class="site-navigation__link">Подбор программы</a>
+            <a href="form.html" class="site-navigation__link site-navigation__link--black site-navigation__link--current-green">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -39,8 +40,8 @@
       <section class="nutrition-programm-form">
         <h2 class="nutrition-programm-form__title">Подбор программы</h2>
         <p class="nutrition-programm-form__text-description">
-          Заполните анкету и мы подберем
-          программу питания для вашего кота
+          Заполните анкету и мы подберем&nbsp;
+          программу&nbsp;питания для вашего кота
         </p>
         <form action="https://echo.htmlacademy.ru" class="programm-form" method="POST">
           <div class="programm-form__content">
@@ -49,19 +50,19 @@
                 <label class="programm-form__label input-label" for="program-user-name">
                   Имя:*
                 </label>
-                <input type="text" name="program-user-name" id="program-user-name">
+                <input class="programm-form__input input" type="text" name="program-user-name" id="program-user-name" placeholder="Барсик">
               </p>
               <p class="programm-form__group">
                 <label class="programm-form__label input-label" for="program-user-weight">
                   Вес (кг):*
                 </label>
-                <input type="text" name="program-user-weight" id="program-user-weight">
+                <input class="programm-form__input input" type="text" name="program-user-weight" id="program-user-weight" placeholder="7">
               </p>
               <p class="programm-form__group">
                 <label class="programm-form__label input-label" for="program-user-age">
                   Возраст (лет):
                 </label>
-                <input type="text" name="program-user-age" id="program-user-age">
+                <input class="programm-form__input input" type="text" name="program-user-age" id="program-user-age" placeholder="7">
               </p>
             </div>
             <div class="programm-form__content-programm">
@@ -105,7 +106,7 @@
                 <label class="programm-form__label input-label" for="user-comment">
                   Комментарий
                 </label>
-                <textarea name="user-comment" id="user-comment" cols="30" rows="10"></textarea>
+                <textarea class="form-contact__input input" name="user-comment" id="user-comment" cols="30" rows="10"></textarea>
               </p>
             </div>
             <div class="programm-form__content-optionally">

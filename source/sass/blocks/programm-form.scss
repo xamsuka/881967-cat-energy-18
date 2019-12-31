@@ -1,3 +1,28 @@
+.programm-form__group {
+  display: flex;
+  align-items: center;
+}
+
+.programm-form__label {
+  margin-right: 15px;
+}
+
+.programm-form__input {
+  flex-grow: 1;
+}
+
+.programm-form__content-info {
+  position: relative;
+  padding-bottom: 8px;
+
+  &::before {
+    @include pos-absolute(auto, -20px, 0, auto);
+    width: 100vw;
+    height: 1px;
+    background-color: #ededed;
+  }
+}
+
 .programm-form__content-info,
 .programm-form__content-programm {
   @include desktop-width {
