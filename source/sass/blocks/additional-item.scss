@@ -16,6 +16,16 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding-left: 0;
+    padding-top: 15px;
+    padding-right: 0;
+    padding-bottom: 16px;
+    border-left: none;
+    border-right: none;
+
+    &:not(:nth-child(1)) {
+      border-top: none;
+    }
   }
 }
 
@@ -50,7 +60,10 @@
   }
 
   @include desktop-width {
-    width: 18%;
+    width: auto;
+    min-width: 160px;
+    margin-right: 165px;
+    flex-grow: 0;
   }
 }
 
@@ -67,10 +80,12 @@
   @include tablet-width {
     width: 100%;
     font-size: 16px;
-    line-height: 25px;
   }
 
   @include desktop-width {
+    flex-grow: 1;
+    justify-content: flex-start;
+    align-items: flex-end;
     width: 31%;
   }
 }
@@ -78,6 +93,12 @@
 .additional-item__volume {
   @include tablet-width {
     margin-right: 50px;
+  }
+
+  @include desktop-width {
+    margin-right: 109px;
+    width: 135px;
+    text-align: left;
   }
 }
 
@@ -95,6 +116,8 @@
   }
 
   @include desktop-width {
-    width: 27%;
+    width: 27.4%;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 }
