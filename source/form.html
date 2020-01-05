@@ -29,7 +29,7 @@
             <a href="catalog.html" class="site-navigation__link site-navigation__link--black">Каталог продукции</a>
           </li>
           <li class="site-navigation__item">
-            <a href="form.html" class="site-navigation__link site-navigation__link--black site-navigation__link--current-green">Подбор программы</a>
+            <a href="form.html" class="site-navigation__link site-navigation__link--black site-navigation__link--current-green site-navigation__link--current">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -67,72 +67,72 @@
             </div>
             <div class="programm-form__content-programm">
               <p class="programm-form__group">
-                <input type="radio" name="program-value" id="program-value-losing" value="losing-weight">
+                <input class="programm-form__radio visually-hidden" type="radio" name="program-value" id="program-value-losing" value="losing-weight" checked>
                 <label class="programm-form__label input-label" for="program-value-losing">
                   Похудение
                 </label>
               </p>
               <p class="programm-form__group">
-                <input type="radio" name="program-value" id="program-value-mass" value="mass-gain">
+                <input class="programm-form__radio visually-hidden" type="radio" name="program-value" id="program-value-mass" value="mass-gain">
                 <label class="programm-form__label input-label" for="program-value-mass">
                   Набор массы
                 </label>
               </p>
               <p class="programm-form__group">
-                <input type="radio" name="program-value" id="program-value-advice" value="need-advice">
+                <input class="programm-form__radio visually-hidden" type="radio" name="program-value" id="program-value-advice" value="need-advice">
                 <label class="programm-form__label input-label" for="program-value-advice">
                   Не знаю (нужен ваш совет)
                 </label>
               </p>
             </div>
             <div class="programm-form__content-contact form-contact">
-              <h2 class="form-contact__title">
+              <h3 class="form-contact__title">
                 Контактные данные
                 (владельца кота)
-              </h2>
+              </h3>
               <p class="form-contact__group">
                 <label class="programm-form__label input-label" for="user-email">
                   E-mail:*
                 </label>
-                <input class="form-contact__input input" type="email" name="user-email" id="user-email">
+                <input class="form-contact__input input" type="email" name="user-email" id="user-email" placeholder="kuklachev@gmail.com">
               </p>
               <p class="form-contact__group">
                 <label class="programm-form__label input-label" for="user-tel">
                   Телефон:*
                 </label>
-                <input class="form-contact__input input" type="tel" name="user-tel" id="user-tel">
-              </p>
-              <p class="form-contact__group">
-                <label class="programm-form__label input-label" for="user-comment">
-                  Комментарий
-                </label>
-                <textarea class="form-contact__input input" name="user-comment" id="user-comment" cols="30" rows="10"></textarea>
+                <input class="form-contact__input input" type="tel" name="user-tel" id="user-tel" placeholder="8 (960) 900-60-90">
               </p>
             </div>
+            <div class="programm-form__box-comment">
+              <h3 class="programm-form__title">
+                Комментарий
+              </h3>
+              <textarea class="programm-form__comment input input--area" name="user-comment" id="user-comment" cols="30" rows="7" placeholder="Расскажите обо всех повадках кота"></textarea>
+            </div>
             <div class="programm-form__content-optionally">
-              <h2 class="program-form__title">
+              <h3 class="programm-form__title">
                 Дополнительно
-              </h2>
+              </h3>
               <p class="programm-form__group">
-                <input class="form-contact__input input" type="checkbox" name="sweetener" id="optionally-sweetener">
+                <input class="programm-form__checkbox visually-hidden" type="checkbox" name="sweetener" id="optionally-sweetener" checked>
                 <label class="programm-form__label input-label" for="optionally-sweetener">
                   Сахарозаменитель
                 </label>
               </p>
               <p class="programm-form__group">
-                <input class="form-contact__input input" type="checkbox" name="water" id="optionally-water">
+                <input class="programm-form__checkbox visually-hidden" type="checkbox" name="water" id="optionally-water">
                 <label class="programm-form__label input-label" for="optionally-water">
                   Питьевая вода
                 </label>
               </p>
               <p class="programm-form__group">
-                <input class="form-contact__input input" type="checkbox" name="milk" id="optionally-milk">
+                <input class="programm-form__checkbox visually-hidden" type="checkbox" name="milk" id="optionally-milk">
                 <label class="programm-form__label input-label" for="optionally-milk">
                   Молоко
                 </label>
               </p>
               <p class="programm-form__group">
-                <input class="form-contact__input input" type="checkbox" name="vitamins" id="optionally-vitamins">
+                <input class="programm-form__checkbox visually-hidden" type="checkbox" name="vitamins" id="optionally-vitamins">
                 <label class="programm-form__label input-label" for="optionally-vitamins">
                   Витамины
                 </label>
@@ -151,12 +151,12 @@
     <div class="cooperation__container">
       <h2 class="cooperation__title">
         приглашаем
-        к сотрудничеству
+        к&nbsp;сотрудничеству
         дилеров!
       </h2>
       <address class="cooperation__address company-address">
-        ул. Большая Конюшенная, д. 19/8
-        Санкт-Петербург
+        <div class="company-address__street">ул. Большая Конюшенная, д. 19/8</div>
+        <div class="company-address__town">Санкт-Петербург</div>
       </address>
     </div>
     <div class="map-block">
