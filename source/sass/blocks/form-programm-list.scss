@@ -1,5 +1,7 @@
 .form-programm-list {
   position: relative;
+  padding-top: 25px;
+  padding-bottom: 7px;
 
   &::before {
     @include pos-absolute(0, 0, auto, -20px);
@@ -16,12 +18,21 @@
   }
 
   @include tablet-width {
+    padding-top: 32px;
+    padding-left: 30px;
+    padding-bottom: 2px;
     border: 1px solid #e6e6e6;
 
     &::before,
     &::after {
       display: none;
     }
+  }
+
+  @include desktop-width {
+    width: 46.7%;
+    height: 196px;
+    padding-top: 34px;
   }
 }
 
@@ -31,6 +42,10 @@
 
   @include tablet-width {
     margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 

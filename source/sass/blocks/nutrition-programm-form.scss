@@ -11,6 +11,10 @@
     font-size: 60px;
     line-height: 60px;
   }
+
+  @include desktop-width {
+    margin-left: 0;
+  }
 }
 
 .nutrition-programm-form__text-description {
@@ -28,5 +32,9 @@
     padding-right: 250px;
     font-size: 20px;
     line-height: 30px;
+  }
+
+  @include desktop-width {
+    width: 55%;
   }
 }
