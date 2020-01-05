@@ -1,0 +1,80 @@
+.form-programm-list {
+  position: relative;
+
+  &::before {
+    @include pos-absolute(0, 0, auto, -20px);
+    width: 100vw;
+    height: 1px;
+    background-color: #ededed;
+  }
+
+  &::after {
+    @include pos-absolute(auto, auto, 0, -20px);
+    width: 100vw;
+    height: 1px;
+    background-color: #ededed;
+  }
+
+  @include tablet-width {
+    border: 1px solid #e6e6e6;
+
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.form-programm-list__group {
+  margin: 0;
+  margin-bottom: 18px;
+
+  @include tablet-width {
+    margin-bottom: 30px;
+  }
+}
+
+.form-programm-list__label {
+  position: relative;
+  padding-left: 45px;
+
+  &::before {
+    @include pos-absolute(-3px, auto, auto, 0);
+    width: 30px;
+    height: 30px;
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+    background-color: transparent;
+  }
+
+  @include tablet-width {
+    padding-left: 57px;
+
+    @include tablet-width {
+      &::before {
+        left: -3px;
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+}
+
+.form-programm-list__radio:checked ~ .form-programm-list__label {
+  &::after {
+    @include pos-absolute(6px, auto, auto, 9px);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #68b738;
+  }
+
+  @include tablet-width {
+    &::after {
+      top: 8px;
+      left: 8px;
+      width: 18px;
+      height: 18px;
+    }
+  }
+}

@@ -1,14 +1,8 @@
 .cooperation {
   position: relative;
-  padding-top: 35px;
 
   @include tablet-width {
-    padding-top: 63px;
     background-color: $bg-silver;
-  }
-
-  @include desktop-width {
-    padding-top: 0;
   }
 }
 
@@ -16,8 +10,10 @@
   @include wrapper;
   display: flex;
   flex-wrap: wrap;
+  padding-top: 35px;
 
   @include tablet-width {
+    padding-top: 65px;
     padding-left: 70px;
     padding-right: 70px;
   }
