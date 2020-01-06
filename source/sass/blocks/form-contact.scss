@@ -2,6 +2,7 @@
   @include desktop-width {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 
@@ -33,6 +34,10 @@
   @include tablet-width {
     margin-bottom: 20px;
   }
+
+  @include desktop-width {
+    width: 46.7%;
+  }
 }
 
 .form-contact__input {
@@ -40,6 +45,10 @@
 
   @include tablet-width {
     margin-left: 17px;
+  }
+
+  @include desktop-width {
+    margin-left: 20px;
   }
 }
 

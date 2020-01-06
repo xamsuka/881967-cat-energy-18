@@ -1,3 +1,9 @@
+.personal-info {
+  @include desktop-width {
+    width: 46.57%;
+  }
+}
+
 .personal-info__group {
   display: flex;
   align-items: center;

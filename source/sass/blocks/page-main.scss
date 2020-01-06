@@ -11,4 +11,11 @@
     padding-right: 40px;
     padding-bottom: 70px;
   }
+
+  @include desktop-width {
+    padding-top: 55px;
+    padding-right: 0;
+    padding-bottom: 82px;
+    padding-left: 0;
+  }
 }

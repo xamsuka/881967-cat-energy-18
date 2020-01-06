@@ -19,6 +19,10 @@
     font-size: 36px;
     line-height: 36px;
   }
+
+  @include desktop-width {
+    margin-bottom: 66px;
+  }
 }
 
 .box-optionally__group {
@@ -28,6 +32,11 @@
   @include tablet-width {
     width: 45%;
     margin-bottom: 50px;
+  }
+
+  @include desktop-width {
+    width: 20%;
+    margin-bottom: 58px;
   }
 }
 

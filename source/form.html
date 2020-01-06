@@ -29,7 +29,9 @@
             <a href="catalog.html" class="site-navigation__link site-navigation__link--black">Каталог продукции</a>
           </li>
           <li class="site-navigation__item">
-            <a href="form.html" class="site-navigation__link site-navigation__link--black site-navigation__link--current-green site-navigation__link--current">Подбор программы</a>
+            <a href="form.html"
+              class="site-navigation__link site-navigation__link--black site-navigation__link--current-green site-navigation__link--current">Подбор
+              программы</a>
           </li>
         </ul>
       </nav>
@@ -50,99 +52,111 @@
                 <label class="personal-info__label input-label" for="programm-user-name">
                   Имя:*
                 </label>
-                <input class="personal-info__input input" type="text" name="programm-user-name" id="program-user-name" placeholder="Барсик">
+                <input class="personal-info__input input" type="text" name="programm-user-name" id="program-user-name"
+                  placeholder="Барсик">
               </p>
               <p class="personal-info__group">
                 <label class="personal-info__label input-label" for="programm-user-weight">
                   Вес (кг):*
                 </label>
-                <input class="personal-info__input input" type="text" name="programm-user-weight" id="program-user-weight" placeholder="7">
+                <input class="personal-info__input input" type="text" name="programm-user-weight"
+                  id="program-user-weight" placeholder="7">
               </p>
               <p class="personal-info__group">
                 <label class="personal-info__label input-label" for="programm-user-age">
                   Возраст (лет):
                 </label>
-                <input class="personal-info__input input" type="text" name="programm-user-age" id="program-user-age" placeholder="7">
+                <input class="personal-info__input input" type="text" name="programm-user-age" id="program-user-age"
+                  placeholder="7">
               </p>
             </div>
             <div class="programm-form__programm-list form-programm-list">
               <p class="form-programm-list__group">
-                <input class="form-programm-list__radio visually-hidden" type="radio" name="program-value" id="program-value-losing" value="losing-weight" checked>
+                <input class="form-programm-list__radio visually-hidden" type="radio" name="program-value"
+                  id="program-value-losing" value="losing-weight" checked>
                 <label class="form-programm-list__label input-label" for="program-value-losing">
                   Похудение
                 </label>
               </p>
               <p class="form-programm-list__group">
-                <input class="form-programm-list__radio visually-hidden" type="radio" name="program-value" id="program-value-mass" value="mass-gain">
+                <input class="form-programm-list__radio visually-hidden" type="radio" name="program-value"
+                  id="program-value-mass" value="mass-gain">
                 <label class="form-programm-list__label input-label" for="program-value-mass">
                   Набор массы
                 </label>
               </p>
               <p class="form-programm-list__group">
-                <input class="form-programm-list__radio visually-hidden" type="radio" name="program-value" id="program-value-advice" value="need-advice">
+                <input class="form-programm-list__radio visually-hidden" type="radio" name="program-value"
+                  id="program-value-advice" value="need-advice">
                 <label class="form-programm-list__label input-label" for="program-value-advice">
                   Не знаю (нужен ваш совет)
                 </label>
               </p>
             </div>
-            <div class="programm-form__content-contact form-contact">
-              <h3 class="form-contact__title">
-                Контактные данные
-                (владельца кота)
-              </h3>
-              <p class="form-contact__group">
-                <label class="form-contact__label input-label" for="user-email">
-                  E-mail:*
-                </label>
-                <input class="form-contact__input input" type="email" name="user-email" id="user-email" placeholder="kuklachev@gmail.com">
-              </p>
-              <p class="form-contact__group">
-                <label class="form-contact__label input-label" for="user-tel">
-                  Телефон:*
-                </label>
-                <input class="form-contact__input form-contact__input--tel input" type="tel" name="user-tel" id="user-tel" placeholder="8 (960) 900-60-90">
-              </p>
-            </div>
-            <div class="programm-form__box-comment box-comment">
-              <h3 class="box-comment__title">
-                Комментарий
-              </h3>
-              <textarea class="box-comment__text-comment input input--area" name="user-comment" id="user-comment" cols="30" rows="7" placeholder="Расскажите обо всех повадках кота"></textarea>
-            </div>
-            <div class="programm-form__content-optionally box-optionally">
-              <h3 class="box-optionally__title">
-                Дополнительно
-              </h3>
-              <p class="box-optionally__group">
-                <input class="box-optionally__checkbox visually-hidden" type="checkbox" name="sweetener" id="optionally-sweetener" checked>
-                <label class="box-optionally__label input-label" for="optionally-sweetener">
-                  Сахарозаменитель
-                </label>
-              </p>
-              <p class="box-optionally__group">
-                <input class="box-optionally__checkbox visually-hidden" type="checkbox" name="water" id="optionally-water">
-                <label class="box-optionally__label input-label" for="optionally-water">
-                  Питьевая вода
-                </label>
-              </p>
-              <p class="box-optionally__group">
-                <input class="box-optionally__checkbox visually-hidden" type="checkbox" name="milk" id="optionally-milk">
-                <label class="box-optionally__label input-label" for="optionally-milk">
-                  Молоко
-                </label>
-              </p>
-              <p class="box-optionally__group">
-                <input class="box-optionally__checkbox visually-hidden" type="checkbox" name="vitamins" id="optionally-vitamins">
-                <label class="box-optionally__label input-label" for="optionally-vitamins">
-                  Витамины
-                </label>
-              </p>
-            </div>
-            <button class="programm-form__button button">Отправить заявку</button>
-            <p class="programm-form__note">
-              * — Обязательные поля
+          </div>
+          <div class="programm-form__content-contact form-contact">
+            <h3 class="form-contact__title">
+              Контактные данные
+              (владельца кота)
+            </h3>
+            <p class="form-contact__group">
+              <label class="form-contact__label input-label" for="user-email">
+                E-mail:*
+              </label>
+              <input class="form-contact__input input" type="email" name="user-email" id="user-email"
+                placeholder="kuklachev@gmail.com">
+            </p>
+            <p class="form-contact__group">
+              <label class="form-contact__label input-label" for="user-tel">
+                Телефон:*
+              </label>
+              <input class="form-contact__input form-contact__input--tel input" type="tel" name="user-tel" id="user-tel"
+                placeholder="8 (960) 900-60-90">
             </p>
           </div>
+          <div class="programm-form__box-comment box-comment">
+            <h3 class="box-comment__title">
+              Комментарий
+            </h3>
+            <textarea class="box-comment__text-comment input input--area" name="user-comment" id="user-comment"
+              cols="30" rows="7" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </div>
+          <div class="programm-form__content-optionally box-optionally">
+            <h3 class="box-optionally__title">
+              Дополнительно
+            </h3>
+            <p class="box-optionally__group">
+              <input class="box-optionally__checkbox visually-hidden" type="checkbox" name="sweetener"
+                id="optionally-sweetener" checked>
+              <label class="box-optionally__label input-label" for="optionally-sweetener">
+                Сахарозаменитель
+              </label>
+            </p>
+            <p class="box-optionally__group">
+              <input class="box-optionally__checkbox visually-hidden" type="checkbox" name="water"
+                id="optionally-water">
+              <label class="box-optionally__label input-label" for="optionally-water">
+                Питьевая вода
+              </label>
+            </p>
+            <p class="box-optionally__group">
+              <input class="box-optionally__checkbox visually-hidden" type="checkbox" name="milk" id="optionally-milk">
+              <label class="box-optionally__label input-label" for="optionally-milk">
+                Молоко
+              </label>
+            </p>
+            <p class="box-optionally__group">
+              <input class="box-optionally__checkbox visually-hidden" type="checkbox" name="vitamins"
+                id="optionally-vitamins">
+              <label class="box-optionally__label input-label" for="optionally-vitamins">
+                Витамины
+              </label>
+            </p>
+          </div>
+          <button class="programm-form__button button">Отправить заявку</button>
+          <p class="programm-form__note">
+            * — Обязательные поля
+          </p>
         </form>
       </section>
     </div>
