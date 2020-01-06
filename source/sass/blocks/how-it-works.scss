@@ -67,7 +67,7 @@
     width: 60px;
     height: 60px;
 
-    background: url("../../img/advantage-leaf@1x.png") no-repeat center center;
+    background: url("../img/advantage-leaf@1x.png") no-repeat center center;
 
     @include tablet-width {
       width: 80px;
@@ -108,15 +108,15 @@
 }
 
 .how-it-works__step--powder::after {
-  background: url("../../img/advantage-powder@1x.png") no-repeat center center;
+  background: url("../img/advantage-powder@1x.png") no-repeat center center;
 }
 
 .how-it-works__step--dining::after {
-  background: url("../../img/advantage-dining@1x.png") no-repeat center center;
+  background: url("../img/advantage-dining@1x.png") no-repeat center center;
 }
 
 .how-it-works__step--clock::after {
-  background: url("../../img/advantage-clock@1x.png") no-repeat center center;
+  background: url("../img/advantage-clock@1x.png") no-repeat center center;
 }
 
 .how-it-works__text {

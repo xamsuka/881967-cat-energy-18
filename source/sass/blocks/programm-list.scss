@@ -58,7 +58,7 @@
     @include pos-absolute(-5px, auto, auto, -7px);
     width: 67px;
     height: 49px;
-    background: url("../../img/icon-cat-slim.svg") no-repeat center center;
+    background: url("../img/icon-cat-slim.svg") no-repeat center center;
   }
 
   @include tablet-width {
@@ -101,13 +101,13 @@
       @include pos-absolute(-25px, auto, auto, -18px);
       width: 134px;
       height: 97px;
-      background: url("../../img/icon-cat-slim.svg") no-repeat center center;
+      background: url("../img/icon-cat-slim.svg") no-repeat center center;
     }
   }
 }
 
 .programm-list__item--cat-pro .programm-list__title::after {
-  background: url("../../img/icon-cat-pro.svg") no-repeat center center;
+  background: url("../img/icon-cat-pro.svg") no-repeat center center;
 }
 
 .programm-list__description {
@@ -148,7 +148,7 @@
     width: 24px;
     height: 11px;
     content: "";
-    background: url("../../img/icon-right-arrow-long.svg") center center;
+    background: url("../img/icon-right-arrow-long.svg") center center;
   }
 
   @include tablet-width {
