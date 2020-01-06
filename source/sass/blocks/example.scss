@@ -3,30 +3,37 @@
 
   background-color: $bg-silver;
 
-  @media (min-width: $tablet-width) {
+  @include tablet-width {
+    padding-bottom: 75px;
     background-color: #ffffff;
     border-top: 1px solid $bg-silver;
+  }
+
+  @include desktop-width {
+    border-top: none;
+    background-color: $bg-silver;
   }
 }
 
 .example__container {
-  padding-top: 12px;
+  padding-top: 30px;
 
   @include wrapper;
 
   @include tablet-width {
-    padding-top: 51px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-top: 45px;
   }
 
   @include desktop-width {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
-    width: 1440px;
+    width: auto;
+    padding-top: 0;
+    background-color: $bg-silver;
 
     .example__content {
-      width: 430px;
+      width: 435px;
     }
   }
 }
@@ -35,22 +42,36 @@
   @include block-title;
 
   @include tablet-width {
-    // @include title-block-tablet;
+    font-size: 60px;
+    line-height: 60px;
   }
 
   @include desktop-width {
     width: 100%;
+    margin-top: -135px;
   }
 }
 
 .example__text {
+  margin: 0;
+  margin-top: 23px;
+  margin-bottom: 25px;
+  padding-left: 1px;
+
   @include text-mobile;
 
   @include tablet-width {
-    margin-top: 60px;
+    margin-top: 63px;
     margin-bottom: 52px;
+    padding-right: 5px;
+    font-size: 16px;
+    line-height: 24px;
+  }
 
-    // @include text-tablet;
+  @include desktop-width {
+    margin-top: 70px;
+    margin-bottom: 68px;
+    padding: 0;
   }
 }
 
@@ -58,8 +79,156 @@
   margin-top: 40px;
 
   @include tablet-width {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 90px;
+    z-index: 1;
+
     .example__image-before {
       text-align: center;
     }
   }
+
+  @include desktop-width {
+    margin-top: -190px;
+    max-width: 677px;
+    padding-left: 25px;
+  }
+}
+
+.example__image-before {
+  @include tablet-width {
+    width: 56%;
+    overflow: hidden;
+  }
+}
+
+.example__image-after {
+  display: none;
+
+  @include tablet-width {
+    @include pos-absolute(-3px, 30px, auto, auto);
+    width: 40%;
+    z-index: -1;
+    overflow: hidden;
+
+    .example__picture-image {
+      margin-left: -350px;
+    }
+  }
+}
+
+.example__picture-image {
+  @include tablet-width {
+    width: 690px;
+    height: 517px;
+    max-width: none;
+  }
+}
+
+.example__block-toggle {
+  margin-top: 49px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include tablet-width {
+    margin-top: 12px;
+  }
+
+  @include desktop-width {
+    margin-top: auto;
+    padding-left: 80px;
+  }
+}
+
+.example__toggle {
+  position: relative;
+  display: inline-block;
+  margin-left: 19px;
+  margin-right: 17px;
+  width: 84px;
+  height: 14px;
+  vertical-align: middle;
+  border-radius: 6px;
+  border: 1px solid #cdcdcd;
+  background-color: #ffffff;
+
+  @include tablet-width {
+    width: 428px;
+    height: 6px;
+    margin-left: 22px;
+    margin-right: 22px;
+    border-radius: 3px;
+    background-color: #dcdcdc;
+  }
+}
+
+.example__toggle-before,
+.example__toggle-after {
+  position: relative;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  @include tablet-width {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+
+    &::before {
+      @include pos-absolute(auto, auto, -5px, 0);
+      width: 100%;
+      height: 0;
+      border-bottom: 1px dashed rgba(0, 0, 0, 0.15);
+    }
+  }
+}
+
+.example__bar {
+  @include pos-absolute(3px, auto, auto, 4px);
+  width: 35px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: #68b738;
+  transition: 0.3s;
+
+  @include tablet-width {
+    position: relative;
+    top: -14px;
+    left: 47%;
+    width: 34px;
+    height: 34px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    border: 1px solid #cdcdcd;
+    background-color: #ffffff;
+    border-radius: 50%;
+
+    &::before {
+      @include pos-absolute(50%, auto, auto, 50%);
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: #68b738;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+.example-right {
+  transform: translateX(100%);
+
+  @include tablet-width {
+    left: 83%;
+  }
+}
+
+.example__image-before .example-right {
+  display: none;
+}
+
+.example__image-after .example-right {
+  display: block;
 }

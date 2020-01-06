@@ -1,0 +1,18 @@
+.personal-info__group {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 16px;
+
+  @include tablet-width {
+    margin-bottom: 21px;
+  }
+}
+
+.personal-info__input {
+  margin-left: 15px;
+
+  @include tablet-width {
+    margin-left: 18px;
+  }
+}

@@ -1,0 +1,5 @@
+.logo-text {
+  @include tablet-width {
+    margin-right: 15px;
+  }
+}

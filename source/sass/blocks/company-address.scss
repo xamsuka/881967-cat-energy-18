@@ -2,7 +2,25 @@
   @include text-mobile;
   display: inline-block;
   margin: 0;
-  width: 134px;
+  width: 139px;
+  line-height: 20px;
+  font-style: normal;
+  text-align: left;
 
-  text-align: right;
+  @include tablet-width {
+    width: 155px;
+    text-align: right;
+    font-size: 16px;
+  }
+
+  @include desktop-width {
+    text-align: left;
+  }
+}
+
+.company-address__town {
+  @include tablet-width {
+    display: block;
+    margin-top: 19px;
+  }
 }

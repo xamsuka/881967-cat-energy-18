@@ -1,0 +1,74 @@
+.box-optionally {
+  @include tablet-width {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.box-optionally__title {
+  margin: 0;
+  margin-bottom: 38px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+
+  @include tablet-width {
+    width: 100%;
+    margin-bottom: 65px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.box-optionally__group {
+  margin: 0;
+  margin-bottom: 18px;
+
+  @include tablet-width {
+    width: 45%;
+    margin-bottom: 50px;
+  }
+}
+
+.box-optionally__label {
+  position: relative;
+  padding-left: 45px;
+
+  &::before {
+    @include pos-absolute(-2px, auto, auto, 0);
+    width: 30px;
+    height: 30px;
+    border: 1px solid #cdcdcd;
+    background-color: transparent;
+  }
+
+  @include tablet-width {
+    padding-left: 58px;
+    margin-bottom: 32px;
+
+    &::before {
+      @include pos-absolute(-3px, auto, auto, -1px);
+      width: 40px;
+      height: 40px;
+      border: 1px solid #cdcdcd;
+      background-color: transparent;
+    }
+  }
+}
+
+.box-optionally__checkbox:checked ~ .box-optionally__label {
+  &::after {
+    @include pos-absolute(4px, auto, auto, 5px);
+    content: url("../../img/icon-tick.svg");
+    width: 21px;
+    height: 16px;
+  }
+
+  @include tablet-width {
+    &::after {
+      top: 6px;
+      left: 9px;
+    }
+  }
+}

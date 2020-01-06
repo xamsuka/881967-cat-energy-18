@@ -1,5 +1,4 @@
 .site-navigation {
-  display: none;
   font-size: 18px;
 
   @include clear-list;
@@ -10,14 +9,71 @@
 }
 
 .site-navigation__item {
-  margin-right: 2em;
+  position: relative;
+  display: block;
+  text-align: center;
+
+  @include tablet-width {
+    margin-right: 2em;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  @include desktop-width {
+    margin-right: 1.9em;
+  }
 }
 
 .site-navigation__link {
   @include link-site;
+  display: block;
+  padding-top: 11px;
   padding-bottom: 9px;
+  cursor: pointer;
+
+  @media (max-width: 767px) {
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+
+    &::before {
+      @include pos-absolute(0, auto, auto, -20px);
+      width: 100vw;
+      height: 0;
+      border-top: 1px dashed rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  @include desktop-width {
+    font-size: 20px;
+    line-height: 24px;
+    color: #ffffff;
+  }
 }
 
-.site-navigation__link-current {
-  border-bottom: 2px solid $color-green;
+.site-navigation__link--black {
+  @include desktop-width {
+    color: #111111;
+  }
+}
+
+.site-navigation__link--current {
+  @include tablet-width {
+    border-bottom: 2px solid $color-green;
+  }
+
+  @include desktop-width {
+    border-bottom: 2px solid #ffffff;
+  }
+}
+
+.site-navigation__link--current-green {
+  @include desktop-width {
+    border-bottom: 2px solid $color-green;
+  }
 }

@@ -1,0 +1,32 @@
+.nutrition-programm-form__title {
+  margin: 0;
+  padding-top: 16px;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 60px;
+  color: $text-title;
+
+  @include tablet-width {
+    margin-left: -40px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.nutrition-programm-form__text-description {
+  margin: 0;
+  margin-top: 25px;
+  margin-bottom: 40px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  @include tablet-width {
+    margin-top: 55px;
+    margin-bottom: 64px;
+    padding-right: 250px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

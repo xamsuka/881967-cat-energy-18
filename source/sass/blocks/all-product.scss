@@ -19,11 +19,21 @@
   @include tablet-width {
     width: 324px;
     max-height: 430px;
+    padding-bottom: 37px;
     padding-left: 37px;
     padding-right: 37px;
-    padding-bottom: 40px;
-
     border: 1px solid #cdcdcd;
+
+    &::before {
+      content: url("../../img/icon-plus.svg");
+      top: 54px;
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  @include desktop-width {
+    max-width: 245px;
   }
 }
 
@@ -38,14 +48,40 @@
   @include text-black;
   font-size: 16px;
   line-height: 20px;
+
+  @include tablet-width {
+    padding-top: 165px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @include desktop-width {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .all-product__subtitle {
   margin: 0;
-  margin-top: 10px;
+  margin-top: 7px;
   margin-bottom: 20px;
 
   @include text-mobile;
   font-size: 12px;
   line-height: 16px;
+
+  @include tablet-width {
+    margin-top: 25px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  @include desktop-width {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }

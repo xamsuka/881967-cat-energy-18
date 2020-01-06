@@ -4,6 +4,11 @@
   padding-bottom: 22px;
   justify-content: space-between;
   align-items: center;
+
+  @include desktop-width {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
 
 .copyright__link {

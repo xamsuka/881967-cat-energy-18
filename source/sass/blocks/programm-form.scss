@@ -1,35 +1,77 @@
-.programm-form__content-info,
-.programm-form__content-programm {
-  @include desktop-width {
-    display: inline-block;
-    width: 50%;
-    margin-right: -2px;
+.programm-form__personal-info {
+  margin-bottom: 24px;
+
+  @include tablet-width {
+    margin-bottom: 70px;
+    padding-bottom: 0;
+  }
+}
+
+.programm-form__programm-list {
+  margin-bottom: 28px;
+  padding-top: 25px;
+  padding-bottom: 7px;
+
+  @include tablet-width {
+    margin-bottom: 75px;
+    padding-top: 32px;
+    padding-left: 30px;
+    padding-bottom: 2px;
+  }
+}
+
+.programm-form__content-contact {
+  margin-bottom: 28px;
+
+  @include tablet-width {
+    margin-bottom: 67px;
+  }
+}
+
+.programm-form__box-comment {
+  margin-bottom: 23px;
+
+  @include tablet-width {
+    margin-bottom: 60px;
   }
 }
 
 .programm-form__content-optionally {
   @include tablet-width {
-    display: flex;
-    flex-wrap: wrap;
-
-    .program-form__title {
-      width: 100%;
-    }
-
-    .programm-form__group {
-      width: 50%;
-    }
+    margin-bottom: 10px;
   }
+}
 
-  @include desktop-width {
-    .programm-form__group {
-      width: 25%;
-    }
+.programm-form__button {
+  margin-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 16px;
+  line-height: 20px;
+
+  @include tablet-width {
+    width: 45%;
+    margin-top: 0;
+    padding-top: 16px;
+    padding-right: 62px;
+    padding-bottom: 16px;
+    padding-left: 62px;
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 
 .programm-form__note {
+  margin: 0;
+  margin-top: 20px;
+
+  @include text-mobile;
+  line-height: 16px;
+  text-align: center;
+
   @include tablet-width {
+    width: 47%;
     display: inline-block;
+    font-size: 16px;
   }
 }

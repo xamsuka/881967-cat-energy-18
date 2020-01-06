@@ -1,15 +1,31 @@
 .cooperation {
-  padding-top: 30px;
+  position: relative;
+
+  @include tablet-width {
+    background-color: $bg-silver;
+  }
 }
 
 .cooperation__container {
   @include wrapper;
   display: flex;
   flex-wrap: wrap;
+  padding-top: 35px;
 
   @include tablet-width {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-top: 65px;
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+  @include desktop-width {
+    @include pos-absolute(90px, auto, auto, 110px);
+    width: 570px;
+    padding-top: 70px;
+    padding-right: 90px;
+    padding-bottom: 60px;
+    padding-left: 76px;
+    background-color: #ffffff;
   }
 }
 
@@ -17,9 +33,15 @@
   @include text-black;
   display: inline-block;
   margin-right: auto;
-  max-width: 123px;
+  max-width: 124px;
 
   font-size: 16px;
   line-height: 20px;
   text-align: left;
+
+  @include tablet-width {
+    max-width: 155px;
+    font-size: 20px;
+    line-height: 25px;
+  }
 }

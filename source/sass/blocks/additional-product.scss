@@ -1,15 +1,36 @@
 .additional-product {
-  padding-bottom: 30px;
+  @include tablet-width {
+    padding-bottom: 77px;
+  }
 
   @include desktop-width {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-bottom: 85px;
   }
 }
 
 .additional-product__title {
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+
+  @include tablet-width {
+    margin-bottom: 80px;
+    padding: 0;
+    padding-top: 68px;
+    padding-left: 37px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
   @include desktop-width {
     width: 100%;
+    padding-top: 76px;
+    padding-left: 0;
   }
 }

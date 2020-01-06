@@ -14,6 +14,10 @@
     background-size: contain;
     text-align: left;
   }
+
+  @include desktop-width {
+    height: 600px;
+  }
 }
 
 .promo__content {
@@ -34,15 +38,16 @@
   color: #ffffff;
 
   @include tablet-width {
+    padding-top: 56px;
     color: #111111;
-
-    // @include title-block-tablet;
+    font-size: 60px;
+    line-height: 60px;
   }
 }
 
 .promo__subtitle {
   margin: 0;
-  margin-top: 20px;
+  margin-top: 25px;
   margin-bottom: 29px;
   font-size: 14px;
   line-height: 14px;
@@ -50,11 +55,15 @@
   color: #ffffff;
 
   @include tablet-width {
-    margin-top: 33px;
-    margin-bottom: 48px;
-
-    // @include sub-title;
+    margin-top: 40px;
+    margin-bottom: 51px;
+    font-size: 20px;
+    line-height: 20px;
     color: #111111;
+  }
+
+  @include desktop-width {
+    margin-bottom: 56px;
   }
 }
 
@@ -64,7 +73,12 @@
   z-index: 0;
 
   @include tablet-width {
-    padding-left: 120px;
+    padding-left: 117px;
+  }
+
+  @include desktop-width {
+    padding-top: 50px;
+    padding-left: 190px;
   }
 }
 
@@ -72,12 +86,12 @@
   @include tablet-width {
     order: 4;
 
-    @include pos-absolute(220px, auto, auto, 0);
+    @include pos-absolute(255px, auto, auto, 30px);
     z-index: -1;
   }
 
   @include desktop-width {
-    @include pos-absolute(0, 200px, auto, auto);
+    @include pos-absolute(25px, 328px, auto, auto);
   }
 }
 
@@ -86,7 +100,15 @@
 }
 
 .promo__link {
+  margin-top: -3px;
+
   @include tablet-width {
+    padding-top: 15px;
+    padding-right: 28px;
+    padding-bottom: 17px;
+    padding-left: 27px;
     align-self: flex-start;
+    font-size: 20px;
+    line-height: 20px;
   }
 }

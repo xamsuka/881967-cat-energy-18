@@ -5,5 +5,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    .catalog-item:nth-child(2n) .catalog-item__image {
+      top: -82px;
+    }
   }
+}
+
+.catalog-list__item {
+  padding-bottom: 25px;
 }

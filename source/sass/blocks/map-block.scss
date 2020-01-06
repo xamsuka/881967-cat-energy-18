@@ -1,8 +1,21 @@
 .map-block {
   margin-top: 26px;
+
+  @include tablet-width {
+    height: 400px;
+    margin-top: 53px;
+  }
+
+  @include desktop-width {
+    margin-top: 0;
+  }
 }
 
 .map-block__image {
   width: 100%;
-  max-height: 400px;
+  max-height: 350px;
+
+  @include tablet-width {
+    max-height: 400px;
+  }
 }
