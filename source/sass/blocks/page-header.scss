@@ -2,6 +2,24 @@
   display: flex;
   align-items: center;
   min-height: 65px;
+
+  &::before {
+    @include desktop-width {
+      @include pos-absolute();
+      width: 50vw;
+      display: block;
+      height: 696px;
+      background-color: $color-green;
+      z-index: 0;
+      background-image: url("../img/index-background-desktop@1x.jpg");
+      background-repeat: no-repeat;
+    }
+
+    @include retina {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+      background-size: 726px auto;
+    }
+  }
 }
 
 .page-header__container {
@@ -40,17 +58,17 @@
   }
 }
 
-.page-header__block-green {
-  display: none;
+// .page-header__block-green {
+//   display: none;
 
-  @include desktop-width {
-    @include pos-absolute();
-    width: 50vw;
-    display: block;
-    height: 696px;
-    background-color: $color-green;
-    z-index: 0;
-    background-image: url("../img/index-background-desktop@1x.jpg");
-    background-repeat: no-repeat;
-  }
-}
+//   @include desktop-width {
+//     @include pos-absolute();
+//     width: 50vw;
+//     display: block;
+//     height: 696px;
+//     background-color: $color-green;
+//     z-index: 0;
+//     background-image: url("../img/index-background-desktop@1x.jpg");
+//     background-repeat: no-repeat;
+//   }
+// }

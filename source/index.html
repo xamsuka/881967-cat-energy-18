@@ -34,9 +34,9 @@
         </ul>
       </nav>
     </div>
-    <div class="page-header__block-green">
+    <!-- <div class="page-header__block-green">
 
-    </div>
+    </div> -->
   </header>
   <main class="page-main">
     <section class="promo">
@@ -45,10 +45,16 @@
           <h1 class="promo__title">Функциональное питание для котов</h1>
           <p class="promo__subtitle">Занялся собой? Займись котом!</p>
           <picture class="promo__picture">
-            <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png">
-            <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg">
-            <img class="promo__image" src="img/index-can-mobile@1x.png" width="280" height="270"
-              alt="Магазин Cat Energy">
+            <source type="image/webp" media="(min-width: 1300px)"
+              srcset="img/index-can-desktop@1x.webp 1x, img/index-can-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/index-can-tablet@1x.webp 1x, img/index-can-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/index-can-mobile@1x.webp 1x, img/index-can-mobile@2x.webp 2x">
+            <source media="(min-width: 1300px)"
+              srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
+            <img class="promo__image" src="img/index-can-mobile@1x.png 1x" srcset="img/index-can-mobile@2x.png 2x"
+              width="280" height="270" alt="Магазин Cat Energy">
           </picture>
           <a href="#" class="promo__link button">Подобрать программу</a>
         </div>
@@ -77,7 +83,6 @@
           </li>
         </ul>
       </section>
-
       <section class="how-it-works">
         <h2 class="how-it-works__title">Как это работает</h2>
         <ul class="how-it-works__steps">
@@ -136,18 +141,28 @@
         <div class="example__preview">
           <div class="example__image-before">
             <picture class="example__picture">
-              <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png">
-              <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png">
-              <img class="example__picture-image" src="img/before-mobile@1x.png" width="311" height="232"
-                alt="Кот который жирный">
+              <source type="image/webp" media="(min-width: 1300px)"
+                srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
+              <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+              <img class="example__picture-image" src="img/before-mobile@1x.png 1x" srcset="img/before-mobile@2x.png 2x"
+                width="311" height="232" alt="Кот который жирный">
             </picture>
           </div>
           <div class="example__image-after">
             <picture class="example__picture">
-              <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png">
-              <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png">
-              <img class="example__picture-image" src="img/after-mobile@1x.png" width="311" height="232"
-                alt="Кот который не жирный">
+              <source type="image/webp" media="(min-width: 1300px)"
+                srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/after-tablet@1x.webp1x, img/after-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
+              <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2xx.png 2x">
+              <img class="example__picture-image" src="img/after-mobile@1x.png 1x" srcset="img/after-mobile@2x.png 2x"
+                width="311" height="232" alt="Кот который не жирный">
             </picture>
           </div>
           <div class="example__block-toggle">
@@ -174,10 +189,13 @@
       </div>
       <div class="map-block">
         <picture class="map-block__picture">
-          <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png">
-          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png">
-          <img class="map-block__image" src="img/bg-map-mobile@1x.png" width="320" height="365"
-            alt="Адрес местонахождения компании">
+          <source type="image/webp" media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
+          <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/img/bg-map-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
+          <img class="map-block__image" src="img/bg-map-mobile@1x.jpg 1x" srcset="img/bg-map-mobile@2x.jpg 2x"
+            width="320" height="365" alt="Адрес местонахождения компании">
         </picture>
       </div>
     </section>
