@@ -8,6 +8,11 @@
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
 
+  @include retina {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+    background-size: 290px auto;
+  }
+
   &::before {
     @include pos-absolute(0, auto, auto, 0);
     left: 50%;
@@ -35,6 +40,11 @@
       content: url("../img/icon-gift.svg");
       transform: translateY(-46%);
     }
+
+    @include retina {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+      background-size: 708px auto;
+    }
   }
 
   @include desktop-width {
@@ -52,6 +62,11 @@
       height: 60px;
       content: url("../img/icon-gift.svg");
       transform: translateX(-50%);
+    }
+
+    @include retina {
+      background-image: url("../img/gift-photo-desktop@2x.jpg");
+      background-size: 290px auto;
     }
   }
 }
