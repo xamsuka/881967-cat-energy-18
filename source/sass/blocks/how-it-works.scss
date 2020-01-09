@@ -1,6 +1,6 @@
 .how-it-works {
   padding-top: 15px;
-  padding-bottom: 30px;
+  padding-bottom: 42px;
 
   @include tablet-width {
     padding-top: 45px;
@@ -69,6 +69,11 @@
 
     background: url("../img/advantage-leaf@1x.png") no-repeat center center;
 
+    @include retina {
+      background: url("../img/advantage-leaf@2x.png") no-repeat center center;
+      background-size: 50px 50px;
+    }
+
     @include tablet-width {
       width: 80px;
       height: 80px;
@@ -109,14 +114,29 @@
 
 .how-it-works__step--powder::after {
   background: url("../img/advantage-powder@1x.png") no-repeat center center;
+
+  @include retina {
+    background: url("../img/advantage-powder@2x.png") no-repeat center center;
+    background-size: 50px 50px;
+  }
 }
 
 .how-it-works__step--dining::after {
   background: url("../img/advantage-dining@1x.png") no-repeat center center;
+
+  @include retina {
+    background: url("../img/advantage-dining@2x.png") no-repeat center center;
+    background-size: 50px 50px;
+  }
 }
 
 .how-it-works__step--clock::after {
   background: url("../img/advantage-clock@1x.png") no-repeat center center;
+
+  @include retina {
+    background: url("../img/advantage-clock@2x.png") no-repeat center center;
+    background-size: 50px 50px;
+  }
 }
 
 .how-it-works__text {
