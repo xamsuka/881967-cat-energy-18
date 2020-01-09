@@ -5,8 +5,13 @@
   height: 289px;
   text-align: center;
   background-color: $color-green;
-  background-image: url("../../img/gift-photo-mobile@1x.jpg");
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
+
+  @include retina {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+    background-size: 290px auto;
+  }
 
   &::before {
     @include pos-absolute(0, auto, auto, 0);
@@ -15,12 +20,12 @@
 
     width: 55px;
     height: 60px;
-    content: url("../../img/icon-gift.svg");
+    content: url("../img/icon-gift.svg");
     transform: translateX(-50%);
   }
 
   @include tablet-width {
-    background-image: url("../../img/gift-photo-tablet@1x.jpg");
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
     max-height: 200px;
     margin-top: 70px;
     margin-bottom: 0;
@@ -32,8 +37,13 @@
 
       width: 55px;
       height: 60px;
-      content: url("../../img/icon-gift.svg");
+      content: url("../img/icon-gift.svg");
       transform: translateY(-46%);
+    }
+
+    @include retina {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+      background-size: 708px auto;
     }
   }
 
@@ -41,7 +51,7 @@
     width: 245px;
     max-height: 289px;
     margin: 0;
-    background-image: url("../../img/gift-photo-desktop@1x.jpg");
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
 
     &::before {
       @include pos-absolute(0, auto, auto, 0);
@@ -50,8 +60,13 @@
 
       width: 55px;
       height: 60px;
-      content: url("../../img/icon-gift.svg");
+      content: url("../img/icon-gift.svg");
       transform: translateX(-50%);
+    }
+
+    @include retina {
+      background-image: url("../img/gift-photo-desktop@2x.jpg");
+      background-size: 290px auto;
     }
   }
 }

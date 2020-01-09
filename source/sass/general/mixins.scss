@@ -87,3 +87,9 @@
     @content;
   }
 }
+
+@mixin retina {
+  @media (min-resolution: $retina-dppx) {
+    @content;
+  }
+}

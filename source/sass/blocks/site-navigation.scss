@@ -14,7 +14,7 @@
   text-align: center;
 
   @include tablet-width {
-    margin-right: 2em;
+    margin-right: 36px;
 
     &:last-child {
       margin-right: 0;
@@ -22,7 +22,7 @@
   }
 
   @include desktop-width {
-    margin-right: 1.9em;
+    margin-right: 34px;
   }
 }
 

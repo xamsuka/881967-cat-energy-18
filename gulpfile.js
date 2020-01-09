@@ -7,6 +7,8 @@ var sass = require("gulp-sass");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
+//svg sprite
+var svgSprite = require('gulp-svg-sprite');
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
