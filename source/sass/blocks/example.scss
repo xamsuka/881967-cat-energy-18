@@ -1,5 +1,5 @@
 .example {
-  padding-bottom: 38px;
+  padding-bottom: 28px;
 
   background-color: $bg-silver;
 
@@ -16,7 +16,7 @@
 }
 
 .example__container {
-  padding-top: 30px;
+  padding-top: 17px;
 
   @include wrapper;
 
@@ -105,7 +105,7 @@
 }
 
 .example__image-after {
-  display: block;
+  display: none;
 
   @include tablet-width {
     @include pos-absolute(-3px, 30px, auto, auto);
@@ -116,6 +116,10 @@
     .example__picture-image {
       margin-left: -350px;
     }
+  }
+
+  @include desktop-width {
+    display: block;
   }
 }
 
