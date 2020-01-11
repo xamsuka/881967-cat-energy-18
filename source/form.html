@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Cat Energy подбор программы</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
   <div style="display: none;">
@@ -97,13 +97,19 @@
               <label class="form-contact__label input-label" for="user-email">
                 E-mail:*
               </label>
-              <input class="form-contact__input input" type="email" name="user-email" id="user-email" placeholder="kuklachev@gmail.com">
+              <input class="form-contact__input form-contact__input--email input" type="email" name="user-email" id="user-email" placeholder="kuklachev@gmail.com">
+              <svg class="form-contact__icon">
+                <use xlink:href="#icon-mail"></use>
+              </svg>
             </p>
             <p class="form-contact__group">
               <label class="form-contact__label input-label" for="user-tel">
                 Телефон:*
               </label>
               <input class="form-contact__input form-contact__input--tel input" type="tel" name="user-tel" id="user-tel" placeholder="8 (960) 900-60-90">
+              <svg class="form-contact__icon">
+                <use xlink:href="#icon-phone"></use>
+              </svg>
             </p>
           </div>
           <div class="programm-form__box-comment box-comment">

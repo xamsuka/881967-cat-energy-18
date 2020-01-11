@@ -1,9 +1,11 @@
 .input {
   flex-grow: 1;
+  max-height: 52px;
   padding-top: 12px;
   padding-bottom: 11px;
   padding-left: 14px;
   border: 1px solid #cdcdcd;
+  opacity: 0.5;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
@@ -16,8 +18,20 @@
     font-size: 20px;
     line-height: 20px;
   }
-}
 
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
+
+  &:active {
+    border: 2px solid #444444;
+  }
+
+  &--error {
+    border: 2px solid #ff8282;
+  }
+}
 
 .input--area {
   width: 100%;

@@ -26,5 +26,19 @@
       padding-left: 0;
       padding-right: 0;
     }
+
+    &:hover,
+    &:focus {
+      background-color: #ebebeb;
+    }
+  }
+
+  &:hover:not(&--color-silver),
+  &:focus:not(&--color-silver) {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
   }
 }

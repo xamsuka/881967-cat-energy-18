@@ -3,6 +3,15 @@
   height: 65px;
   max-height: 65px;
   align-items: center;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .logo__image {

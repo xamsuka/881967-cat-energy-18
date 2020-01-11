@@ -161,6 +161,10 @@
       left: 133px;
     }
   }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .programm-list__item--cat-pro .programm-list__link::after {
