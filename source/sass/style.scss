@@ -3,7 +3,6 @@
 @import "general/variables.scss";
 @import "general/mixins.scss";
 @import "general/common.scss";
-// Подключение стилизации бэм блоков
 @import "blocks/logo.scss";
 @import "blocks/button.scss";
 @import "blocks/page-header.scss";
@@ -22,8 +21,6 @@
 @import "blocks/page-footer.scss";
 @import "blocks/social.scss";
 @import "blocks/copyright.scss";
-@import "blocks/logo-text.scss";
-// Подключение блоков catalog.html
 @import "blocks/catalog.scss";
 @import "blocks/catalog-list.scss";
 @import "blocks/catalog-item.scss";
@@ -32,7 +29,6 @@
 @import "blocks/additional-list.scss";
 @import "blocks/additional-item.scss";
 @import "blocks/promo-banners.scss";
-// Подключение блоков form.html
 @import "blocks/nutrition-programm-form.scss";
 @import "blocks/input.scss";
 @import "blocks/input-label.scss";

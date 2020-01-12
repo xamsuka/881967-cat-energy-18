@@ -28,13 +28,15 @@
     border: 2px solid #444444;
   }
 
-  &--error {
+  &:invalid {
+    opacity: 1;
     border: 2px solid #ff8282;
   }
 }
 
 .input--area {
   width: 100%;
+  max-height: initial;
   padding-top: 14px;
   padding-right: 13px;
   padding-bottom: 9px;

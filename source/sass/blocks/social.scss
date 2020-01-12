@@ -46,6 +46,19 @@
   }
 }
 
+.social__item-icon {
+  fill: #666666;
+
+  &:hover,
+  &:focus {
+    fill: #68b738;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .social__link {
   width: 100%;
   max-height: 19px;
