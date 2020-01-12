@@ -1,6 +1,5 @@
 .example {
-  padding-bottom: 28px;
-
+  padding-bottom: 39px;
   background-color: $bg-silver;
 
   @include tablet-width {
@@ -98,7 +97,11 @@
 }
 
 .example__image-before {
+  margin-left: -16px;
+  width: 311px;
+
   @include tablet-width {
+    margin-left: 0;
     width: 56%;
     overflow: hidden;
   }
@@ -106,10 +109,13 @@
 
 .example__image-after {
   display: none;
+  margin-left: -16px;
+  width: 311px;
 
   @include tablet-width {
     @include pos-absolute(-3px, 30px, auto, auto);
     width: 40%;
+    margin-left: 0;
     z-index: -1;
     overflow: hidden;
 
@@ -135,8 +141,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 30px;
-  margin-top: 49px;
+  height: 15px;
+  margin-top: 30px;
 
   @include tablet-width {
     margin-top: 12px;
@@ -193,7 +199,7 @@
 }
 
 .example__bar {
-  @include pos-absolute(3px, auto, auto, 4px);
+  @include pos-absolute(3px, auto, auto, 7px);
   width: 35px;
   height: 6px;
   border-radius: 3px;

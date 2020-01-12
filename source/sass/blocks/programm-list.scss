@@ -168,7 +168,9 @@
 }
 
 .programm-list__item--cat-pro .programm-list__link::after {
-  left: 127px;
+  @include tablet-width {
+    left: 127px;
+  }
 }
 
 @include tablet-width {

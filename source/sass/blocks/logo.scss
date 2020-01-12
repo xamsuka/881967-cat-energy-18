@@ -1,5 +1,6 @@
 .logo {
   display: flex;
+  min-width: 191px;
   height: 65px;
   max-height: 65px;
   align-items: center;
@@ -15,9 +16,15 @@
 }
 
 .logo__image {
+  display: inline;
+
   @include tablet-width {
-    display: block;
     width: 173px;
     height: 58px;
+  }
+
+  @include desktop-width {
+    width: 202px;
+    height: 59px;
   }
 }
