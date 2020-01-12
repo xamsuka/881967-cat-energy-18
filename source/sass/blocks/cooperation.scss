@@ -13,13 +13,13 @@
   padding-top: 29px;
 
   @include tablet-width {
-    padding-top: 65px;
+    padding-top: 64px;
     padding-left: 70px;
     padding-right: 70px;
   }
 
   @include desktop-width {
-    @include pos-absolute(90px, auto, auto, 110px);
+    @include pos-absolute(95px, auto, auto, 110px);
     width: 570px;
     padding-top: 65px;
     padding-right: 90px;

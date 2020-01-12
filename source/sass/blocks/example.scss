@@ -3,12 +3,13 @@
   background-color: $bg-silver;
 
   @include tablet-width {
-    padding-bottom: 75px;
+    padding-bottom: 78px;
     background-color: #ffffff;
     border-top: 1px solid $bg-silver;
   }
 
   @include desktop-width {
+    padding-bottom: 70px;
     border-top: none;
     background-color: $bg-silver;
   }
@@ -76,12 +77,16 @@
 
 .example__preview {
   margin-top: 40px;
+  width: 311px;
+  margin-left: -17px;
 
   @include tablet-width {
     position: relative;
     display: flex;
     flex-direction: column;
-    margin-top: 90px;
+    width: 100%;
+    margin-top: 85px;
+    margin-left: 0;
     z-index: 1;
 
     .example__image-before {
@@ -91,49 +96,87 @@
 
   @include desktop-width {
     margin-top: -190px;
-    max-width: 677px;
+    width: 677px;
     padding-left: 25px;
   }
 }
 
-.example__image-before {
-  margin-left: -16px;
-  width: 311px;
+.example__preview-image {
+  position: relative;
 
   @include tablet-width {
-    margin-left: 0;
-    width: 56%;
+    padding: 0 10px;
+    max-height: 499px;
+  }
+
+  @include desktop-width {
+    padding: 0;
+  }
+}
+
+.example__preview-box {
+  @include tablet-width {
+    width: 50%;
     overflow: hidden;
+  }
+
+  @include desktop-width {
+    width: 57%;
+    padding-top: 16px;
+  }
+
+  &:nth-child(2) {
+    @include tablet-width {
+      display: block;
+
+      @include pos-absolute(0, 0, auto, auto);
+      margin-left: 0;
+      z-index: -1;
+    }
+
+    @include desktop-width {
+      width: 48%;
+      padding-top: 0;
+    }
+  }
+}
+
+.example__image-before {
+  @include tablet-width {
+    padding-top: 20px;
+  }
+
+  @include desktop-width {
+    padding-top: 0;
   }
 }
 
 .example__image-after {
   display: none;
-  margin-left: -16px;
-  width: 311px;
 
   @include tablet-width {
-    @include pos-absolute(-3px, 30px, auto, auto);
-    width: 40%;
-    margin-left: 0;
-    z-index: -1;
-    overflow: hidden;
-
-    .example__picture-image {
-      margin-left: -350px;
-    }
-  }
-
-  @include desktop-width {
     display: block;
+    margin-left: -245px;
   }
 }
 
 .example__picture-image {
   @include tablet-width {
     width: 690px;
-    height: 517px;
+    height: 499px;
     max-width: none;
+  }
+
+  @include desktop-width {
+    width: 677px;
+    height: 499px;
+  }
+}
+
+.example__picture-image--after {
+  @include tablet-width {
+    width: 545px;
+    height: 517px;
   }
 }
 
@@ -145,11 +188,11 @@
   margin-top: 30px;
 
   @include tablet-width {
-    margin-top: 12px;
+    margin-top: 40px;
   }
 
   @include desktop-width {
-    margin-top: auto;
+    margin-top: 59px;
     padding-left: 80px;
   }
 }
@@ -209,7 +252,7 @@
   @include tablet-width {
     position: relative;
     top: -14px;
-    left: 47%;
+    left: 46.5%;
     width: 34px;
     height: 34px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);

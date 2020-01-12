@@ -62,8 +62,7 @@
   }
 
   &::after {
-    @include pos-absolute();
-    right: auto;
+    @include pos-absolute(0, auto, auto, 0);
     width: 60px;
     height: 60px;
 

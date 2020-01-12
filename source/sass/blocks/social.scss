@@ -9,7 +9,6 @@
 
   @include tablet-width {
     padding: 0;
-    width: 124px;
     justify-content: space-between;
   }
 }
@@ -39,7 +38,7 @@
   }
 
   @include tablet-width {
-    margin-right: 0;
+    margin-right: 20px;
   }
 }
 
@@ -64,7 +63,8 @@
   max-height: 19px;
 
   @include tablet-width {
-    max-height: none;
+    width: 30px;
+    height: 28px;
     display: flex;
     justify-content: center;
     align-items: center;

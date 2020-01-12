@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/style.min.css">
+  <script src="js/picturefill.min.js" async></script>
 </head>
 
 <body>
@@ -139,31 +140,38 @@
           </div>
         </div>
         <div class="example__preview">
-          <div class="example__image-before">
-            <picture class="example__picture">
-              <source type="image/webp" media="(min-width: 1300px)"
-                srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)"
-                srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
-              <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
-              <img class="example__picture-image" src="img/before-mobile@1x.png 1x" srcset="img/before-mobile@2x.png 2x"
-                width="311" height="232" alt="Кот который жирный">
-            </picture>
-          </div>
-          <div class="example__image-after">
-            <picture class="example__picture">
-              <source type="image/webp" media="(min-width: 1300px)"
-                srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)"
-                srcset="img/after-tablet@1x.webp1x, img/after-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
-              <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2xx.png 2x">
-              <img class="example__picture-image" src="img/after-mobile@1x.png 1x" srcset="img/after-mobile@2x.png 2x"
-                width="311" height="232" alt="Кот который не жирный">
-            </picture>
+          <div class="example__preview-image">
+            <div class="example__preview-box">
+              <div class="example__image-before">
+                <picture class="example__picture">
+                  <source type="image/webp" media="(min-width: 1300px)"
+                    srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
+                  <source media="(min-width: 1300px)"
+                    srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+                  <img class="example__picture-image" src="img/before-mobile@1x.png 1x"
+                    srcset="img/before-mobile@2x.png 2x" width="311" height="232" alt="Кот который жирный">
+                </picture>
+              </div>
+            </div>
+            <div class="example__preview-box">
+              <div class="example__image-after">
+                <picture class="example__picture">
+                  <source type="image/webp" media="(min-width: 1300px)"
+                    srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/after-tablet@1x.webp1x, img/after-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
+                  <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2xx.png 2x">
+                  <img class="example__picture-image example__picture-image--after" src="img/after-mobile@1x.png 1x"
+                    srcset="img/after-mobile@2x.png 2x" width="311" height="232" alt="Кот который не жирный">
+                </picture>
+              </div>
+            </div>
           </div>
           <div class="example__block-toggle">
             <span class="example__toggle-before">Было</span>

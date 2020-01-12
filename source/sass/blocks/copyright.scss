@@ -5,16 +5,9 @@
 }
 
 .copyright__link {
-  padding-top: 20px;
-  padding-bottom: 22px;
-
   @include text-mobile;
   font-size: 16px;
   line-height: 16px;
-
-  @include tablet-width {
-    margin-right: 20px;
-  }
 
   @include desktop-width {
     padding-top: 0;
@@ -41,5 +34,11 @@
     &:active {
       opacity: 0.3;
     }
+  }
+}
+
+.copyright__link--img {
+  @include tablet-width {
+    margin-left: 23px;
   }
 }

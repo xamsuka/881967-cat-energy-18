@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <script src="js/picturefill.min.js" async></script>
 </head>
+
 <body>
   <div style="display: none;">
     <include src="build/img/sprite.svg"></include>
@@ -27,7 +30,8 @@
             <a href="index.html" class="site-navigation__link site-navigation__link--black">Главная</a>
           </li>
           <li class="site-navigation__item">
-            <a href="catalog.html" class="site-navigation__link site-navigation__link--black site-navigation__link--current-green site-navigation__link--current">Каталог
+            <a href="catalog.html"
+              class="site-navigation__link site-navigation__link--black site-navigation__link--current-green site-navigation__link--current">Каталог
               продукции</a>
           </li>
           <li class="site-navigation__item">
@@ -44,12 +48,18 @@
         <ul class="catalog-list">
           <li class="catalog-list__item catalog-item">
             <picture class="catalog-item__picture">
-              <source type="image/webp" media="(min-width: 1300px)" srcset="img/chicken-small-desktop@1x.webp 1x, img/chicken-small-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.webp 1x, img/chicken-small-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/chicken-small-mobile@1x.webp 1x, img/chicken-small-mobile@2x.webp 2x">
-              <source media="(min-width: 1300px)" srcset="img/chicken-small-desktop@1x.png 1x, img/chicken-small-desktop@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.png 1x, img/chicken-small-tablet@2x.png 2x">
-              <img class="catalog-item__image" src="img/chicken-small-mobile@1x.jpg 1x" srcset="img/chicken-small-mobile@2x.jpg 2x" width="140" height="144" alt="Продукт со вкусом курица">
+              <source type="image/webp" media="(min-width: 1300px)"
+                srcset="img/chicken-small-desktop@1x.webp 1x, img/chicken-small-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/chicken-small-tablet@1x.webp 1x, img/chicken-small-tablet@2x.webp 2x">
+              <source type="image/webp"
+                srcset="img/chicken-small-mobile@1x.webp 1x, img/chicken-small-mobile@2x.webp 2x">
+              <source media="(min-width: 1300px)"
+                srcset="img/chicken-small-desktop@1x.png 1x, img/chicken-small-desktop@2x.png 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/chicken-small-tablet@1x.png 1x, img/chicken-small-tablet@2x.png 2x">
+              <img class="catalog-item__image" src="img/chicken-small-mobile@1x.jpg 1x"
+                srcset="img/chicken-small-mobile@2x.jpg 2x" width="140" height="144" alt="Продукт со вкусом курица">
             </picture>
             <div class="catalog-item__content">
               <h3 class="catalog-item__title">
@@ -87,12 +97,17 @@
           </li>
           <li class="catalog-list__item catalog-item">
             <picture class="catalog-item__picture">
-              <source type="image/webp" media="(min-width: 1300px)" srcset="img/chicken-big-desktop@1x.webp 1x, img/chicken-big-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="chicken-big-tablet@1x.webp 1x, img/chicken-big-tablet@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1300px)"
+                srcset="img/chicken-big-desktop@1x.webp 1x, img/chicken-big-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="chicken-big-tablet@1x.webp 1x, img/chicken-big-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/chicken-big-mobile@1x.jpg 1x, img/chicken-big-mobile@2x.webp 2x">
-              <source media="(min-width: 1300px)" srcset="img/chicken-big-desktop@1x.png 1x, img/chicken-big-desktop@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="img/chicken-big-tablet@1x.png 1x, img/chicken-big-tablet@2x.png 2x">
-              <img class="catalog-item__image" src="img/chicken-big-mobile@1x.jpg 1x" srcset="img/chicken-big-mobile@2x.jpg 2x" width="140" height="144" alt="Продукт со вкусом курица">
+              <source media="(min-width: 1300px)"
+                srcset="img/chicken-big-desktop@1x.png 1x, img/chicken-big-desktop@2x.png 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/chicken-big-tablet@1x.png 1x, img/chicken-big-tablet@2x.png 2x">
+              <img class="catalog-item__image" src="img/chicken-big-mobile@1x.jpg 1x"
+                srcset="img/chicken-big-mobile@2x.jpg 2x" width="140" height="144" alt="Продукт со вкусом курица">
             </picture>
             <div class="catalog-item__content">
               <h3 class="catalog-item__title">
@@ -130,12 +145,17 @@
           </li>
           <li class="catalog-list__item catalog-item">
             <picture class="catalog-item__picture">
-              <source type="image/webp" media="(min-width: 1300px)" srcset="img/fish-small-desktop@1x.webp 1x, img/fish-small-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/fish-small-tablet@1x.webp 1x, img/fish-small-tablet@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1300px)"
+                srcset="img/fish-small-desktop@1x.webp 1x, img/fish-small-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/fish-small-tablet@1x.webp 1x, img/fish-small-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/fish-small-mobile@1x.webp 1x, img/fish-small-mobile@2x.webp 2x">
-              <source media="(min-width: 1300px)" srcset="img/fish-small-desktop@1x.png 1x, img/fish-small-desktop@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="img/fish-small-tablet@1x.png 1x, img/fish-small-tablet@2x.png 2x">
-              <img class="catalog-item__image" src="img/fish-small-mobile@1x.jpg 1x" srcset="img/fish-small-mobile@2x.jpg 2x" alt="Продукт со вкусом курица" width="140" height="144">
+              <source media="(min-width: 1300px)"
+                srcset="img/fish-small-desktop@1x.png 1x, img/fish-small-desktop@2x.png 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/fish-small-tablet@1x.png 1x, img/fish-small-tablet@2x.png 2x">
+              <img class="catalog-item__image" src="img/fish-small-mobile@1x.jpg 1x"
+                srcset="img/fish-small-mobile@2x.jpg 2x" alt="Продукт со вкусом курица" width="140" height="144">
             </picture>
             <div class="catalog-item__content">
               <h3 class="catalog-item__title">
@@ -173,12 +193,16 @@
           </li>
           <li class="catalog-list__item catalog-item">
             <picture class="catalog-item__picture">
-              <source type="image/webp" media="(min-width: 1300px)" srcset="img/fish-big-desktop@1x.webp 1x, img/fish-big-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/fish-big-tablet@1x.webp 1x, img/fish-big-tablet@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1300px)"
+                srcset="img/fish-big-desktop@1x.webp 1x, img/fish-big-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/fish-big-tablet@1x.webp 1x, img/fish-big-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/fish-big-mobile@1x.webp 1x, img/fish-big-mobile@2x.webp 2x">
-              <source media="(min-width: 1300px)" srcset="img/fish-big-desktop@1x.png 1x, img/fish-big-desktop@2x.png 2x">
+              <source media="(min-width: 1300px)"
+                srcset="img/fish-big-desktop@1x.png 1x, img/fish-big-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/fish-big-tablet@1x.png 1x, img/fish-big-tablet@2x.png 2x">
-              <img class="catalog-item__image" src="img/fish-big-mobile@1x.jpg 1x" srcset="img/fish-big-mobile@2x.jpg 2x" alt="Продукт со вкусом курица" width="140" height="144">
+              <img class="catalog-item__image" src="img/fish-big-mobile@1x.jpg 1x"
+                srcset="img/fish-big-mobile@2x.jpg 2x" alt="Продукт со вкусом курица" width="140" height="144">
             </picture>
             <div class="catalog-item__content">
               <h3 class="catalog-item__title">
@@ -216,12 +240,18 @@
           </li>
           <li class="catalog-list__item catalog-item">
             <picture class="catalog-item__picture">
-              <source type="image/webp" media="(min-width: 1300px)" srcset="img/buckwheat-small-desktop@1x.webp 1x, img/buckwheat-small-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/buckwheat-small-tablet@1x.webp 1x, img/buckwheat-small-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/buckwheat-small-mobile@1x.webp 1x, img/buckwheat-small-mobile@2x.webp 2x">
-              <source media="(min-width: 1300px)" srcset="img/buckwheat-small-desktop@1x.png 1x, img/buckwheat-small-desktop@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="img/buckwheat-small-tablet@1x.png 1x, img/buckwheat-small-tablet@2x.png 2x">
-              <img class="catalog-item__image" src="img/buckwheat-small-mobile@1x.jpg 1x" srcset="img/buckwheat-small-mobile@2x.jpg 2x" alt="Продукт со вкусом курица" width="140" height="144">
+              <source type="image/webp" media="(min-width: 1300px)"
+                srcset="img/buckwheat-small-desktop@1x.webp 1x, img/buckwheat-small-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/buckwheat-small-tablet@1x.webp 1x, img/buckwheat-small-tablet@2x.webp 2x">
+              <source type="image/webp"
+                srcset="img/buckwheat-small-mobile@1x.webp 1x, img/buckwheat-small-mobile@2x.webp 2x">
+              <source media="(min-width: 1300px)"
+                srcset="img/buckwheat-small-desktop@1x.png 1x, img/buckwheat-small-desktop@2x.png 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/buckwheat-small-tablet@1x.png 1x, img/buckwheat-small-tablet@2x.png 2x">
+              <img class="catalog-item__image" src="img/buckwheat-small-mobile@1x.jpg 1x"
+                srcset="img/buckwheat-small-mobile@2x.jpg 2x" alt="Продукт со вкусом курица" width="140" height="144">
             </picture>
             <div class="catalog-item__content">
               <h3 class="catalog-item__title">
@@ -259,12 +289,18 @@
           </li>
           <li class="catalog-list__item catalog-item">
             <picture class="catalog-item__picture">
-              <source type="image/webp" media="(min-width: 1300px)" srcset="img/buckwheat-big-desktop@1x.webp 1x, img/buckwheat-big-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/buckwheat-big-tablet@1x.webp 1x, img/buckwheat-big-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/buckwheat-big-mobile@1x.webp 1x, img/buckwheat-big-mobile@2x.webp 2x">
-              <source media="(min-width: 1300px)" srcset="img/buckwheat-big-desktop@1x.png 1x, img/buckwheat-big-desktop@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="img/buckwheat-big-tablet@1x.png 1x, img/buckwheat-big-tablet@2x.png 2x">
-              <img class="catalog-item__image" src="img/buckwheat-big-mobile@1x.jpg 1x" srcset="img/buckwheat-big-mobile@2x.jpg 2x" alt="Продукт со вкусом курица" width="140" height="144">
+              <source type="image/webp" media="(min-width: 1300px)"
+                srcset="img/buckwheat-big-desktop@1x.webp 1x, img/buckwheat-big-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/buckwheat-big-tablet@1x.webp 1x, img/buckwheat-big-tablet@2x.webp 2x">
+              <source type="image/webp"
+                srcset="img/buckwheat-big-mobile@1x.webp 1x, img/buckwheat-big-mobile@2x.webp 2x">
+              <source media="(min-width: 1300px)"
+                srcset="img/buckwheat-big-desktop@1x.png 1x, img/buckwheat-big-desktop@2x.png 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/buckwheat-big-tablet@1x.png 1x, img/buckwheat-big-tablet@2x.png 2x">
+              <img class="catalog-item__image" src="img/buckwheat-big-mobile@1x.jpg 1x"
+                srcset="img/buckwheat-big-mobile@2x.jpg 2x" alt="Продукт со вкусом курица" width="140" height="144">
             </picture>
             <div class="catalog-item__content">
               <h3 class="catalog-item__title">
@@ -302,12 +338,17 @@
           </li>
           <li class="catalog-list__item catalog-item">
             <picture class="catalog-item__picture">
-              <source type="image/webp" media="(min-width: 1300px)" srcset="img/rice-small-desktop@1x.webp 1x, img/rice-small-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/rice-small-tablet@1x.webp 1x, img/rice-small-tablet@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1300px)"
+                srcset="img/rice-small-desktop@1x.webp 1x, img/rice-small-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/rice-small-tablet@1x.webp 1x, img/rice-small-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/rice-small-mobile@1x.webp 1x, img/rice-small-mobile@2x.webp 2x">
-              <source media="(min-width: 1300px)" srcset="img/rice-small-desktop@1x.png 1x, img/rice-small-desktop@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="img/rice-small-tablet@1x.png 1x, img/rice-small-tablet@2x.png 2x">
-              <img class="catalog-item__image" src="img/rice-small-mobile@1x.jpg 1x" srcset="img/rice-small-mobile@2x.jpg 2x" alt="Продукт со вкусом курица" width="140" height="144">
+              <source media="(min-width: 1300px)"
+                srcset="img/rice-small-desktop@1x.png 1x, img/rice-small-desktop@2x.png 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/rice-small-tablet@1x.png 1x, img/rice-small-tablet@2x.png 2x">
+              <img class="catalog-item__image" src="img/rice-small-mobile@1x.jpg 1x"
+                srcset="img/rice-small-mobile@2x.jpg 2x" alt="Продукт со вкусом курица" width="140" height="144">
             </picture>
             <div class="catalog-item__content">
               <h3 class="catalog-item__title">
@@ -422,12 +463,15 @@
     </div>
     <div class="map-block">
       <picture class="map-block__picture">
-        <source type="image/webp" media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
-        <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
+        <source type="image/webp" media="(min-width: 1300px)"
+          srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
+        <source type="image/webp" media="(min-width: 768px)"
+          srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
         <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
         <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/img/bg-map-desktop@2x.jpg 2x">
         <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
-        <img class="map-block__image" src="img/bg-map-mobile@1x.jpg 1x" srcset="img/bg-map-mobile@2x.jpg 2x" width="320" height="365" alt="Адрес местонахождения компании">
+        <img class="map-block__image" src="img/bg-map-mobile@1x.jpg 1x" srcset="img/bg-map-mobile@2x.jpg 2x" width="320"
+          height="365" alt="Адрес местонахождения компании">
       </picture>
     </div>
   </section>

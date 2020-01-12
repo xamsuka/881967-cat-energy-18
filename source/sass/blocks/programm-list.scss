@@ -87,10 +87,10 @@
     position: relative;
 
     font-size: 36px;
-    line-height: 37.02px;
+    line-height: 37px;
 
     &::before {
-      @include pos-absolute(-25px, auto, auto, 0);
+      @include pos-absolute(-29px, auto, auto, 0);
       width: 100px;
       height: 100px;
       background-color: $color-green;
