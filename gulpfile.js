@@ -110,5 +110,3 @@ gulp.task("webp", function () {
     .pipe(webp({ quality: 90 }))
     .pipe(gulp.dest("source/img"));
 });
-
-
