@@ -1,4 +1,7 @@
 .logo-text {
+  display: flex;
+  justify-content: center;
+
   @include tablet-width {
     margin-right: 15px;
   }

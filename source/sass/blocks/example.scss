@@ -1,15 +1,15 @@
 .example {
-  padding-bottom: 28px;
-
+  padding-bottom: 39px;
   background-color: $bg-silver;
 
   @include tablet-width {
-    padding-bottom: 75px;
+    padding-bottom: 78px;
     background-color: #ffffff;
     border-top: 1px solid $bg-silver;
   }
 
   @include desktop-width {
+    padding-bottom: 70px;
     border-top: none;
     background-color: $bg-silver;
   }
@@ -77,12 +77,16 @@
 
 .example__preview {
   margin-top: 40px;
+  width: 311px;
+  margin-left: -17px;
 
   @include tablet-width {
     position: relative;
     display: flex;
     flex-direction: column;
-    margin-top: 90px;
+    width: 100%;
+    margin-top: 85px;
+    margin-left: 0;
     z-index: 1;
 
     .example__image-before {
@@ -92,15 +96,58 @@
 
   @include desktop-width {
     margin-top: -190px;
-    max-width: 677px;
+    width: 677px;
     padding-left: 25px;
+  }
+}
+
+.example__preview-image {
+  position: relative;
+
+  @include tablet-width {
+    padding: 0 10px;
+    max-height: 499px;
+  }
+
+  @include desktop-width {
+    padding: 0;
+  }
+}
+
+.example__preview-box {
+  @include tablet-width {
+    width: 50%;
+    overflow: hidden;
+  }
+
+  @include desktop-width {
+    width: 57%;
+    padding-top: 16px;
+  }
+
+  &:nth-child(2) {
+    @include tablet-width {
+      display: block;
+
+      @include pos-absolute(0, 0, auto, auto);
+      margin-left: 0;
+      z-index: -1;
+    }
+
+    @include desktop-width {
+      width: 48%;
+      padding-top: 0;
+    }
   }
 }
 
 .example__image-before {
   @include tablet-width {
-    width: 56%;
-    overflow: hidden;
+    padding-top: 20px;
+  }
+
+  @include desktop-width {
+    padding-top: 0;
   }
 }
 
@@ -108,26 +155,28 @@
   display: none;
 
   @include tablet-width {
-    @include pos-absolute(-3px, 30px, auto, auto);
-    width: 40%;
-    z-index: -1;
-    overflow: hidden;
-
-    .example__picture-image {
-      margin-left: -350px;
-    }
-  }
-
-  @include desktop-width {
     display: block;
+    margin-left: -245px;
   }
 }
 
 .example__picture-image {
   @include tablet-width {
     width: 690px;
-    height: 517px;
+    height: 499px;
     max-width: none;
+  }
+
+  @include desktop-width {
+    width: 677px;
+    height: 499px;
+  }
+}
+
+.example__picture-image--after {
+  @include tablet-width {
+    width: 545px;
+    height: 517px;
   }
 }
 
@@ -135,15 +184,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 30px;
-  margin-top: 49px;
+  height: 15px;
+  margin-top: 30px;
 
   @include tablet-width {
-    margin-top: 12px;
+    margin-top: 40px;
   }
 
   @include desktop-width {
-    margin-top: auto;
+    margin-top: 59px;
     padding-left: 80px;
   }
 }
@@ -193,7 +242,7 @@
 }
 
 .example__bar {
-  @include pos-absolute(3px, auto, auto, 4px);
+  @include pos-absolute(3px, auto, auto, 7px);
   width: 35px;
   height: 6px;
   border-radius: 3px;
@@ -203,7 +252,7 @@
   @include tablet-width {
     position: relative;
     top: -14px;
-    left: 47%;
+    left: 46.5%;
     width: 34px;
     height: 34px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
@@ -219,6 +268,16 @@
       background-color: #68b738;
       transform: translate(-50%, -50%);
     }
+  }
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+  }
+
+  &:active {
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
+    border: 2px solid #68b738;
   }
 }
 

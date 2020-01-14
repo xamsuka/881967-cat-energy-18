@@ -71,6 +71,15 @@
       height: 40px;
     }
   }
+
+  &:hover::before,
+  &:focus::before {
+    border: 1px solid #bababa;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .form-programm-list__radio:checked ~ .form-programm-list__label {
