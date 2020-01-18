@@ -78,7 +78,7 @@
 
   @include desktop-width {
     padding-top: 50px;
-    padding-left: 190px;
+    padding-left: 120px;
   }
 }
 
@@ -91,7 +91,7 @@
   }
 
   @include desktop-width {
-    @include pos-absolute(25px, 328px, auto, auto);
+    @include pos-absolute(25px, 258px, auto, auto);
   }
 }
 

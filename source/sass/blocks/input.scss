@@ -25,12 +25,34 @@
   }
 
   &:active {
-    border: 2px solid #444444;
+    outline: 2px solid #444444;
   }
 
   &:invalid {
     opacity: 1;
-    border: 2px solid #ff8282;
+    outline: 2px solid #ff8282;
+  }
+}
+
+.input--radio + .input-label {
+  &:hover::before,
+  &:focus::before {
+    border: 1px solid #bababa;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.input--checkbox:hover + .input-label,
+.input--checkbox:focus + .input-label {
+  &::before {
+    border: 1px solid #bababa;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 

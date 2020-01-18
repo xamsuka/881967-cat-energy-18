@@ -19,8 +19,10 @@
 
   @include tablet-width {
     padding-top: 32px;
+    padding-right: 20px;
+    padding-bottom: 30px;
     padding-left: 30px;
-    padding-bottom: 2px;
+
     border: 1px solid #e6e6e6;
 
     &::before,
@@ -72,10 +74,10 @@
     }
   }
 
-  &:hover::before,
-  &:focus::before {
-    border: 1px solid #bababa;
-  }
+  // &:hover::before,
+  // &:focus::before {
+  //   border: 1px solid #bababa;
+  // }
 
   &:active {
     opacity: 0.3;

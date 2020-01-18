@@ -1,0 +1,13 @@
+.input-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.input-icon--email {
+  @include tablet-width {
+    top: 21px;
+    right: 16px;
+    width: 17px;
+    height: 13px;
+  }
+}

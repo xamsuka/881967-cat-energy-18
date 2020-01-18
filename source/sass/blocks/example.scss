@@ -97,7 +97,6 @@
   @include desktop-width {
     margin-top: -190px;
     width: 677px;
-    padding-left: 25px;
   }
 }
 
@@ -121,8 +120,8 @@
   }
 
   @include desktop-width {
-    width: 57%;
-    padding-top: 16px;
+    width: 54%;
+    margin-left: 27px;
   }
 
   &:nth-child(2) {
@@ -135,7 +134,7 @@
     }
 
     @include desktop-width {
-      width: 48%;
+      width: 42%;
       padding-top: 0;
     }
   }
@@ -147,6 +146,7 @@
   }
 
   @include desktop-width {
+    width: 690px;
     padding-top: 0;
   }
 }
@@ -158,6 +158,10 @@
     display: block;
     margin-left: -245px;
   }
+
+  @include desktop-width {
+    margin-left: -365px;
+  }
 }
 
 .example__picture-image {
@@ -168,8 +172,8 @@
   }
 
   @include desktop-width {
-    width: 677px;
-    height: 499px;
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -177,6 +181,10 @@
   @include tablet-width {
     width: 545px;
     height: 517px;
+  }
+
+  @include desktop-width {
+    width: 690px;
   }
 }
 
@@ -193,7 +201,7 @@
 
   @include desktop-width {
     margin-top: 59px;
-    padding-left: 80px;
+    padding-left: 106px;
   }
 }
 

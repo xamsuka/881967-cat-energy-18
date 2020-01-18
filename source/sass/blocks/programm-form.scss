@@ -35,7 +35,7 @@
   margin-bottom: 28px;
 
   @include tablet-width {
-    margin-bottom: 67px;
+    margin-bottom: 66px;
   }
 
   @include desktop-width {
@@ -57,7 +57,7 @@
 
 .programm-form__content-optionally {
   @include tablet-width {
-    margin-bottom: 8px;
+    margin-bottom: 11px;
   }
 
   @include desktop-width {

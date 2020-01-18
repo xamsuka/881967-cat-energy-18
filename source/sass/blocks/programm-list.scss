@@ -34,7 +34,7 @@
 
   @include desktop-width {
     display: flex;
-    width: 47%;
+    width: 46.7%;
     margin: 0;
     padding-right: 30px;
   }
@@ -140,7 +140,7 @@
   position: relative;
 
   line-height: 16px;
-  color: $text-title;
+  color: $text-base;
   text-transform: uppercase;
 
   &::after {

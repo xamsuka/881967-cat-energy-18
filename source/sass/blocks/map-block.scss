@@ -13,6 +13,30 @@
 
 .map-block__picture {
   display: flex;
+
+  @include tablet-width {
+    &::before {
+      @include pos-absolute();
+      top: 51%;
+      right: 333px;
+      width: 113px;
+      height: 106px;
+      background: url("../img/map-pin.png") no-repeat;
+      transform: translateY(-50%);
+    }
+  }
+
+  @include desktop-width {
+    &::before {
+      @include pos-absolute();
+      top: 50%;
+      right: 23%;
+      width: 113px;
+      height: 106px;
+      background: url("../img/map-pin.png") no-repeat;
+      transform: translateY(-50%);
+    }
+  }
 }
 
 .map-block__image {
