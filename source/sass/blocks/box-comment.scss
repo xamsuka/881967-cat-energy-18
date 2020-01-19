@@ -6,8 +6,32 @@
   line-height: 24px;
 
   @include tablet-width {
+    position: relative;
+    display: inline-block;
+    width: auto;
+    margin-right: 200px;
+    margin-bottom: 75px;
+    margin-left: -40px;
+    padding-right: 41px;
+    padding-left: 40px;
     font-size: 36px;
     line-height: 36px;
-    margin-bottom: 75px;
+
+
+    background-color: #ffffff;
+
+    &::before {
+      @include pos-absolute(23px, auto, auto, -50%);
+      width: 9999px;
+      height: 3px;
+      background-color: #68b738;
+      z-index: -1;
+    }
+  }
+
+  @include desktop-width {
+    margin-right: 30%;
+    margin-left: -20px;
+    padding-left: 20px;
   }
 }

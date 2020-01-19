@@ -62,15 +62,15 @@
               <!-- <p class="personal-info__group"> -->
               <label class="personal-info__label input-label" for="programm-user-weight">
                 Вес (кг):*
-                <input class="personal-info__input input" type="number" name="programm-user-weight"
-                  id="program-user-weight" placeholder="7">
+                <input class="personal-info__input input" type="text" name="programm-user-weight"
+                  id="program-user-weight" placeholder="7" pattern="[0-9]{5,10}">
               </label>
               <!-- </p> -->
               <!-- <p class="personal-info__group"> -->
               <label class="personal-info__label input-label" for="programm-user-age">
                 Возраст (лет):
-                <input class="personal-info__input input" type="number" name="programm-user-age" id="program-user-age"
-                  placeholder="7">
+                <input class="personal-info__input input" type="text" name="programm-user-age" id="program-user-age"
+                  placeholder="7" pattern="[0-9]{5,10}">
               </label>
               <!-- </p> -->
             </div>
@@ -150,7 +150,8 @@
               </label>
             </p>
             <p class="box-optionally__group">
-              <input class="box-optionally__checkbox input--checkbox visually-hidden" type="checkbox" name="milk" id="optionally-milk">
+              <input class="box-optionally__checkbox input--checkbox visually-hidden" type="checkbox" name="milk"
+                id="optionally-milk">
               <label class="box-optionally__label input-label" for="optionally-milk">
                 Молоко
               </label>
@@ -205,29 +206,29 @@
       <ul class="page-footer__social-list social">
         <li class="social__item">
           <a href="#" class="social__link social-item__link--vk" aria-label="Магазин Cat Energy в Вконтакте">
-            <svg class="social__item-icon">
+            <svg class="social__item-icon" width="22" height="12">
               <use xlink:href="#icon-vk"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
           <a href="#" class="social__link social-item__link--inst" aria-label="Магазин Cat Energy в инстаграмме">
-            <svg class="social__item-icon">
+            <svg class="social__item-icon" width="16" height="16">
               <use xlink:href="#icon-insta"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
           <a href="#" class="social__link social-item__link--fb" aria-label="Магазин Cat Energy в фейсбуке">
-            <svg class="social__item-icon">
+            <svg class="social__item-icon" width="10" height="19">
               <use xlink:href="#icon-fb"></use>
             </svg>
           </a>
         </li>
       </ul>
       <div class="page-footer__copyright copyright">
-        <a href="htmlacademy.ru" class="copyright__link">HTML Academy</a>
-        <a href="htmlacademy.ru" class="copyright__link copyright__link--img">
+        <a href="htmlacademy.ru" class="copyright__link">
+          <div class="copyright__link-text">HTML Academy</div>
           <svg class="copyright__icon" width="27" height="34">
             <use xlink:href="#icon-htmlacademy"></use>
           </svg>

@@ -32,12 +32,27 @@
     opacity: 1;
     outline: 2px solid #ff8282;
   }
+
+  &:invalid + svg {
+    fill: red;
+  }
+
+  &:hover + svg {
+    fill: #68b738;
+  }
+
+  &:invalid:hover + svg {
+    fill: red;
+  }
 }
 
-.input--radio + .input-label {
-  &:hover::before,
-  &:focus::before {
+.input--radio:hover + .input-label,
+.input--radio:focus + .input-label {
+  &::before,
+  &::before {
     border: 1px solid #bababa;
+    box-shadow: 0 0 2pt 1pt #809aeb;
+    border-radius: 50%;
   }
 
   &:active {
@@ -49,6 +64,7 @@
 .input--checkbox:focus + .input-label {
   &::before {
     border: 1px solid #bababa;
+    box-shadow: 0 0 2pt 1pt #809aeb;
   }
 
   &:active {
