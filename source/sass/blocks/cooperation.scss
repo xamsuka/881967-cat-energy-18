@@ -29,6 +29,19 @@
   }
 }
 
+.cooperation__container--catalog,
+.cooperation__container--form {
+  padding-top: 33px;
+
+  @include tablet-width {
+    padding-top: 62px;
+  }
+
+  @include desktop-width {
+    padding-top: 66px;
+  }
+}
+
 .cooperation__title {
   @include text-black;
   display: inline-block;
