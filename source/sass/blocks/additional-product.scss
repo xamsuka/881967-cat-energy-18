@@ -13,17 +13,27 @@
 
 .additional-product__title {
   position: relative;
+  display: inline-block;
   margin: 0;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 28px;
+  padding-right: 22px;
+  padding-bottom: 32px;
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
+  background-color: #ffffff;
+
+  &::before {
+    @include pos-absolute(42px, auto, auto, 0);
+    width: 9999px;
+    height: 3px;
+    background-color: #68b738;
+    z-index: -1;
+  }
 
   @include tablet-width {
-    display: inline-block;
     padding: 0;
-    padding-top: 65px;
+    padding-top: 67px;
     padding-right: 35px;
     padding-left: 40px;
     margin-bottom: 80px;
@@ -31,14 +41,9 @@
 
     font-size: 36px;
     line-height: 36px;
-    background-color: #ffffff;
 
     &::before {
-      @include pos-absolute(87px, auto, auto, -50%);
-      width: 9999px;
-      height: 3px;
-      background-color: #68b738;
-      z-index: -1;
+      @include pos-absolute(89px, auto, auto, -50%);
     }
   }
 

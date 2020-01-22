@@ -15,10 +15,20 @@
 .map-block__picture {
   display: flex;
 
+  &::before {
+    @include pos-absolute();
+    top: 257px;
+    right: 133px;
+    width: 55px;
+    height: 53px;
+    background: url("../img/map-pin.png") no-repeat center center;
+    background-size: contain;
+  }
+
   @include tablet-width {
     &::before {
       @include pos-absolute();
-      top: 67%;
+      top: 66.6%;
       right: 333px;
       width: 113px;
       height: 106px;

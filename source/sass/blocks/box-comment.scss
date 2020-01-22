@@ -1,13 +1,25 @@
 .box-comment__title {
+  position: relative;
+  display: inline-block;
   margin: 0;
+  margin-left: -21px;
   margin-bottom: 35px;
+  padding-right: 21px;
+  padding-left: 21px;
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
+  background-color: #ffffff;
+
+  &::before {
+    @include pos-absolute(15px, auto, auto, -50%);
+    width: 9999px;
+    height: 3px;
+    background-color: #68b738;
+    z-index: -1;
+  }
 
   @include tablet-width {
-    position: relative;
-    display: inline-block;
     width: auto;
     margin-right: 200px;
     margin-bottom: 75px;
@@ -17,15 +29,8 @@
     font-size: 36px;
     line-height: 36px;
 
-
-    background-color: #ffffff;
-
     &::before {
-      @include pos-absolute(23px, auto, auto, -50%);
-      width: 9999px;
-      height: 3px;
-      background-color: #68b738;
-      z-index: -1;
+      @include pos-absolute(22px, auto, auto, -50%);
     }
   }
 

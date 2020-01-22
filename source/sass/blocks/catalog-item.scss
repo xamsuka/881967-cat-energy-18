@@ -1,6 +1,16 @@
 .catalog-item {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
+
+  &::after {
+    @include pos-absolute(auto, auto, 0, 0);
+    left: 50%;
+    width: 9999px;
+    height: 1px;
+    background-color: #f4f4f4;
+    transform: translateX(-50%);
+  }
 
   @include tablet-width {
     position: relative;
@@ -15,6 +25,10 @@
     &:last-child,
     &:nth-last-child(2) {
       margin-bottom: 0;
+    }
+
+    &::after {
+      display: none;
     }
   }
 
