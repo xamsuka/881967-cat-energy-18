@@ -38,10 +38,14 @@
   color: #ffffff;
 
   @include tablet-width {
-    padding-top: 56px;
+    padding-top: 53px;
     color: #111111;
     font-size: 60px;
     line-height: 60px;
+  }
+
+  @include desktop-width {
+    padding-top: 55px;
   }
 }
 
@@ -63,7 +67,7 @@
   }
 
   @include desktop-width {
-    margin-bottom: 56px;
+    margin-bottom: 57px;
   }
 }
 

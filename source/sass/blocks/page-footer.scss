@@ -10,18 +10,18 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 57px;
-    padding-bottom: 57px;
+    padding-top: 54px;
+    padding-bottom: 54px;
   }
 
   @include desktop-width {
-    padding-top: 56px;
+    padding-top: 57px;
     padding-bottom: 56px;
   }
 }
 
 .page-footer__logo {
-  margin-bottom: 28px;
+  margin-bottom: 33px;
   padding-top: 50px;
 
   @include tablet-width {

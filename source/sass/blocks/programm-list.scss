@@ -76,21 +76,21 @@
     }
 
     &::after {
-      @include pos-absolute(90px, 30px, auto, auto);
+      @include pos-absolute(90px, 28px, auto, auto);
       width: 268px;
       height: 194px;
     }
   }
 
   @include desktop-width {
-    padding-left: 164px;
+    padding-left: 161px;
     position: relative;
 
     font-size: 36px;
     line-height: 37px;
 
     &::before {
-      @include pos-absolute(-29px, auto, auto, 0);
+      @include pos-absolute(-28px, auto, auto, -1px);
       width: 100px;
       height: 100px;
       background-color: $color-green;
@@ -162,6 +162,13 @@
     }
   }
 
+  @include desktop-width {
+    &::after {
+      top: 5px;
+      left: 131px;
+    }
+  }
+
   &:active {
     opacity: 0.3;
   }
@@ -170,6 +177,10 @@
 .programm-list__item--cat-pro .programm-list__link::after {
   @include tablet-width {
     left: 127px;
+  }
+
+  @include desktop-width {
+    left: 125px;
   }
 }
 
@@ -194,10 +205,10 @@
   }
 
   .programm-list__item--cat-slim .programm-list__title::after {
-    top: -30px;
+    top: -34px;
   }
 
   .programm-list__item--cat-pro .programm-list__title::after {
-    top: -30px;
+    top: -27px;
   }
 }
