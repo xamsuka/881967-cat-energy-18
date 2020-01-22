@@ -1,15 +1,12 @@
 .example {
-  padding-bottom: 39px;
   background-color: $bg-silver;
 
   @include tablet-width {
-    padding-bottom: 78px;
     background-color: #ffffff;
     border-top: 1px solid $bg-silver;
   }
 
   @include desktop-width {
-    padding-bottom: 70px;
     border-top: none;
     background-color: $bg-silver;
   }
@@ -17,11 +14,13 @@
 
 .example__container {
   padding-top: 17px;
+  padding-bottom: 39px;
 
   @include wrapper;
 
   @include tablet-width {
-    padding-top: 45px;
+    padding-top: 43px;
+    padding-bottom: 0;
   }
 
   @include desktop-width {
@@ -31,10 +30,13 @@
     width: auto;
     padding-top: 0;
     background-color: $bg-silver;
+  }
+}
 
-    .example__content {
-      width: 435px;
-    }
+.example__content {
+  @include desktop-width {
+    width: 435px;
+    z-index: 2;
   }
 }
 
@@ -48,7 +50,8 @@
 
   @include desktop-width {
     width: 100%;
-    margin-top: -135px;
+    margin-top: -151px;
+    z-index: 2;
   }
 }
 
@@ -61,81 +64,100 @@
   @include text-mobile;
 
   @include tablet-width {
-    margin-top: 63px;
-    margin-bottom: 52px;
+    margin-top: 64px;
+    margin-bottom: 53px;
     padding-right: 5px;
     font-size: 16px;
     line-height: 24px;
   }
 
   @include desktop-width {
-    margin-top: 70px;
+    margin-top: 55px;
     margin-bottom: 68px;
     padding: 0;
   }
 }
 
 .example__preview {
-  margin-top: 40px;
-  width: 311px;
-  margin-left: -17px;
+  position: relative;
+  margin-top: 35px;
 
   @include tablet-width {
     position: relative;
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-top: 85px;
+    margin-top: 87px;
     margin-left: 0;
+    padding-bottom: 78px;
     z-index: 1;
 
-    .example__image-before {
-      text-align: center;
+    &::before {
+      @include pos-absolute();
+      right: -50%;
+      width: 9999px;
+      height: 100%;
+      background: linear-gradient(to bottom, #ffffff 26.7%, #f2f2f2 26.7% 100%);
+      z-index: -1;
+    }
+
+    &::after {
+      @include pos-absolute();
+      right: -50%;
+      width: 708px;
+      height: 100%;
+      background: linear-gradient(to bottom, #ffffff 26.7%, #eaeaea 26.7% 100%);
+      z-index: -1;
     }
   }
 
   @include desktop-width {
-    margin-top: -190px;
+    margin-top: -186px;
     width: 677px;
-    padding-left: 25px;
+
+    &::after {
+      width: 624px;
+    }
   }
 }
 
 .example__preview-image {
   position: relative;
+  width: 320px;
 
   @include tablet-width {
-    padding: 0 10px;
+    width: 100%;
     max-height: 499px;
-  }
-
-  @include desktop-width {
-    padding: 0;
   }
 }
 
 .example__preview-box {
+  margin-left: -20px;
+
   @include tablet-width {
-    width: 50%;
+    width: 48%;
+    margin-left: 15px;
     overflow: hidden;
   }
 
   @include desktop-width {
-    width: 57%;
-    padding-top: 16px;
+    width: 54%;
+    margin-top: -20px;
+    margin-left: 27px;
   }
 
   &:nth-child(2) {
     @include tablet-width {
       display: block;
+      width: 50%;
 
       @include pos-absolute(0, 0, auto, auto);
       margin-left: 0;
-      z-index: -1;
+      z-index: 0;
     }
 
     @include desktop-width {
-      width: 48%;
+      width: 42%;
       padding-top: 0;
     }
   }
@@ -143,11 +165,7 @@
 
 .example__image-before {
   @include tablet-width {
-    padding-top: 20px;
-  }
-
-  @include desktop-width {
-    padding-top: 0;
+    width: 690px;
   }
 }
 
@@ -156,27 +174,36 @@
 
   @include tablet-width {
     display: block;
-    margin-left: -245px;
+    margin-left: -339px;
+  }
+
+  @include desktop-width {
+    margin-left: -365px;
   }
 }
 
 .example__picture-image {
+  width: 320px;
+
   @include tablet-width {
     width: 690px;
-    height: 499px;
     max-width: none;
   }
 
   @include desktop-width {
-    width: 677px;
-    height: 499px;
+    width: 100%;
+    height: auto;
   }
 }
 
 .example__picture-image--after {
   @include tablet-width {
-    width: 545px;
+    width: 690px;
     height: 517px;
+  }
+
+  @include desktop-width {
+    width: 690px;
   }
 }
 
@@ -185,15 +212,15 @@
   align-items: center;
   justify-content: center;
   height: 15px;
-  margin-top: 30px;
+  margin-top: 28px;
 
   @include tablet-width {
-    margin-top: 40px;
+    margin-top: 38px;
   }
 
   @include desktop-width {
-    margin-top: 59px;
-    padding-left: 80px;
+    margin-top: 40px;
+    padding-left: 106px;
   }
 }
 

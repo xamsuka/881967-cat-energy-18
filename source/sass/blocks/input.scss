@@ -25,12 +25,50 @@
   }
 
   &:active {
-    border: 2px solid #444444;
+    outline: 2px solid #444444;
   }
 
   &:invalid {
     opacity: 1;
-    border: 2px solid #ff8282;
+    outline: 2px solid #ff8282;
+  }
+
+  &:invalid + svg {
+    fill: red;
+  }
+
+  &:hover + svg {
+    fill: #68b738;
+  }
+
+  &:invalid:hover + svg {
+    fill: red;
+  }
+}
+
+.input--radio:hover + .input-label,
+.input--radio:focus + .input-label {
+  &::before,
+  &::before {
+    border: 1px solid #bababa;
+    box-shadow: 0 0 2pt 1pt #809aeb;
+    border-radius: 50%;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.input--checkbox:hover + .input-label,
+.input--checkbox:focus + .input-label {
+  &::before {
+    border: 1px solid #bababa;
+    box-shadow: 0 0 2pt 1pt #809aeb;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 

@@ -1,0 +1,27 @@
+.input-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.input-icon--email {
+  top: 15px;
+  right: 16px;
+  width: 17px;
+  height: 13px;
+
+  @include tablet-width {
+    top: 21px;
+  }
+
+  @include desktop-width {
+    top: 19px;
+    right: 20px;
+  }
+}
+
+.input-icon--tel {
+  @include desktop-width {
+    top: 16px;
+    right: 19px;
+  }
+}

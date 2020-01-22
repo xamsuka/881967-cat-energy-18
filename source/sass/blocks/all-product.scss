@@ -8,11 +8,20 @@
   &::before {
     @include pos-absolute(0, auto, auto, 0);
     content: url("../../img/icon-plus-mobile.svg");
-    top: 27px;
+    top: 26px;
     left: 50%;
     width: 30px;
     height: 30px;
     opacity: 0.2;
+    transform: translateX(-50%);
+  }
+
+  &::after {
+    @include pos-absolute(auto, auto, 0, 0);
+    left: 50%;
+    width: 9999px;
+    height: 1px;
+    background-color: #f4f4f4;
     transform: translateX(-50%);
   }
 
@@ -29,6 +38,10 @@
       top: 54px;
       width: 60px;
       height: 60px;
+    }
+
+    &::after {
+      display: none;
     }
   }
 

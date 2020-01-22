@@ -62,35 +62,35 @@
               <!-- <p class="personal-info__group"> -->
               <label class="personal-info__label input-label" for="programm-user-weight">
                 Вес (кг):*
-                <input class="personal-info__input input" type="number" name="programm-user-weight"
-                  id="program-user-weight" placeholder="7">
+                <input class="personal-info__input input" type="text" name="programm-user-weight"
+                  id="program-user-weight" placeholder="7" pattern="[0-9]{5,10}">
               </label>
               <!-- </p> -->
               <!-- <p class="personal-info__group"> -->
               <label class="personal-info__label input-label" for="programm-user-age">
                 Возраст (лет):
-                <input class="personal-info__input input" type="number" name="programm-user-age" id="program-user-age"
-                  placeholder="7">
+                <input class="personal-info__input input" type="text" name="programm-user-age" id="program-user-age"
+                  placeholder="7" pattern="[0-9]{5,10}">
               </label>
               <!-- </p> -->
             </div>
             <div class="programm-form__programm-list form-programm-list">
               <p class="form-programm-list__group">
-                <input class="form-programm-list__radio visually-hidden" type="radio" name="program-value"
-                  id="program-value-losing" value="losing-weight" checked="">
+                <input class="form-programm-list__radio input--radio visually-hidden" type="radio" name="program-value"
+                  id="program-value-losing" value="losing-weight" checked>
                 <label class="form-programm-list__label input-label" for="program-value-losing">
                   Похудение
                 </label>
               </p>
               <p class="form-programm-list__group">
-                <input class="form-programm-list__radio visually-hidden" type="radio" name="program-value"
+                <input class="form-programm-list__radio input--radio visually-hidden" type="radio" name="program-value"
                   id="program-value-mass" value="mass-gain">
                 <label class="form-programm-list__label input-label" for="program-value-mass">
                   Набор массы
                 </label>
               </p>
               <p class="form-programm-list__group">
-                <input class="form-programm-list__radio visually-hidden" type="radio" name="program-value"
+                <input class="form-programm-list__radio input--radio visually-hidden" type="radio" name="program-value"
                   id="program-value-advice" value="need-advice">
                 <label class="form-programm-list__label input-label" for="program-value-advice">
                   Не знаю (нужен ваш совет)
@@ -108,7 +108,7 @@
               E-mail:*
               <input class="form-contact__input input" type="email" name="user-email" id="user-email"
                 placeholder="kuklachev@gmail.com">
-              <svg class="form-contact__icon input-icon">
+              <svg class="form-contact__icon input-icon input-icon--email">
                 <use xlink:href="#icon-mail"></use>
               </svg>
             </label>
@@ -116,9 +116,9 @@
             <!-- <p class="form-contact__group"> -->
             <label class="form-contact__label input-label input-label--box-input" for="user-tel">
               Телефон:*
-              <input class="form-contact__input input" name="user-tel" id="user-tel" type="tel" pattern="[0-9]{11}"
+              <input class="form-contact__input form-contact__input--tel input" name="user-tel" id="user-tel" type="tel" pattern="[0-9]{11}"
                 placeholder="8 (960) 900-60-90">
-              <svg class="form-contact__icon input-icon">
+              <svg class="form-contact__icon input-icon input-icon--tel">
                 <use xlink:href="#icon-phone"></use>
               </svg>
             </label>
@@ -136,27 +136,28 @@
               Дополнительно
             </h3>
             <p class="box-optionally__group">
-              <input class="box-optionally__checkbox visually-hidden" type="checkbox" name="sweetener"
+              <input class="box-optionally__checkbox input--checkbox visually-hidden" type="checkbox" name="sweetener"
                 id="optionally-sweetener" checked="">
               <label class="box-optionally__label input-label" for="optionally-sweetener">
                 Сахарозаменитель
               </label>
             </p>
             <p class="box-optionally__group">
-              <input class="box-optionally__checkbox visually-hidden" type="checkbox" name="water"
+              <input class="box-optionally__checkbox input--checkbox visually-hidden" type="checkbox" name="water"
                 id="optionally-water">
               <label class="box-optionally__label input-label" for="optionally-water">
                 Питьевая вода
               </label>
             </p>
             <p class="box-optionally__group">
-              <input class="box-optionally__checkbox visually-hidden" type="checkbox" name="milk" id="optionally-milk">
+              <input class="box-optionally__checkbox input--checkbox visually-hidden" type="checkbox" name="milk"
+                id="optionally-milk">
               <label class="box-optionally__label input-label" for="optionally-milk">
                 Молоко
               </label>
             </p>
             <p class="box-optionally__group">
-              <input class="box-optionally__checkbox visually-hidden" type="checkbox" name="vitamins"
+              <input class="box-optionally__checkbox input--checkbox visually-hidden" type="checkbox" name="vitamins"
                 id="optionally-vitamins">
               <label class="box-optionally__label input-label" for="optionally-vitamins">
                 Витамины
@@ -172,7 +173,7 @@
     </div>
   </main>
   <section class="cooperation">
-    <div class="cooperation__container">
+    <div class="cooperation__container cooperation__container--form">
       <h2 class="cooperation__title">
         приглашаем
         к&nbsp;сотрудничеству
@@ -205,29 +206,29 @@
       <ul class="page-footer__social-list social">
         <li class="social__item">
           <a href="#" class="social__link social-item__link--vk" aria-label="Магазин Cat Energy в Вконтакте">
-            <svg class="social__item-icon">
+            <svg class="social__item-icon" width="22" height="12">
               <use xlink:href="#icon-vk"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
           <a href="#" class="social__link social-item__link--inst" aria-label="Магазин Cat Energy в инстаграмме">
-            <svg class="social__item-icon">
+            <svg class="social__item-icon" width="16" height="16">
               <use xlink:href="#icon-insta"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
           <a href="#" class="social__link social-item__link--fb" aria-label="Магазин Cat Energy в фейсбуке">
-            <svg class="social__item-icon">
+            <svg class="social__item-icon" width="10" height="19">
               <use xlink:href="#icon-fb"></use>
             </svg>
           </a>
         </li>
       </ul>
       <div class="page-footer__copyright copyright">
-        <a href="htmlacademy.ru" class="copyright__link">HTML Academy</a>
-        <a href="htmlacademy.ru" class="copyright__link copyright__link--img">
+        <a href="htmlacademy.ru" class="copyright__link">
+          <div class="copyright__link-text">HTML Academy</div>
           <svg class="copyright__icon" width="27" height="34">
             <use xlink:href="#icon-htmlacademy"></use>
           </svg>

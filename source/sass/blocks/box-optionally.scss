@@ -7,21 +7,47 @@
 }
 
 .box-optionally__title {
+  position: relative;
+  display: inline-block;
   margin: 0;
+  margin-left: -21px;
   margin-bottom: 38px;
+  padding-right: 21px;
+  padding-left: 21px;
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
+  background-color: #ffffff;
+
+  &::before {
+    @include pos-absolute(14px, auto, auto, -50%);
+    width: 9999px;
+    height: 3px;
+    background-color: #68b738;
+    z-index: -1;
+  }
 
   @include tablet-width {
-    width: 100%;
-    margin-bottom: 65px;
+    width: auto;
+    margin-right: 200px;
+    margin-bottom: 67px;
+    margin-left: -40px;
+    padding-right: 41px;
+    padding-left: 40px;
+
     font-size: 36px;
     line-height: 36px;
+
+    &::before {
+      @include pos-absolute(23px, auto, auto, -50%);
+    }
   }
 
   @include desktop-width {
+    margin-right: 70%;
     margin-bottom: 66px;
+    margin-left: -20px;
+    padding-left: 20px;
   }
 }
 
@@ -31,7 +57,7 @@
 
   @include tablet-width {
     width: 45%;
-    margin-bottom: 50px;
+    margin-bottom: 48px;
   }
 
   @include desktop-width {
@@ -50,14 +76,6 @@
     height: 30px;
     border: 1px solid #cdcdcd;
     background-color: transparent;
-  }
-
-  &:hover::before {
-    border: 1px solid #bababa;
-  }
-
-  &:active {
-    opacity: 0.3;
   }
 
   @include tablet-width {

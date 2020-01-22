@@ -2,7 +2,7 @@
   position: relative;
 
   @include tablet-width {
-    background-color: $bg-silver;
+    background-color: #ffffff;
   }
 }
 
@@ -10,7 +10,7 @@
   @include wrapper;
   display: flex;
   flex-wrap: wrap;
-  padding-top: 29px;
+  padding-top: 28px;
 
   @include tablet-width {
     padding-top: 64px;
@@ -19,13 +19,26 @@
   }
 
   @include desktop-width {
-    @include pos-absolute(95px, auto, auto, 110px);
+    @include pos-absolute(95px, auto, auto, 40px);
     width: 570px;
     padding-top: 65px;
     padding-right: 90px;
-    padding-bottom: 55px;
+    padding-bottom: 57px;
     padding-left: 76px;
     background-color: #ffffff;
+  }
+}
+
+.cooperation__container--catalog,
+.cooperation__container--form {
+  padding-top: 33px;
+
+  @include tablet-width {
+    padding-top: 62px;
+  }
+
+  @include desktop-width {
+    padding-top: 66px;
   }
 }
 

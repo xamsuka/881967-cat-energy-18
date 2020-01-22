@@ -7,20 +7,47 @@
 }
 
 .form-contact__title {
+  position: relative;
+  display: inline-block;
+  width: 72%;
   margin: 0;
   margin-bottom: 35px;
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
+  background-color: #ffffff;
+
+  &::before {
+    @include pos-absolute(14px, auto, auto, 0);
+    width: 9999px;
+    height: 3px;
+    background-color: #68b738;
+    z-index: -1;
+  }
 
   @include tablet-width {
-    margin-bottom: 74px;
+    width: auto;
+    padding-left: 40px;
+    padding-right: 41px;
+    margin-bottom: 76px;
+    margin-left: -40px;
+
     font-size: 36px;
     line-height: 36px;
+
+    &::before {
+      @include pos-absolute(23px, auto, auto, -50%);
+    }
   }
 
   @include desktop-width {
-    width: 100%;
+    margin-right: 30%;
+    margin-left: -20px;
+    padding-left: 20px;
+
+    &::before {
+      @include pos-absolute(21px, auto, auto, -50%);
+    }
   }
 }
 
@@ -55,11 +82,9 @@
 
 .form-contact__icon {
   @include pos-absolute(11px, 15px, auto, auto);
-  width: 20px;
-  height: 20px;
 
   @include tablet-width {
-    @include pos-absolute(16px, 20px, auto, auto);
+    @include pos-absolute(18px, 14px, auto, auto);
   }
 }
 

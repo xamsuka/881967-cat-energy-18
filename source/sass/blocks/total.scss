@@ -34,7 +34,7 @@
 
 .total__weight {
   @include tablet-width {
-    margin-right: 42px;
+    margin-right: 40px;
   }
 }
 
@@ -82,7 +82,7 @@
   font-weight: 400;
   line-height: 20px;
   text-align: center;
-  color: $text-title;
+  color: $text-base;
   text-transform: uppercase;
 
   @include tablet-width {

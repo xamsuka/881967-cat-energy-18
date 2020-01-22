@@ -2,6 +2,10 @@
   padding-top: 197px;
 
   @include tablet-width {
-    padding-top: 60px;
+    padding-top: 57px;
+  }
+
+  @include desktop-width {
+    padding-top: 59px;
   }
 }

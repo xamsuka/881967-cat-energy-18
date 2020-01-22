@@ -4,23 +4,25 @@
   padding-bottom: 7px;
 
   &::before {
-    @include pos-absolute(0, 0, auto, -20px);
-    width: 100vw;
+    @include pos-absolute(0, 0, auto, -80%);
+    width: 9999px;
     height: 1px;
     background-color: #ededed;
   }
 
   &::after {
-    @include pos-absolute(auto, auto, 0, -20px);
-    width: 100vw;
+    @include pos-absolute(auto, auto, 0, -80%);
+    width: 9999px;
     height: 1px;
     background-color: #ededed;
   }
 
   @include tablet-width {
     padding-top: 32px;
+    padding-right: 20px;
+    padding-bottom: 30px;
     padding-left: 30px;
-    padding-bottom: 2px;
+
     border: 1px solid #e6e6e6;
 
     &::before,
@@ -70,11 +72,6 @@
       width: 40px;
       height: 40px;
     }
-  }
-
-  &:hover::before,
-  &:focus::before {
-    border: 1px solid #bababa;
   }
 
   &:active {
