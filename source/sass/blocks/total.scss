@@ -36,6 +36,10 @@
   @include tablet-width {
     margin-right: 40px;
   }
+
+  @include desktop-width {
+    margin-right: 42px;
+  }
 }
 
 .total__weight-value,

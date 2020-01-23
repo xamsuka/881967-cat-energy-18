@@ -174,11 +174,11 @@
 
   @include tablet-width {
     display: block;
-    margin-left: -339px;
+    margin-left: -337px;
   }
 
   @include desktop-width {
-    margin-left: -365px;
+    margin-left: -366px;
   }
 }
 
@@ -186,24 +186,17 @@
   width: 320px;
 
   @include tablet-width {
-    width: 690px;
-    max-width: none;
-  }
-
-  @include desktop-width {
-    width: 100%;
-    height: auto;
+    width: 700px;
   }
 }
 
 .example__picture-image--after {
   @include tablet-width {
-    width: 690px;
     height: 517px;
   }
 
   @include desktop-width {
-    width: 690px;
+    min-width: 689px;
   }
 }
 
