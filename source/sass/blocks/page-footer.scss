@@ -10,7 +10,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 54px;
+    padding-top: 58px;
     padding-bottom: 54px;
   }
 
@@ -22,7 +22,7 @@
 
 .page-footer__logo {
   margin-bottom: 33px;
-  padding-top: 51px;
+  padding-top: 41px;
 
   @include tablet-width {
     max-height: 24px;

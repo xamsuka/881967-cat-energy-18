@@ -176,11 +176,8 @@
 
 .programm-list__item--cat-pro .programm-list__link::after {
   @include tablet-width {
-    left: 127px;
-  }
-
-  @include desktop-width {
     left: 125px;
+    top: 6px;
   }
 }
 

@@ -166,6 +166,7 @@
 .example__image-before {
   @include tablet-width {
     width: 690px;
+    margin-top: 17px;
   }
 }
 
@@ -174,11 +175,11 @@
 
   @include tablet-width {
     display: block;
-    margin-left: -339px;
+    margin-left: -247px;
   }
 
   @include desktop-width {
-    margin-left: -365px;
+    margin-left: -275px;
   }
 }
 
@@ -186,24 +187,15 @@
   width: 320px;
 
   @include tablet-width {
-    width: 690px;
-    max-width: none;
-  }
-
-  @include desktop-width {
-    width: 100%;
-    height: auto;
+    width: 677px;
+    height: 499px;
   }
 }
 
 .example__picture-image--after {
   @include tablet-width {
-    width: 690px;
+    width: 545px;
     height: 517px;
-  }
-
-  @include desktop-width {
-    width: 690px;
   }
 }
 
