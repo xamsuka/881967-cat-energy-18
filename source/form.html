@@ -7,7 +7,6 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Cat Energy подбор программы</title>
   <link rel="stylesheet" href="css/style.min.css">
-  <script src="js/picturefill.min.js" async></script>
 </head>
 
 <body>
@@ -53,21 +52,21 @@
           <div class="programm-form__contents">
             <div class="programm-form__personal-info personal-info">
               <!-- <p class="personal-info__group"> -->
-              <label class="personal-info__label input-label" for="programm-user-name">
+              <label class="personal-info__label input-label">
                 Имя:*
                 <input class="personal-info__input input" type="text" name="programm-user-name" id="program-user-name"
                   pattern="[A-Za-zА-Яа-яЁё]{3,}" placeholder="Барсик">
               </label>
               <!-- </p> -->
               <!-- <p class="personal-info__group"> -->
-              <label class="personal-info__label input-label" for="programm-user-weight">
+              <label class="personal-info__label input-label">
                 Вес (кг):*
                 <input class="personal-info__input input" type="text" name="programm-user-weight"
                   id="program-user-weight" placeholder="7" pattern="[0-9]{5,10}">
               </label>
               <!-- </p> -->
               <!-- <p class="personal-info__group"> -->
-              <label class="personal-info__label input-label" for="programm-user-age">
+              <label class="personal-info__label input-label">
                 Возраст (лет):
                 <input class="personal-info__input input" type="text" name="programm-user-age" id="program-user-age"
                   placeholder="7" pattern="[0-9]{5,10}">
@@ -195,7 +194,7 @@
         <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
         <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/img/bg-map-desktop@2x.jpg 2x">
         <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
-        <img class="map-block__image" src="img/bg-map-mobile@1x.jpg 1x" srcset="img/bg-map-mobile@2x.jpg 2x"
+        <img class="map-block__image" src="img/bg-map-mobile@1x.jpg" srcset="img/bg-map-mobile@2x.jpg 2x"
           width="320" height="365" alt="Адрес местонахождения компании">
       </picture>
     </div>
@@ -239,6 +238,7 @@
     </div>
   </footer>
   <script src="js/script.js"></script>
+  <script src="js/picturefill.min.js"></script>
 </body>
 
 </html>

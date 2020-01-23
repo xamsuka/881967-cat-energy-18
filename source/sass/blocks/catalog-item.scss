@@ -131,6 +131,12 @@
 
 .catalog-item__column {
   padding: 0;
+  flex-grow: 1;
+  display: block;
+
+  &:nth-child(2n) {
+    text-align: right;
+  }
 
   @include tablet-width {
     padding-top: 6px;

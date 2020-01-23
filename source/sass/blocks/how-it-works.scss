@@ -84,6 +84,7 @@
   }
 
   @include tablet-width {
+    display: block;
     width: 245px;
     min-height: 228px;
     margin-right: 140px;
@@ -164,7 +165,7 @@
   @include text-mobile;
 
   @include tablet-width {
-    padding-top: 69px;
+    padding-top: 112px;
     padding-left: 0;
     font-size: 16px;
     line-height: 24px;

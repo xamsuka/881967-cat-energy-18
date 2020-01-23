@@ -81,6 +81,7 @@
   padding-left: 13px;
 
   @include tablet-width {
+    min-height: 140px;
     padding-left: 17px;
     padding-bottom: 18px;
   }
