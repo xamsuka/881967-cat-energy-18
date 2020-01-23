@@ -105,7 +105,8 @@
 
 .promo__link {
   margin-top: -3px;
-  width: auto;
+  padding-left: 0;
+  padding-right: 0;
 
   @include tablet-width {
     padding-top: 15px;

@@ -52,6 +52,10 @@
 
 .all-product__button {
   margin-top: auto;
+
+  @include tablet-width {
+    margin-top: 64px;
+  }
 }
 
 .all-product__title {
