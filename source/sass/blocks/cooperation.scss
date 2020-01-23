@@ -50,6 +50,7 @@
   padding-top: 28px;
 
   @include tablet-width {
+    margin-top: 0;
     padding-top: 62px;
   }
 
