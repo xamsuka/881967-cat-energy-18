@@ -1,26 +1,34 @@
 .cooperation {
   position: relative;
+  background-color: #f2f2f2;
 
-  @include tablet-width {
+  &--page-index {
     background-color: #ffffff;
   }
 }
 
 .cooperation__container {
   @include wrapper;
+  padding-top: 28px;
+  padding-bottom: 26px;
+
+  @include tablet-width {
+    padding-top: 64px;
+    padding-bottom: 0;
+  }
 
   @include desktop-width {
     position: relative;
+    padding-top: 0;
   }
 }
 
 .cooperation__content {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 28px;
 
   @include tablet-width {
-    padding-top: 64px;
+    // padding-top: 64px;
     padding-left: 40px;
     padding-right: 40px;
   }
@@ -38,14 +46,16 @@
 
 .cooperation__container--catalog,
 .cooperation__container--form {
-  padding-top: 33px;
+  margin-top: 6px;
+  padding-top: 28px;
 
   @include tablet-width {
     padding-top: 62px;
   }
 
   @include desktop-width {
-    padding-top: 66px;
+    margin-top: 0;
+    padding-top: 0;
   }
 }
 

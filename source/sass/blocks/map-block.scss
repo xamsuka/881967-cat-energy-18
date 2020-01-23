@@ -1,5 +1,4 @@
 .map-block {
-  margin-top: 26px;
   max-height: 360px;
   overflow: hidden;
 
@@ -11,7 +10,7 @@
 
   @include desktop-width {
     display: flex;
-    height: 400px;
+    height: 400;
     margin-top: 0;
   }
 }
