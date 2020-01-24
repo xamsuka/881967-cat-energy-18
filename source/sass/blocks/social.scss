@@ -1,5 +1,5 @@
 .social {
-  padding-top: 31px;
+  padding-top: 22px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -10,17 +10,6 @@
   @include tablet-width {
     padding: 0;
     justify-content: space-between;
-  }
-}
-
-.page-footer__social-list {
-  @include clear-list;
-  padding-top: 21px;
-  padding-bottom: 21px;
-
-
-  @include tablet-width {
-    padding: 0;
     border: none;
   }
 }
@@ -71,21 +60,21 @@
   }
 }
 
-.social-item__link--vk svg {
+.social__link--vk svg {
   @include tablet-width {
     width: 30px;
     height: 16px;
   }
 }
 
-.social-item__link--inst svg {
+.social__link--inst svg {
   @include tablet-width {
     width: 23px;
     height: 23px;
   }
 }
 
-.social-item__link--fb svg {
+.social__link--fb svg {
   @include tablet-width {
     width: 14px;
     height: 28px;

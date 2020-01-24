@@ -28,12 +28,12 @@
     outline: 2px solid #444444;
   }
 
-  &:invalid {
+  &:focus:invalid {
     opacity: 1;
     outline: 2px solid #ff8282;
   }
 
-  &:invalid + svg {
+  &:focus:invalid + svg {
     fill: red;
   }
 

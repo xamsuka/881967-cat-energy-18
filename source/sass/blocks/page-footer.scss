@@ -32,6 +32,17 @@
   }
 }
 
+.page-footer__social-list {
+  @include clear-list;
+  padding-top: 21px;
+  padding-bottom: 21px;
+
+  @include tablet-width {
+    padding: 0;
+    border: none;
+  }
+}
+
 .page-footer__copyright {
   padding-top: 20px;
   padding-bottom: 30px;
