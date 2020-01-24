@@ -16,11 +16,12 @@
 
   iframe {
     width: 100%;
+    display: block;
   }
 }
 
 .map-block__picture {
-  display: flex;
+  display: none;
   width: 100%;
 
   &::before {
@@ -65,4 +66,12 @@
   @include tablet-width {
     margin-top: -5px;
   }
+}
+
+.map-block--nojs .map-block__picture {
+  display: flex;
+}
+
+.map-block--nojs iframe {
+  display: none;
 }
