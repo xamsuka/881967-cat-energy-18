@@ -135,6 +135,7 @@
 .additional-item__price {
   @include tablet-width {
     align-self: flex-end;
+    margin-top: 5px;
     font-size: 16px;
     line-height: 20px;
   }
@@ -150,7 +151,7 @@
   line-height: 20px;
 
   @include tablet-width {
-    margin-top: 26px;
+    margin-top: 21px;
   }
 
   @include desktop-width {

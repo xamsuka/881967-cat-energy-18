@@ -1,5 +1,6 @@
 .input {
   flex-grow: 1;
+  height: 52px;
   max-height: 52px;
   padding-top: 12px;
   padding-bottom: 11px;
@@ -81,7 +82,7 @@
   padding-left: 13px;
 
   @include tablet-width {
-    min-height: 140px;
+    min-height: 175px;
     padding-left: 17px;
     padding-bottom: 18px;
   }

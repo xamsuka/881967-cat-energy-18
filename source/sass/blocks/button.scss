@@ -44,6 +44,8 @@
 }
 
 .button--promo {
+  padding-bottom: 9px;
+
   @include tablet-width {
     width: auto;
   }

@@ -39,7 +39,7 @@
 
   @media (max-width: 767px) {
     padding-top: 24px;
-    padding-bottom: 24px;
+    padding-bottom: 22px;
 
     &::before {
       @include pos-absolute(0, auto, auto, -20px);
