@@ -33,13 +33,13 @@
   padding-bottom: 8px;
   cursor: pointer;
 
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+
   @media (max-width: 767px) {
     padding-top: 24px;
-    padding-bottom: 24px;
-
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 20px;
+    padding-bottom: 22px;
 
     &::before {
       @include pos-absolute(0, auto, auto, -20px);
@@ -47,6 +47,12 @@
       height: 0;
       border-top: 1px solid rgba(205, 205, 205, 0.5);
     }
+  }
+
+  @include tablet-width {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
   }
 
   @include desktop-width {

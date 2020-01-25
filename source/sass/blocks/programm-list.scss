@@ -149,6 +149,13 @@
     height: 11px;
     content: "";
     background: url("../img/icon-right-arrow-long.svg") center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &:hover::after {
+    width: 33px;
+    height: 11px;
   }
 
   @include tablet-width {

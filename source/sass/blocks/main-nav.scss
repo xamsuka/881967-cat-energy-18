@@ -44,7 +44,7 @@
   &::before,
   &::after {
     @include pos-absolute(8px, auto, auto, 0);
-    width: 18px;
+    width: 25px;
     height: 2px;
 
     background-color: #000000;

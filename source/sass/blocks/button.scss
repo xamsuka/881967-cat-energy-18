@@ -39,6 +39,14 @@
   }
 
   &:active {
-    color: rgba(255, 255, 255, 0.3);
+    color: rgba(68, 68, 68, 0.3);
+  }
+}
+
+.button--promo {
+  padding-bottom: 9px;
+
+  @include tablet-width {
+    width: auto;
   }
 }

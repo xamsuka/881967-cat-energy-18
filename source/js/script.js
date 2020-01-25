@@ -1,11 +1,16 @@
 var mainNav = document.querySelector(".main-nav");
 var buttonNavigation = mainNav.querySelector(".main-nav__toggle");
+var mapBlock = document.querySelector(".map-block");
 // var examplePreview = document.querySelector(".example__preview");
 // var exampleBefore = examplePreview.querySelector(".example__image-before");
 // var exampleAfter = examplePreview.querySelector(".example__image-after");
 // var exampleBar = examplePreview.querySelector(".example__bar");
 if (mainNav.classList.contains("main-nav--nojs")) {
   mainNav.classList.remove("main-nav--nojs");
+}
+
+if (mapBlock.classList.contains("map-block--nojs")) {
+  mapBlock.classList.remove("map-block--nojs");
 }
 
 buttonNavigation.addEventListener("click", function () {
