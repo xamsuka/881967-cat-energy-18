@@ -30,7 +30,7 @@
     line-height: 36px;
 
     &::before {
-      @include pos-absolute(22px, auto, auto, -50%);
+      @include pos-absolute(22px, auto, auto, -100vw);
     }
   }
 
